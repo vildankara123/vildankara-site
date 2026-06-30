@@ -1,0 +1,9 @@
+/* ============================================================
+   FONTS — Vildan Kara Kayacan Advisory System
+   Webfonts shipped to consumers. Served from Google Fonts CDN.
+   - Newsreader      : editorial display serif (headlines, insights)
+   - Hanken Grotesk  : UI + body grotesque (warm, professional)
+   - IBM Plex Mono   : technical labels, indices, data (SAP/AI nod)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');

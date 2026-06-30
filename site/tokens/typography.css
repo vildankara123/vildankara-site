@@ -1,0 +1,50 @@
+/* ============================================================
+   TYPOGRAPHY
+   Display: Newsreader (editorial serif, optical sizing)
+   Sans:    Hanken Grotesk (UI + body)
+   Mono:    IBM Plex Mono (labels, indices, data)
+   ============================================================ */
+
+:root {
+  /* ---- FAMILIES ---- */
+  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-sans:  'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:  'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* ---- DISPLAY / HEADING SIZES (serif, fluid) ---- */
+  --t-display-l: clamp(3rem, 1.4rem + 6.4vw, 5.5rem);      /* @kind other */ /* hero */
+  --t-display-m: clamp(1.95rem, 1.3rem + 2.7vw, 2.85rem);  /* @kind other */ /* section heads, stats, quotes */
+  --t-head-l:    clamp(1.55rem, 1.2rem + 1.5vw, 2.1rem);   /* @kind other */
+  --t-head-m:    clamp(1.25rem, 1.08rem + 0.8vw, 1.55rem); /* @kind other */ /* card titles */
+  --t-head-s:    1.125rem;                                 /* @kind other */
+
+  /* ---- BODY / UI SIZES (sans) ---- */
+  --t-body-l: 1.1875rem;   /* @kind other */ /* 19 — lede */
+  --t-body:   1.0625rem;   /* @kind other */ /* 17 — body */
+  --t-body-s: 0.9375rem;   /* @kind other */ /* 15 — secondary */
+  --t-caption:0.8125rem;   /* @kind other */ /* 13 — captions */
+  --t-micro:  0.6875rem;   /* @kind other */ /* 11 — eyebrows / mono labels */
+
+  /* ---- LINE HEIGHTS ---- */
+  --lh-tight: 1.04;   /* @kind other */
+  --lh-snug:  1.12;   /* @kind other */
+  --lh-head:  1.2;    /* @kind other */
+  --lh-body:  1.62;   /* @kind other */
+
+  /* ---- TRACKING ---- */
+  --ls-display: -0.02em;  /* @kind other */
+  --ls-head:    -0.012em; /* @kind other */
+  --ls-body:    0;        /* @kind other */
+  --ls-eyebrow: 0.2em;    /* @kind other */
+  --ls-mono:    0.14em;   /* @kind other */
+
+  /* ---- WEIGHTS ---- */
+  --fw-light:    300;  /* @kind other */
+  --fw-regular:  400;  /* @kind other */
+  --fw-medium:   500;  /* @kind other */
+  --fw-semibold: 600;  /* @kind other */
+  --fw-bold:     700;  /* @kind other */
+
+  /* ---- MEASURE ---- */
+  --measure: 64ch;     /* @kind spacing */
+}

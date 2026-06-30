@@ -1,0 +1,12 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Local Claude Code settings (not needed in the repo)
+.claude/settings.local.json
+
+# Netlify (not used — we deploy via GitHub Pages)
+.netlify/
+netlify.toml

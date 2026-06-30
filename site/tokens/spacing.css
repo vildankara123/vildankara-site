@@ -1,0 +1,57 @@
+/* ============================================================
+   SPACING · RADII · SHADOWS · MOTION · LAYOUT
+   Editorial system: generous rhythm, sharp executive corners,
+   cool soft low shadows, hairline borders.
+   ============================================================ */
+
+:root {
+  /* ---- SPACING (4px base) ---- */
+  --space-1:  0.25rem;   /* @kind spacing */  /* 4  */
+  --space-2:  0.5rem;    /* @kind spacing */  /* 8  */
+  --space-3:  0.75rem;   /* @kind spacing */  /* 12 */
+  --space-4:  1rem;      /* @kind spacing */  /* 16 */
+  --space-5:  1.5rem;    /* @kind spacing */  /* 24 */
+  --space-6:  2rem;      /* @kind spacing */  /* 32 */
+  --space-7:  2.5rem;    /* @kind spacing */  /* 40 */
+  --space-8:  3rem;      /* @kind spacing */  /* 48 */
+  --space-9:  4rem;      /* @kind spacing */  /* 64 */
+  --space-10: 5rem;      /* @kind spacing */  /* 80 */
+  --space-11: 7rem;      /* @kind spacing */  /* 112 */
+  --space-12: 9rem;      /* @kind spacing */  /* 144 */
+
+  /* ---- SECTION RHYTHM & CONTAINERS ---- */
+  --section-y: clamp(3.25rem, 2.2rem + 3.4vw, 5.25rem);  /* @kind spacing */
+  --gutter:    clamp(1.25rem, 0.5rem + 3vw, 2.5rem);/* @kind spacing */
+  --container:      1200px;  /* @kind spacing */
+  --container-wide: 1360px;  /* @kind spacing */
+
+  /* ---- RADII (sharp, executive) ---- */
+  --r-xs:   2px;    /* @kind radius */
+  --r-sm:   4px;    /* @kind radius */
+  --r-md:   8px;    /* @kind radius */
+  --r-lg:   12px;   /* @kind radius */
+  --r-pill: 999px;  /* @kind radius */
+
+  /* ---- BORDERS ---- */
+  --border-hair: 1px;    /* @kind spacing */
+  --border-mark: 1.5px;  /* @kind spacing */
+
+  /* ---- SHADOWS (cool-tinted ink, low + soft) ---- */
+  --shadow-sm: 0 2px 8px rgba(10, 20, 33, 0.06);          /* @kind shadow */
+  --shadow-md: 0 12px 32px -14px rgba(10, 20, 33, 0.18);  /* @kind shadow */
+  --shadow-lg: 0 30px 64px -26px rgba(10, 20, 33, 0.30);  /* @kind shadow */
+  --shadow-gold: 0 16px 40px -18px rgba(138, 101, 49, 0.42); /* @kind shadow */
+  --glow-gold: 0 0 52px -12px rgba(190, 150, 87, 0.40);       /* @kind shadow */
+  --glow-warm: 0 0 52px -12px rgba(190, 150, 87, 0.40);       /* @kind shadow */
+
+  /* ---- MOTION ---- */
+  --ease:     cubic-bezier(0.22, 0.61, 0.36, 1);  /* @kind other */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);      /* @kind other */
+  --dur-fast: 140ms;  /* @kind other */
+  --dur:      260ms;  /* @kind other */
+  --dur-slow: 520ms;  /* @kind other */
+
+  /* ---- Z ---- */
+  --z-nav:  100;  /* @kind other */
+  --z-over: 200;  /* @kind other */
+}

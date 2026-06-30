@@ -1,0 +1,78 @@
+/* ============================================================
+   COLORS — Ink · Gold · Mist
+   Executive-glass palette drawn from the brand photography:
+   deep navy tailoring (Ink), warm gold jewellery (Gold),
+   cool glass-tower light (Slate / Mist). Gold is the single
+   accent; backgrounds are enriched with cool imagery + texture
+   rather than flat fills.
+   ============================================================ */
+
+:root {
+  /* ---- INK (deep navy anchor) ---- */
+  --ink-900: #0A1421;
+  --ink-800: #0E1B2E;
+  --ink-700: #1A2B40;
+  --ink-600: #2C3F56;
+  --ink-500: #44586F;
+
+  /* ---- SLATE & MIST (cool glass greys) ---- */
+  --slate-500: #586B7F;
+  --slate-400: #80909F;
+  --slate-300: #A9B5C0;
+  --mist-200:  #D5DCE3;
+  --mist-100:  #E8ECF0;
+  --mist-50:   #F2F4F6;
+
+  /* ---- GOLD (antique-brass accent) ---- */
+  --gold-700: #8A6531;   /* accent text on light (AA) */
+  --gold-600: #A67E40;
+  --gold-500: #BE9657;   /* primary accent ★ */
+  --gold-400: #D2B27D;   /* accent on ink */
+  --gold-300: #DCC79B;
+  --gold-200: #E7D6B6;
+  --gold-100: #F0E6D2;
+
+  /* ---- SIGNATURE GRADIENTS (gold-toned, subtle) ---- */
+  --grad-gold:      linear-gradient(118deg, #D2B27D 0%, #BE9657 60%, #A67E40 100%);   /* @kind color */
+  --grad-gold-deep: linear-gradient(118deg, #BE9657 0%, #8A6531 100%);   /* @kind color */
+  --grad-ink:       linear-gradient(160deg, #16263C 0%, #0A1421 100%);   /* @kind color */
+
+  /* ---- back-compat aliases (gold-toned) so any stale reference renders gold ---- */
+  --grad-warm:      var(--grad-gold);        /* @kind color */
+  --grad-warm-deep: var(--grad-gold-deep);   /* @kind color */
+  --grad-text:      var(--gold-400);         /* @kind color */
+
+  /* ---- PAPER / SURFACES ---- */
+  --paper:        #F6F4EF;
+  --surface-card: #FFFFFF;
+  --bg-ink:       var(--ink-900);
+
+  /* ---- LINES ---- */
+  --line:        #E4E1D8;
+  --line-strong: #D3D0C6;
+  --line-accent: #DCC8A2;
+  --line-on-ink: rgba(236, 240, 244, 0.14);
+
+  /* ---- TEXT ---- */
+  --text-strong: #0E1B2E;
+  --text-body:   #2C3F56;
+  --text-muted:  #586B7F;
+  --text-faint:  #80909F;
+  --text-on-ink:        #EAEEF2;
+  --text-on-ink-muted:  rgba(234, 238, 242, 0.64);
+  --text-on-ink-faint:  rgba(234, 238, 242, 0.42);
+
+  /* ---- ACCENT ALIASES ---- */
+  --accent:        var(--gold-500);
+  --accent-strong: var(--gold-700);
+  --accent-on-ink: var(--gold-400);
+  --on-accent:     var(--ink-900);
+
+  /* ---- SEMANTIC SURFACES ---- */
+  --bg:        var(--paper);
+  --bg-raised: var(--surface-card);
+  --bg-tint:   var(--mist-50);
+  --border:    var(--line);
+
+  --focus-ring: var(--gold-600);
+}
