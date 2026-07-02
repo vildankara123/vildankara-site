@@ -17,9 +17,9 @@
         <Chrome.Nav t={t} lang={lang} setLang={setLang} current="services" />
         <Top.SloganHero t={t} img={SITE.img} onNav={onNav} />
         <Top.CredBar t={t} />
+        <HomeSections.Manifesto t={t} />
+        <HomeSections.Services t={t} onNav={onNav} />
         <HomeSections.Perspective t={t} />
-        <HomeSections.WhereIHelp t={t} onNav={onNav} />
-        <HomeSections.WhyClients t={t} />
         <HomeSections.HowIThink t={t} />
         <HomeSections.AboutTeaser t={t} />
         <End.CtaBand t={t} />

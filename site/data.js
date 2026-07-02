@@ -1,816 +1,2656 @@
-/* ============================================================
-   Content — Vildan Kara Kayacan · Executive Advisory.
-   Multi-page site. Bilingual (EN / TR).
-   Voice: third person, professional / advertising register.
-   The SUBJECT is Vildan Kara Kayacan (named or implied) — not a
-   first person ("I/me"), and not a fictional company structure.
-   Region terminology: EMEA & MENA.
-   Exposed as window.SITE.
-   ============================================================ */
+/* Vildan Kara Kayacan - site content (window.SITE). Tek kaynak. */
 window.SITE = {
-  img: {
-    portrait:   "assets/img/vildan-portrait.jpg",
-    about:      "assets/img/vildan-about.png",
-    presenting: "assets/img/vildan-presenting.jpg",
-    strategy:   "assets/img/vildan-strategy.jpg",
-    boardroom:  "assets/img/hero-boardroom.png",
-    road:       "assets/img/hero-city-night.png",
-    skyline:    "assets/img/hero-city-office.png",
+  "img": {
+    "portrait": "assets/img/vildan-portrait.jpg",
+    "about": "assets/img/vildan-about.png",
+    "presenting": "assets/img/vildan-presenting.jpg",
+    "strategy": "assets/img/vildan-strategy.jpg",
+    "boardroom": "assets/img/hero-boardroom.png",
+    "road": "assets/img/hero-city-night.png",
+    "skyline": "assets/img/hero-skyline.png",
+    "seated": "assets/img/vildan-seated.png"
   },
-
-  /* page filenames used by the shared nav/footer */
-  pages: { home: "index.html", services: "index.html#services", work: "index.html#work", projects: "projects.html", insights: "insights.html", about: "about.html", contact: "index.html#contact" },
-
-  /* Service-area imagery (shared EN/TR), indexed to the six services.
-     Real corporate/technology photography (Unsplash CDN), brand-duotoned
-     in CSS. SUBSTITUTION: replace with owned/licensed imagery before launch. */
-  serviceImages: [
-    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=70",  /* org change / people */
-    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=70",  /* SAP / data center */
-    "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1000&q=70",  /* AI / network */
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=70",  /* managed services / dashboards */
-    "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1000&q=70",  /* PMO / planning */
-    "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=70",  /* bid / handshake */
-  ],
-
-  /* Project header imagery (shared), indexed to the six projects.
-     SUBSTITUTION: replace with owned/product imagery before launch. */
-  projectImages: [
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=70",  /* SAP Activa — analytics dashboard */
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=70",  /* Segmentil — charts */
-    "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=900&q=70",  /* Yazbix — writing / journal */
-    "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=900&q=70",  /* Social Media Studio — social */
-    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=70",  /* English for Children — learning */
-    "https://images.unsplash.com/photo-1488229297570-58520851e868?auto=format&fit=crop&w=900&q=70",  /* In progress — abstract lab */
-  ],
-
-  /* Insight (article) header imagery — indexed to the six articles.
-     Reuses verified Unsplash IDs. SUBSTITUTION: replace before launch. */
-  insightImages: [
-    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=70",  /* SAP fail — data center */
-    "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=900&q=70",  /* AI — network */
-    "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=900&q=70",  /* staying ahead — planning */
-    "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=70",  /* vendor — handshake */
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=70",  /* managed services — dashboards */
-    "https://images.unsplash.com/photo-1488229297570-58520851e868?auto=format&fit=crop&w=900&q=70",  /* trend — abstract */
-  ],
-
-  /* Non-personal corporate imagery for the About page + CTA band. */
-  aux: {
-    aboutHero: "https://images.unsplash.com/photo-1488229297570-58520851e868?auto=format&fit=crop&w=1100&q=70",  /* abstract glass */
-    aboutBio:  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1100&q=70",  /* strategy / data */
-    cta:       "assets/img/hero-boardroom.png",  /* wide boardroom */
+  "pages": {
+    "home": "index.html",
+    "services": "index.html#services",
+    "work": "index.html#work",
+    "projects": "projects.html",
+    "insights": "insights.html",
+    "about": "about.html",
+    "contact": "index.html#contact"
   },
-
-  /* Shared 16-country footprint (EMEA & MENA). name/projects per language. */
-  footprint: [
-    { code: "tr", lat: 39.9, lng: 32.8, name_en: "Türkiye", name_tr: "Türkiye", projects_en: ["Turkish Airlines — OCM Lead (150+ people)", "Eureko Sigorta — First SAP HANA FSI reference", "Arçelik — MDM Implementation", "Yapı Kredi Bank — First banking ERP programme", "NTT DATA — EMEA & MENA Service Management", "Mercedes-Benz Turkey — Shared Service Operation"], projects_tr: ["Türk Hava Yolları — OCM Lideri (150+ kişi)", "Eureko Sigorta — İlk SAP HANA FSI referansı", "Arçelik — MDM Implementasyonu", "Yapı Kredi Bankası — İlk bankacılık ERP programı", "NTT DATA — EMEA & MENA Servis Yönetimi", "Mercedes-Benz Türk — Shared Service Operasyonu"] },
-    { code: "de", lat: 51.2, lng: 10.4, name_en: "Germany", name_tr: "Almanya", projects_en: ["Metro Group AG — Düsseldorf FCC (SAP FI)", "Schnellecke Logistics — Global roll-out (onsite)", "Air Berlin — Business Transformation (onsite)", "Yaşar Holding — Germany Localization"], projects_tr: ["Metro Group AG — Düsseldorf FCC (SAP FI Danışmanı)", "Schnellecke Logistics — Global roll-out (onsite)", "Air Berlin — Business Transformation (onsite)", "Yaşar Holding — Almanya Lokalizasyon"] },
-    { code: "eg", lat: 26.8, lng: 30.8, name_en: "Egypt", name_tr: "Mısır", projects_en: ["Metro Group — SAP Roll-out", "Financial process implementation & go-live"], projects_tr: ["Metro Group — SAP Roll-out", "Finansal süreç implementasyonu ve go-live"] },
-    { code: "kz", lat: 48.0, lng: 66.9, name_en: "Kazakhstan", name_tr: "Kazakistan", projects_en: ["Metro Group — SAP Roll-out", "International SAP FI implementation"], projects_tr: ["Metro Group — SAP Roll-out", "Uluslararası SAP FI implementasyonu"] },
-    { code: "sk", lat: 48.7, lng: 19.7, name_en: "Slovakia", name_tr: "Slovakya", projects_en: ["Metro Group — SAP Roll-out", "Local GAAP & IFRS parallel reporting"], projects_tr: ["Metro Group — SAP Roll-out", "Yerel GAAP ve IFRS paralel raporlama"] },
-    { code: "be", lat: 50.5, lng: 4.4, name_en: "Belgium", name_tr: "Belçika", projects_en: ["Metro Group — SAP Roll-out", "Multi-company-code SAP FI setup"], projects_tr: ["Metro Group — SAP Roll-out", "Çok şirket kodlu SAP FI kurulumu"] },
-    { code: "es", lat: 40.4, lng: -3.7, name_en: "Spain", name_tr: "İspanya", projects_en: ["Metro Group — SAP Roll-out", "User acceptance testing & go-live"], projects_tr: ["Metro Group — SAP Roll-out", "Kullanıcı kabul testi ve go-live"] },
-    { code: "bg", lat: 42.7, lng: 25.5, name_en: "Bulgaria", name_tr: "Bulgaristan", projects_en: ["Metro Group — SAP Roll-out", "SAP FI functional support & training"], projects_tr: ["Metro Group — SAP Roll-out", "SAP FI fonksiyonel destek ve eğitim"] },
-    { code: "pk", lat: 30.4, lng: 69.3, name_en: "Pakistan", name_tr: "Pakistan", projects_en: ["Metro Group — SAP Roll-out", "International SAP implementation & training"], projects_tr: ["Metro Group — SAP Roll-out", "Uluslararası SAP implementasyonu ve eğitim"] },
-    { code: "at", lat: 47.5, lng: 14.5, name_en: "Austria", name_tr: "Avusturya", projects_en: ["NTT DATA — EMEA Service Coordination", "Integration with European delivery centers"], projects_tr: ["NTT DATA — EMEA Servis Koordinasyonu", "Avrupa teslimat merkezleriyle entegrasyon"] },
-    { code: "pl", lat: 51.9, lng: 19.1, name_en: "Poland", name_tr: "Polonya", projects_en: ["NTT DATA — EMEA Service Structure", "Delivery center development & integration"], projects_tr: ["NTT DATA — EMEA Servis Yapılanması", "Teslimat merkezi geliştirme ve entegrasyon"] },
-    { code: "cz", lat: 49.8, lng: 15.5, name_en: "Czechia", name_tr: "Çekya", projects_en: ["NTT DATA — EMEA Delivery Coordination", "Local adaptation of central service model"], projects_tr: ["NTT DATA — EMEA Delivery Koordinasyonu", "Merkezi servis modelinin yerel adaptasyonu"] },
-    { code: "ro", lat: 45.9, lng: 24.9, name_en: "Romania", name_tr: "Romanya", projects_en: ["NTT DATA — EMEA Delivery Expansion", "New CoE setup support"], projects_tr: ["NTT DATA — EMEA Teslimat Genişletme", "Yeni CoE kurulumu desteği"] },
-    { code: "ua", lat: 48.4, lng: 31.2, name_en: "Ukraine", name_tr: "Ukrayna", projects_en: ["NTT DATA — Delivery Center Integration", "Within EMEA SAP service organization"], projects_tr: ["NTT DATA — Teslimat Merkezi Entegrasyonu", "EMEA SAP servis organizasyonu kapsamında"] },
-    { code: "ae", lat: 24.5, lng: 54.4, name_en: "UAE", name_tr: "BAE", projects_en: ["NTT DATA — MENA Region Service Management", "Middle East & Africa SAP managed services"], projects_tr: ["NTT DATA — MENA Bölgesi Servis Yönetimi", "Orta Doğu & Afrika SAP yönetilen hizmetler"] },
-    { code: "sa", lat: 24.7, lng: 46.7, name_en: "Saudi Arabia", name_tr: "Suudi Arabistan", projects_en: ["NTT DATA — MENA Region Service Expansion", "SAP managed services strategy & delivery"], projects_tr: ["NTT DATA — MENA Bölgesi Servis Genişlemesi", "SAP yönetilen hizmetler stratejisi ve teslimat"] },
+  "serviceImages": [
+    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=70",
+    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=70",
+    "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1000&q=70",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=70",
+    "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1000&q=70",
+    "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=70"
   ],
-
-  /* Detail-page content, keyed by language then item index.
-     NOTE: article bodies are professional drafts — replace with final copy. */
-  detail: {
-    en: {
-      labels: { back: "All insights", backProjects: "All projects", byline: "Vildan Kara Kayacan", features: "Highlights", visit: "Visit project", status: "Status", related: "Continue reading", talk: "Discuss this" },
-      insightBodies: [
-        ["Most S/4HANA programmes are framed as technology migrations. That framing is the first mistake. The platform change is real, but it is rarely what determines success — the operating model, the governance and the people around it are.", "The programmes that endure share a pattern: a staged, low-risk roadmap; a target operating model defined before the build; and change management treated as a workstream, not an afterthought. The ones that fail almost always skipped one of the three.", "Before committing a budget, three questions are worth answering honestly. Is the scope staged so value arrives early? Is there a single owner for the operating model? And is the organisation genuinely ready to work differently on go-live day? If any answer is unclear, that is where the work starts."],
-        ["Artificial intelligence is usually introduced as a tool. The organisations that get real value treat it as an operating-model question instead — where decisions are made, how work flows, who is accountable.", "Pilots are easy; production is hard. The gap is rarely the model. It is governance, data ownership, and the human change required for people to trust and adopt a new way of working.", "A pragmatic path: pick a process where the value is measurable, govern the data and the decisions explicitly, and design adoption as carefully as the technology. AI that nobody uses is not a capability — it is a cost."],
-        ["Change is accelerating, and the distance between leaders and followers is widening. For CIOs, the risk is not a single technology — it is being structurally unprepared when several arrive at once.", "Three areas reward early preparation: a data foundation that AI can actually use; an operating model that can absorb change without re-organising every year; and a governance posture that says yes to experiments without losing control.", "None of these is a project. They are postures — and the time to adopt them is before the pressure, not during it."],
-        ["Vendor selection is where a transformation's risk profile is quietly set. The wrong choice is rarely obvious on day one; it surfaces a year later, in missed milestones and renegotiations.", "The mistakes repeat: scoring on price before fit; letting the integrator design the RFP; confusing a good demo with delivery capability; and negotiating terms that protect the vendor more than the client.", "An evaluation run on the client's side of the table — clear requirements, weighted criteria, reference checks that go beyond the slide — changes the outcome. Independence here is not a nicety; it is risk management."],
-        ["Managed services are often bought as a cost line and managed as one. That is how value leaks. ITIL is not paperwork — it is the structure that turns a service into a predictable, improvable asset.", "Value comes from the model: the right SLA/KPI design, clear accountability, and a continual-improvement loop that is actually run. Without it, a contract becomes a ticket queue.", "The question to ask of any managed-services arrangement is simple: is it getting better every quarter, or just getting through? The answer is usually visible in the governance, not the headcount."],
-        ["Every season brings a new technology that demands attention. Some reshape the enterprise; most do not. The discipline is telling them apart before committing budget and credibility.", "A simple test helps: does it change the economics of something the business already does at scale, or only add a capability nobody was asking for? Lasting change tends to move a number that matters.", "Curiosity and discipline are not opposites. Experiment widely, but commit narrowly — and only where the value is real and measurable."],
+  "projectImages": [
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=70",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=70",
+    "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=900&q=70",
+    "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=900&q=70",
+    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=70",
+    "https://images.unsplash.com/photo-1488229297570-58520851e868?auto=format&fit=crop&w=900&q=70"
+  ],
+  "insightImages": [
+    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=70",
+    "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=900&q=70",
+    "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=900&q=70",
+    "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=70",
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=70",
+    "https://images.unsplash.com/photo-1488229297570-58520851e868?auto=format&fit=crop&w=900&q=70"
+  ],
+  "aux": {
+    "aboutHero": "https://images.unsplash.com/photo-1488229297570-58520851e868?auto=format&fit=crop&w=1100&q=70",
+    "aboutBio": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1100&q=70",
+    "cta": "assets/img/hero-boardroom.png"
+  },
+  "footprint": [
+    {
+      "code": "tr",
+      "lat": 39.9,
+      "lng": 32.8,
+      "name_en": "Türkiye",
+      "name_tr": "Türkiye",
+      "projects_en": [
+        "Turkish Airlines, OCM Lead (150+ people)",
+        "Eureko Sigorta, First SAP HANA FSI reference",
+        "Arçelik, MDM Implementation",
+        "Yapı Kredi Bank, First banking ERP programme",
+        "NTT DATA, EMEA & MENA Service Management",
+        "Mercedes-Benz Turkey, Shared Service Operation"
       ],
-      projectBodies: [
-        ["SAP Activa brings artificial intelligence to the discipline of SAP programme management. It scores project health, predicts risk, optimises resource allocation and generates status reporting automatically — extending the SAP Activate methodology with a layer of applied AI.", "Built from real delivery experience, it targets the moments where large programmes quietly go off-track: drifting milestones, hidden resource conflicts and status reports that arrive too late to act on."],
-        ["Segmentil segments enterprise customer portfolios and predicts behaviour using applied AI — RFM analysis, churn prediction and customer-lifetime-value, packaged as a decision-support tool for sales and customer-success teams.", "The goal is not another dashboard but a clearer next action: which accounts to protect, which to grow, and where attention creates the most value."],
-        ["Yazbix is an AI-assisted digital journal — a place to capture thoughts, memories and notes, enriched with speech-to-text, sentiment analysis and smart tagging. It began as a personal experiment in what applied AI can do for everyday memory.", "It is the most personal project in the portfolio, and the one that most directly explores how AI can be quiet, helpful and human."],
-        ["Social Media Studio is an AI-assisted content and scheduling platform for small businesses and founders — content suggestions, timing optimisation and lightweight performance analytics in one place.", "It exists to test a simple idea: that applied AI can give a one-person business the leverage of a small team."],
-        ["English for Children is an interactive English-vocabulary platform built for young learners — visual cards, spoken pronunciation and gamified repetition on an AI-personalised learning path.", "The design question behind it: how does AI personalise learning without removing the joy of it? The answer shapes every screen."],
-        ["A new applied-AI project is currently in development, aimed at a real problem in enterprise transformation. It is early, deliberately so — the right time to share is when it works, not before.", "Details will follow. To hear when it launches, a short note via the contact page is the best way to stay in touch."],
-      ],
-      projectFeatures: [
-        ["Project health scoring", "Risk prediction", "Resource optimisation", "Automated status reporting"],
-        ["RFM segmentation", "Churn prediction", "Customer-lifetime-value", "Sales decision support"],
-        ["Speech-to-text capture", "Sentiment analysis", "Smart tagging", "Private by design"],
-        ["Content suggestions", "Scheduling optimisation", "Performance analytics", "Built for small teams"],
-        ["Visual flashcards", "Spoken pronunciation", "Gamified repetition", "AI-personalised path"],
-        ["In active development", "Enterprise-transformation focus", "Applied AI", "Launching soon"],
-      ],
+      "projects_tr": [
+        "Türk Hava Yolları, OCM Lideri (150+ kişi)",
+        "Eureko Sigorta, İlk SAP HANA FSI referansı",
+        "Arçelik, MDM Implementasyonu",
+        "Yapı Kredi Bankası, İlk bankacılık ERP programı",
+        "NTT DATA, EMEA & MENA Servis Yönetimi",
+        "Mercedes-Benz Türk, Shared Service Operasyonu"
+      ]
     },
-    tr: {
-      labels: { back: "Tüm yazılar", backProjects: "Tüm projeler", byline: "Vildan Kara Kayacan", features: "Öne çıkanlar", visit: "Projeyi gör", status: "Durum", related: "Okumaya devam et", talk: "Bunu konuşalım" },
-      insightBodies: [
-        ["S/4HANA programlarının çoğu bir teknoloji göçü olarak çerçevelenir. İlk hata budur. Platform değişimi gerçektir ama başarıyı nadiren o belirler — etrafındaki işletme modeli, yönetişim ve insanlar belirler.", "Kalıcı programlar aynı deseni paylaşır: aşamalı, düşük riskli bir yol haritası; inşadan önce tanımlanmış bir hedef işletme modeli; ve sonradan akla gelen değil, bir iş kolu olarak ele alınan değişim yönetimi. Başarısız olanlar neredeyse her zaman bu üçünden birini atlamıştır.", "Bütçe ayrılmadan önce üç soru dürüstçe yanıtlanmalı: Kapsam, değerin erken gelmesini sağlayacak şekilde aşamalı mı? İşletme modelinin tek bir sahibi var mı? Ve kurum, go-live gününde gerçekten farklı çalışmaya hazır mı? Herhangi biri net değilse, iş tam orada başlar."],
-        ["Yapay zeka genellikle bir araç olarak tanıtılır. Gerçek değer elde eden kurumlar onu bir işletme modeli sorusu olarak ele alır — kararların nerede verildiği, işin nasıl aktığı, kimin sorumlu olduğu.", "Pilotlar kolaydır; üretim zordur. Aradaki fark nadiren modeldir. Yönetişim, veri sahipliği ve insanların yeni çalışma biçimine güvenip benimsemesi için gereken değişimdir.", "Pragmatik bir yol: değerin ölçülebilir olduğu bir süreç seçin, veriyi ve kararları açıkça yönetin ve benimsemeyi teknoloji kadar dikkatli tasarlayın. Kimsenin kullanmadığı AI bir yetkinlik değil, bir maliyettir."],
-        ["Değişim hızlanıyor ve liderlerle takipçiler arasındaki mesafe açılıyor. CIO'lar için risk tek bir teknoloji değil — birkaçı aynı anda geldiğinde yapısal olarak hazırlıksız olmaktır.", "Üç alan erken hazırlığı ödüllendirir: AI'ın gerçekten kullanabileceği bir veri temeli; her yıl yeniden yapılanmadan değişimi soğurabilen bir işletme modeli; ve kontrolü kaybetmeden deneylere evet diyen bir yönetişim duruşu.", "Bunların hiçbiri bir proje değil. Bunlar duruşlardır — ve onları benimseme zamanı baskı altındayken değil, öncesidir."],
-        ["Tedarikçi seçimi, bir dönüşümün risk profilinin sessizce belirlendiği yerdir. Yanlış seçim ilk gün nadiren belli olur; bir yıl sonra kaçırılan kilometre taşları ve yeniden müzakerelerle ortaya çıkar.", "Hatalar tekrar eder: uyumdan önce fiyata göre puanlama; RFP'yi entegratöre tasarlatma; iyi bir demoyu teslimat yetkinliğiyle karıştırma; ve müşteriden çok tedarikçiyi koruyan şartlar müzakere etme.", "Masanın müşteri tarafında yürütülen bir değerlendirme — net gereksinimler, ağırlıklı kriterler, slaytın ötesine geçen referans kontrolleri — sonucu değiştirir. Buradaki bağımsızlık bir incelik değil; risk yönetimidir."],
-        ["Yönetilen hizmetler çoğu zaman bir maliyet kalemi olarak satın alınır ve öyle yönetilir. Değer böyle sızar. ITIL evrak işi değildir — bir hizmeti öngörülebilir, iyileştirilebilir bir varlığa dönüştüren yapıdır.", "Değer modelden gelir: doğru SLA/KPI tasarımı, net hesap verebilirlik ve gerçekten işletilen bir sürekli iyileştirme döngüsü. Bunlar olmadan bir sözleşme bir talep kuyruğuna döner.", "Herhangi bir yönetilen hizmet düzenlemesine sorulacak soru basittir: her çeyrek daha mı iyi oluyor, yoksa sadece idare mi ediyor? Yanıt genellikle kişi sayısında değil, yönetişimde görünür."],
-        ["Her dönem dikkat isteyen yeni bir teknoloji getirir. Bazıları kurumu yeniden şekillendirir; çoğu şekillendirmez. Disiplin, bütçe ve itibar bağlamadan önce ikisini ayırt etmektir.", "Basit bir test yardımcı olur: işletmenin halihazırda ölçekte yaptığı bir şeyin ekonomisini mi değiştiriyor, yoksa kimsenin istemediği bir yetenek mi ekliyor? Kalıcı değişim genellikle önemli bir sayıyı hareket ettirir.", "Merak ve disiplin zıt değildir. Geniş deneyin ama dar bağlanın — ve yalnızca değerin gerçek ve ölçülebilir olduğu yerde."],
+    {
+      "code": "de",
+      "lat": 51.2,
+      "lng": 10.4,
+      "name_en": "Germany",
+      "name_tr": "Almanya",
+      "projects_en": [
+        "Metro Group AG, Düsseldorf FCC (SAP FI)",
+        "Schnellecke Logistics, Global roll-out (onsite)",
+        "Air Berlin, Business Transformation (onsite)",
+        "Yaşar Holding, Germany Localization"
       ],
-      projectBodies: [
-        ["SAP Activa, yapay zekayı SAP program yönetimi disiplinine taşır. Proje sağlığını skorlar, riski tahmin eder, kaynak tahsisini optimize eder ve durum raporlamasını otomatik üretir — SAP Activate metodolojisini uygulamalı bir AI katmanıyla genişletir.", "Gerçek teslimat deneyiminden doğdu ve büyük programların sessizce rayından çıktığı anları hedefler: kayan kilometre taşları, gizli kaynak çatışmaları ve harekete geçmek için çok geç gelen durum raporları."],
-        ["Segmentil, kurumsal müşteri portföylerini uygulamalı AI ile segmentler ve davranış tahmini üretir — RFM analizi, churn tahmini ve müşteri yaşam boyu değeri; satış ve müşteri başarı ekipleri için bir karar destek aracı olarak.", "Amaç bir gösterge paneli daha değil, daha net bir sonraki adım: hangi hesapların korunacağı, hangilerinin büyütüleceği ve ilginin en çok değer yarattığı yer."],
-        ["Yazbix, yapay zeka destekli bir dijital günlük — düşünceleri, anıları ve notları yakalamak için bir yer; sesten metne, duygu analizi ve akıllı etiketleme ile zenginleştirilmiş. Uygulamalı AI'ın günlük hafıza için ne yapabileceğine dair kişisel bir deney olarak başladı.", "Portföydeki en kişisel proje ve AI'ın sessiz, yardımcı ve insani olabileceğini en doğrudan keşfedeni."],
-        ["Sosyal Medya Stüdyosu, küçük işletmeler ve girişimciler için yapay zeka destekli bir içerik ve zamanlama platformudur — içerik önerileri, zamanlama optimizasyonu ve hafif performans analitikleri tek bir yerde.", "Basit bir fikri sınamak için var: uygulamalı AI, tek kişilik bir işletmeye küçük bir ekibin gücünü verebilir."],
-        ["Çocuklar için İngilizce, genç öğrenciler için tasarlanmış interaktif bir İngilizce kelime platformudur — görsel kartlar, sesli telaffuz ve AI ile kişiselleştirilmiş bir yolda oyunlaştırılmış tekrar.", "Arkasındaki tasarım sorusu: AI öğrenmeyi, keyfini kaçırmadan nasıl kişiselleştirir? Yanıt her ekranı şekillendiriyor."],
-        ["Şu anda geliştirme aşamasında, kurumsal dönüşümdeki gerçek bir problemi hedefleyen yeni bir uygulamalı AI projesi var. Erken aşamada, bilinçli olarak öyle — paylaşmanın doğru zamanı çalıştığında, öncesinde değil.", "Detaylar paylaşılacak. Ne zaman yayınlanacağını duymak için iletişim sayfasından kısa bir not en iyi yol."],
-      ],
-      projectFeatures: [
-        ["Proje sağlık skorlama", "Risk tahmini", "Kaynak optimizasyonu", "Otomatik durum raporlama"],
-        ["RFM segmentasyonu", "Churn tahmini", "Müşteri yaşam boyu değeri", "Satış karar desteği"],
-        ["Sesten metne yakalama", "Duygu analizi", "Akıllı etiketleme", "Tasarımı gereği gizli"],
-        ["İçerik önerileri", "Zamanlama optimizasyonu", "Performans analitiği", "Küçük ekipler için"],
-        ["Görsel kartlar", "Sesli telaffuz", "Oyunlaştırılmış tekrar", "AI ile kişiselleştirilmiş yol"],
-        ["Aktif geliştirmede", "Kurumsal dönüşüm odağı", "Uygulamalı AI", "Yakında"],
-      ],
+      "projects_tr": [
+        "Metro Group AG, Düsseldorf FCC (SAP FI Danışmanı)",
+        "Schnellecke Logistics, Global roll-out (onsite)",
+        "Air Berlin, Business Transformation (onsite)",
+        "Yaşar Holding, Almanya Lokalizasyon"
+      ]
     },
+    {
+      "code": "eg",
+      "lat": 26.8,
+      "lng": 30.8,
+      "name_en": "Egypt",
+      "name_tr": "Mısır",
+      "projects_en": [
+        "Metro Group, SAP Roll-out",
+        "Financial process implementation & go-live"
+      ],
+      "projects_tr": [
+        "Metro Group, SAP Roll-out",
+        "Finansal süreç implementasyonu ve go-live"
+      ]
+    },
+    {
+      "code": "kz",
+      "lat": 48,
+      "lng": 66.9,
+      "name_en": "Kazakhstan",
+      "name_tr": "Kazakistan",
+      "projects_en": [
+        "Metro Group, SAP Roll-out",
+        "International SAP FI implementation"
+      ],
+      "projects_tr": [
+        "Metro Group, SAP Roll-out",
+        "Uluslararası SAP FI implementasyonu"
+      ]
+    },
+    {
+      "code": "sk",
+      "lat": 48.7,
+      "lng": 19.7,
+      "name_en": "Slovakia",
+      "name_tr": "Slovakya",
+      "projects_en": [
+        "Metro Group, SAP Roll-out",
+        "Local GAAP & IFRS parallel reporting"
+      ],
+      "projects_tr": [
+        "Metro Group, SAP Roll-out",
+        "Yerel GAAP ve IFRS paralel raporlama"
+      ]
+    },
+    {
+      "code": "be",
+      "lat": 50.5,
+      "lng": 4.4,
+      "name_en": "Belgium",
+      "name_tr": "Belçika",
+      "projects_en": [
+        "Metro Group, SAP Roll-out",
+        "Multi-company-code SAP FI setup"
+      ],
+      "projects_tr": [
+        "Metro Group, SAP Roll-out",
+        "Çok şirket kodlu SAP FI kurulumu"
+      ]
+    },
+    {
+      "code": "es",
+      "lat": 40.4,
+      "lng": -3.7,
+      "name_en": "Spain",
+      "name_tr": "İspanya",
+      "projects_en": [
+        "Metro Group, SAP Roll-out",
+        "User acceptance testing & go-live"
+      ],
+      "projects_tr": [
+        "Metro Group, SAP Roll-out",
+        "Kullanıcı kabul testi ve go-live"
+      ]
+    },
+    {
+      "code": "bg",
+      "lat": 42.7,
+      "lng": 25.5,
+      "name_en": "Bulgaria",
+      "name_tr": "Bulgaristan",
+      "projects_en": [
+        "Metro Group, SAP Roll-out",
+        "SAP FI functional support & training"
+      ],
+      "projects_tr": [
+        "Metro Group, SAP Roll-out",
+        "SAP FI fonksiyonel destek ve eğitim"
+      ]
+    },
+    {
+      "code": "pk",
+      "lat": 30.4,
+      "lng": 69.3,
+      "name_en": "Pakistan",
+      "name_tr": "Pakistan",
+      "projects_en": [
+        "Metro Group, SAP Roll-out",
+        "International SAP implementation & training"
+      ],
+      "projects_tr": [
+        "Metro Group, SAP Roll-out",
+        "Uluslararası SAP implementasyonu ve eğitim"
+      ]
+    },
+    {
+      "code": "at",
+      "lat": 47.5,
+      "lng": 14.5,
+      "name_en": "Austria",
+      "name_tr": "Avusturya",
+      "projects_en": [
+        "NTT DATA, EMEA Service Coordination",
+        "Integration with European delivery centers"
+      ],
+      "projects_tr": [
+        "NTT DATA, EMEA Servis Koordinasyonu",
+        "Avrupa teslimat merkezleriyle entegrasyon"
+      ]
+    },
+    {
+      "code": "pl",
+      "lat": 51.9,
+      "lng": 19.1,
+      "name_en": "Poland",
+      "name_tr": "Polonya",
+      "projects_en": [
+        "NTT DATA, EMEA Service Structure",
+        "Delivery center development & integration"
+      ],
+      "projects_tr": [
+        "NTT DATA, EMEA Servis Yapılanması",
+        "Teslimat merkezi geliştirme ve entegrasyon"
+      ]
+    },
+    {
+      "code": "cz",
+      "lat": 49.8,
+      "lng": 15.5,
+      "name_en": "Czechia",
+      "name_tr": "Çekya",
+      "projects_en": [
+        "NTT DATA, EMEA Delivery Coordination",
+        "Local adaptation of central service model"
+      ],
+      "projects_tr": [
+        "NTT DATA, EMEA Delivery Koordinasyonu",
+        "Merkezi servis modelinin yerel adaptasyonu"
+      ]
+    },
+    {
+      "code": "ro",
+      "lat": 45.9,
+      "lng": 24.9,
+      "name_en": "Romania",
+      "name_tr": "Romanya",
+      "projects_en": [
+        "NTT DATA, EMEA Delivery Expansion",
+        "New CoE setup support"
+      ],
+      "projects_tr": [
+        "NTT DATA, EMEA Teslimat Genişletme",
+        "Yeni CoE kurulumu desteği"
+      ]
+    },
+    {
+      "code": "ua",
+      "lat": 48.4,
+      "lng": 31.2,
+      "name_en": "Ukraine",
+      "name_tr": "Ukrayna",
+      "projects_en": [
+        "NTT DATA, Delivery Center Integration",
+        "Within EMEA SAP service organization"
+      ],
+      "projects_tr": [
+        "NTT DATA, Teslimat Merkezi Entegrasyonu",
+        "EMEA SAP servis organizasyonu kapsamında"
+      ]
+    },
+    {
+      "code": "ae",
+      "lat": 24.5,
+      "lng": 54.4,
+      "name_en": "UAE",
+      "name_tr": "BAE",
+      "projects_en": [
+        "NTT DATA, MENA Region Service Management",
+        "Middle East & Africa SAP managed services"
+      ],
+      "projects_tr": [
+        "NTT DATA, MENA Bölgesi Servis Yönetimi",
+        "Orta Doğu & Afrika SAP yönetilen hizmetler"
+      ]
+    },
+    {
+      "code": "sa",
+      "lat": 24.7,
+      "lng": 46.7,
+      "name_en": "Saudi Arabia",
+      "name_tr": "Suudi Arabistan",
+      "projects_en": [
+        "NTT DATA, MENA Region Service Expansion",
+        "SAP managed services strategy & delivery"
+      ],
+      "projects_tr": [
+        "NTT DATA, MENA Bölgesi Servis Genişlemesi",
+        "SAP yönetilen hizmetler stratejisi ve teslimat"
+      ]
+    }
+  ],
+  "detail": {
+    "en": {
+      "labels": {
+        "back": "All insights",
+        "backProjects": "All projects",
+        "byline": "Vildan Kara Kayacan",
+        "features": "Highlights",
+        "visit": "Visit project",
+        "status": "Status",
+        "related": "Continue reading",
+        "talk": "Discuss this"
+      },
+      "insightBodies": [
+        [
+          "Less Concepts. More Outcomes.",
+          "We use the word “digital transformation” so often that it now describes almost everything, yet doesn’t quite explain anything.",
+          "Whenever I hear it in a meeting or a presentation, a single question comes to my mind:",
+          "“So, what exactly did you do?”",
+          "If I truly had one single piece of advice to give an organisation in the age of AI, it would definitely be: be more pragmatic.",
+          "And yet, the sheer number of definitions we use is what keeps us from it...",
+          "What do we actually mean by an increase in operational efficiency? Did we automate our repetitive work? Did we remove unnecessary approval steps and speed up our processes? Did we put in automated steps that prevent faulty manual entries?",
+          "On the improved-customer-experience side, what really changed? Can we analyse the customer data we hold and provide a personal, faster purchasing process? Can we see its effect on the customer’s purchase volume?",
+          "What did we achieve with innovation and agility? Can we bring a new technology into the organisation faster than before, in a way that meets the organisation’s need? Or did we just start talking about Agile terminology and the latest technologies?",
+          "What did we accomplish in employee experience? Did we free our employees from routine work and enable them to work with more creativity and a greater focus on problem-solving? Or did we cause them to struggle with yet another technology they don’t know?",
+          "Are our data-driven decision-making mechanisms working? Can we now run simulations based on reliable, real-time data and make rational decisions? Or are we still working on one more of the dozens of reports whose model and accuracy we can’t be sure of?",
+          "Did we achieve cost optimisation? Could we reduce the waste in our processes? Did we truly reposition our resources and redesign an optimal cost model? Have we become able to do a job faster, at higher quality, or at lower cost?",
+          "The value of digital transformation emerges in an organisation’s ability to increase its problem-solving capacity.",
+          "That is why, in the age of AI, I wish everyone a little more pragmatism...",
+          "By the way, the word’s origin is the Greek “pragma”,it carries the meanings of work, action, the thing done, the act that produces a result. It means usefulness, practicality and a focus on practical outcomes."
+        ],
+        [
+          "What Actually Makes AI Work?",
+          "Artificial intelligence...",
+          "The world’s simplest technology to understand. What it is and what it can do are very obvious. Everything is possible.",
+          "When a process that for years has limped along with Excel or complex custom development could be turned, in half a day, into a system running with Claude, I keep questioning: what is the obstacle in front of organisations not making progress in AI transformation?",
+          "Is it that AI transformation is actually less a technology project than an organisational-design problem? That senior executives who have grown distant from the operation think they can achieve transformation merely by giving instructions? That teams who have worked with the same processes for years struggle to imagine another possibility? What am I missing in this reading?",
+          "And how strange it is that we see the thing standing in front of artificial intelligence is the human being itself.",
+          "In a context broader than resistance...",
+          "I always say that the person who will do a job using AI is the one who best knows how to make that work most efficient.",
+          "And that brings creative thinking, deep dedication and a sense of ownership.",
+          "If you ask me, it also requires a bit of boredom.",
+          "Artificial intelligence is the saviour of the person who is bored of continuing to do the same things in the same way.",
+          "“What if I now did this job with AI like this...”",
+          "“What if I added this on top...”",
+          "“While I’m at it, let it give me these too...”",
+          "To say that.",
+          "To look for the ways to do it.",
+          "With an inner motivation.",
+          "Otherwise, with a person who treats artificial intelligence like an IT project and waits for it to be served to them on a tray, I think it may already be too late.",
+          "But here another question arises.",
+          "Why do people take ownership?",
+          "Why do some people constantly look for better, while others do only what is asked of them and step aside?",
+          "When I think about all this, I believe AI transformation will develop most efficiently in freer, more democratic and fairer working environments.",
+          "The fundamental promise of the age of artificial intelligence is that it can offer people new possibilities.",
+          "Whether these possibilities can turn into real value depends on people willingly owning them.",
+          "Behind an employee’s desire to turn their own work into something that benefits the company, there are usually dynamics greater than the job description.",
+          "This is, in part, an emotional relationship.",
+          "Perhaps a kind of sense of reciprocity.",
+          "A person who is constantly expected to contribute to the organisation must, over time, also be receiving something from the organisation.",
+          "Respect.",
+          "Trust.",
+          "Recognition.",
+          "Meaning.",
+          "Belonging.",
+          "If an employee has for years only fulfilled what is expected of them, then instead of expecting them one day to suddenly redesign their work, question the processes and produce new value with AI, trying to create new motivations may be more realistic.",
+          "To trigger rethinking...",
+          "To enable people to look at their own work with different eyes...",
+          "To be able to design, together, more meaningful, fairer and more participatory ways of working...",
+          "Perhaps the most important aspect of AI transformation lies right here.",
+          "In the motivation to all link arms together in order to work in a different model, I think artificial intelligence can be a very powerful tool, far more than an end."
+        ],
+        [
+          "Why Purpose Matters More Than Ever",
+          "The other day I came across a talk by Dr. Gülcan Özer.",
+          "“They ask me, we can’t get Gen Z to work, what shall we do, perhaps they realised they are human beings earlier than we did, ” she was saying.",
+          "So it is this obvious, I thought.",
+          "Because, as a woman of the Y generation, I was raised believing that work is not only an economic but a moral value.",
+          "I am part of a generation that was made to believe that getting a good education, working hard, getting ahead of everyone and proving oneself would one day bring a person to a happy place.",
+          "I never started a job without reading and acquiring a great deal of knowledge.",
+          "I always tried to make sure that the work I did was at a level that would earn the recognition of others.",
+          "Our generation ran the same marathon, with the same effort, for years.",
+          "We were well-raised children.",
+          "And now we too will quietly grow tired of running this marathon, start to think “why were we running?”, look back at how many years we have been running and where we have actually arrived, ask ourselves “how much longer will we run?”, and ultimately, we have run long enough to realise that the real winners of this marathon are not the runners, but the ones who organise it...",
+          "Indeed, we look at Gen Z and try to understand, and also manage, them: “Why aren’t you running, what are you questioning?”",
+          "And perhaps for the first time, a generation does not want to make sense of its life solely within work and corporate hierarchies. And it’s a good thing it doesn’t, and at this point, perhaps for the first time, it forces us to think about a different way of working and living.",
+          "That is why, in the new age, without building new business models, equal organisational structures, systems where the production model and the income model are linked more fairly, and freer, more democratic, human-centred structures, expecting new generations to commit to work with the same belief does not feel very realistic to me.",
+          "In this context, I genuinely trust Gen Z.",
+          "Especially for the Alpha generation, our children whom today, at the age of three, we send to school paying 100K a month, I hope we can build a world where, at the end of the day, they do not simply turn into minimum-wage and burnt-out white-collar workers.",
+          "I believe this should be the new marathon of us, the X and Y generations."
+        ]
+      ],
+      "projectBodies": [
+        [
+          "SAP Activa brings artificial intelligence to the discipline of SAP programme management. It scores project health, predicts risk, optimises resource allocation and generates status reporting automatically, extending the SAP Activate methodology with a layer of applied AI.",
+          "Built from real delivery experience, it targets the moments where large programmes quietly go off-track: drifting milestones, hidden resource conflicts and status reports that arrive too late to act on."
+        ],
+        [
+          "Segmentil segments enterprise customer portfolios and predicts behaviour using applied AI, RFM analysis, churn prediction and customer-lifetime-value, packaged as a decision-support tool for sales and customer-success teams.",
+          "The goal is a clearer next action: which accounts to protect, which to grow, and where attention creates the most value."
+        ],
+        [
+          "Yazbix is an AI-assisted digital journal, a place to capture thoughts, memories and notes, enriched with speech-to-text, sentiment analysis and smart tagging. It began as a personal experiment in what applied AI can do for everyday memory.",
+          "It is the most personal project in the portfolio, and the one that most directly explores how AI can be quiet, helpful and human."
+        ],
+        [
+          "Social Media Studio is an AI-assisted content and scheduling platform for small businesses and founders, content suggestions, timing optimisation and lightweight performance analytics in one place.",
+          "It exists to test a simple idea: that applied AI can give a one-person business the leverage of a small team."
+        ],
+        [
+          "English for Children is an interactive English-vocabulary platform built for young learners, visual cards, spoken pronunciation and gamified repetition on an AI-personalised learning path.",
+          "The design question behind it: how does AI personalise learning while keeping the joy of it intact? The answer shapes every screen."
+        ],
+        [
+          "A new applied-AI project is currently in development, aimed at a real problem in enterprise transformation. It is early, deliberately so, the right time to share is once it works.",
+          "Details will follow. To hear when it launches, a short note via the contact page is the best way to stay in touch."
+        ]
+      ],
+      "projectFeatures": [
+        [
+          "Project health scoring",
+          "Risk prediction",
+          "Resource optimisation",
+          "Automated status reporting"
+        ],
+        [
+          "RFM segmentation",
+          "Churn prediction",
+          "Customer-lifetime-value",
+          "Sales decision support"
+        ],
+        [
+          "Speech-to-text capture",
+          "Sentiment analysis",
+          "Smart tagging",
+          "Private by design"
+        ],
+        [
+          "Content suggestions",
+          "Scheduling optimisation",
+          "Performance analytics",
+          "Built for small teams"
+        ],
+        [
+          "Visual flashcards",
+          "Spoken pronunciation",
+          "Gamified repetition",
+          "AI-personalised path"
+        ],
+        [
+          "In active development",
+          "Enterprise-transformation focus",
+          "Applied AI",
+          "Launching soon"
+        ]
+      ]
+    },
+    "tr": {
+      "labels": {
+        "back": "Tüm yazılar",
+        "backProjects": "Tüm projeler",
+        "byline": "Vildan Kara Kayacan",
+        "features": "Öne çıkanlar",
+        "visit": "Projeyi gör",
+        "status": "Durum",
+        "related": "Okumaya devam et",
+        "talk": "Bunu konuşalım"
+      },
+      "insightBodies": [
+        [
+          "“Dijital dönüşüm” kelimesini o kadar çok kullanıyoruz ki, artık neredeyse her şeyi tanımlıyor ama hiçbir şeyi tam olarak açıklamıyor sanki.",
+          "Bir toplantıda ya da sunumda duyduğumda aklıma tek bir soru geliyor:",
+          "“Yani, tam olarak ne yaptınız?”",
+          "Gerçekten yapay zekâ çağında bir organizasyona tek bir tavsiye verecek olsam, bu kesinlikle daha pragmatik olun olurdu.",
+          "Kullandığımız ne çok tanım bizi bundan alıkoyuyor oysa...",
+          "Operasyonel verimlilik artışı derken neyi kastediyoruz mesela tam olarak? Tekrarlayan işlerimizi otomatikleştirdik mi? Gereksiz onay adımlarını çıkarıp süreçlerimizi hızlandırdık mı? Hatalı manuel girişleri engelleyen otomatik adımlar koyduk mu?",
+          "İyileştirilmiş müşteri deneyimi tarafında gerçekten ne değişti? Elimizdeki müşteri verilerini analiz edip, kişisel ve daha hızlı bir satın alma süreci sağlayabiliyor muyuz? Bunun müşterinin satın alma hacmine etkisini görebiliyor muyuz?",
+          "İnovasyon ve çeviklik ile neyi sağladık? Yeni bir teknolojinin organizasyon ihtiyacını eskisinden daha hızlı giderecek şekilde kuruma alınmasını sağlayabiliyor muyuz? Yoksa sadece Agile terminolojisini ve son teknolojileri mi konuşmaya başladık?",
+          "Çalışan deneyiminde neyi başardık? Rutin işlerden kurtarıp çalışanlarımızın daha yaratıcı ve daha problem çözme odağıyla çalışmasını sağlayabildik mi? Yoksa bilmediği başka bir teknolojiyle uğraşmasına mı neden olduk?",
+          "Veri odaklı karar alma mekanizmaları işliyor mu? Artık güvenilir ve anlık verilere dayalı simülasyonlar yapıp rasyonel kararlar alabiliyor muyuz? Yoksa hâlâ modelinden ve doğruluğundan emin olamadığımız onlarca raporun bir yenisi üzerinde mi çalışıyoruz?",
+          "Maliyet optimizasyonunu sağladık mı? Süreçlerimizdeki israfı azaltabildik mi? Kaynaklarımızı gerçekten daha uygun konumlandırıp optimize bir maliyet modelini yeniden kurguladık mı? Bir işi daha hızlı, daha kaliteli veya daha düşük maliyetle yapabilir hale geldik mi?",
+          "Dijital dönüşümün değeri, organizasyonların problem çözme kapasitesini artırabilmesinde ortaya çıkar.",
+          "Bu yüzden; yapay zekâ çağında herkese biraz daha pragmatizm dilerim...",
+          "Bu arada kelimenin kökeni Yunanca “pragma” sözcüğünden gelir ve iş, eylem, yapılan şey, sonuç doğuran hareket anlamlarını taşır. Yararcılık, uygulamacılık ve pratik sonuç odaklılık anlamına gelir."
+        ],
+        [
+          "Yapay Zekâ...",
+          "Dünyanın anlaması en basit teknolojisi. Ne olduğu ve yapabilecekleri çok aşikâr. Her şey mümkün.",
+          "Yıllardır Excel ile ya da karmaşık geliştirmelerle ağır aksak yürütülen bir süreci, yarım günde Claude ile işleyen bir sisteme dönüştürebilecekken, organizasyonların AI dönüşümünde ilerleme kaydetmemesinin önündeki engel nedir diye sorguluyorum devamlı.",
+          "AI dönüşümünün aslında bir teknoloji projesinden ziyade bir organizasyonel tasarım problemi olması mı? Operasyondan uzaklaşmış üst düzey yöneticilerin dönüşümü sadece talimat vererek gerçekleştirebileceklerini düşünmeleri mi? Yıllardır aynı süreçlerle çalışan ekiplerin başka bir ihtimali hayal etmekte zorlanmaları mı? Bu okumada neyi kaçırıyorum?",
+          "Ve ne gariptir ki, yapay zekânın karşısında duran şeyin insanın tam kendisi olduğunu görüyoruz.",
+          "Direnç bağlamından daha geniş kapsamda...",
+          "Bir insanın yapay zekâ kullanarak yapacağı işi en verimli hale nasıl getirebileceğini en iyi yine kendisi bilir derim hep.",
+          "Bu ise yaratıcı düşünceyle, büyük bir işe adanmışlık ve sahiplenmişlik getiriyor.",
+          "Bana soracak olursanız biraz da sıkılmışlık gerektirir.",
+          "Aynı şeyleri yapmaya aynı şekilde devam etmekten sıkılan insanın kurtarıcısı yapay zekâdır.",
+          "“Ben bu işi yapay zekâ ile böyle yapsam artık...”",
+          "“Üzerine bunu da koysam...”",
+          "“Yapmışken şunları bunları da bana versin...”",
+          "demek.",
+          "Bunun yollarını aramak.",
+          "Bir iç motivasyonla.",
+          "Yoksa yapay zekâyı bir IT projesi gibi, kendisine tepsiyle sunulmasını bekleyen bir insanla çok geç kalınmış olabileceğini düşünüyorum.",
+          "Fakat burada başka bir soru daha ortaya çıkıyor.",
+          "İnsanlar neden sahiplenir?",
+          "Neden bazı insanlar sürekli daha iyisini ararken, bazıları yalnızca kendisinden isteneni yapıp kenara çekilir?",
+          "Tüm bunları düşündüğümde, AI dönüşümünün en verimli şekilde daha özgürlükçü, daha demokratik ve daha adil çalışma ortamlarında gelişeceğine inanıyorum.",
+          "Yapay zekâ çağının temel vaadi, insanlara yeni imkânlar sunabilmesidir.",
+          "Bu imkânların gerçek değere dönüşebilmesi insanların onları gönüllü olarak sahiplenmesine bağlıdır.",
+          "Bir çalışanın kendi işini şirket faydasına dönüştürme isteğinin arkasında çoğu zaman görev tanımından daha büyük dinamikler vardır.",
+          "Bu biraz da duygusal bir ilişkidir.",
+          "Belki de bir çeşit karşılıklılık duygusu.",
+          "Organizasyona sürekli katkı vermesi beklenen bir insanın, zamanla organizasyondan da bir şeyler alıyor olması gerekir.",
+          "Saygı.",
+          "Güven.",
+          "Takdir.",
+          "Anlam.",
+          "Aidiyet.",
+          "Eğer bir çalışan yıllardır yalnızca kendisinden beklenenleri yerine getiriyorsa, ondan bir gün çıkıp işini yeniden tasarlamasını, süreçleri sorgulamasını ve yapay zekâ ile yeni değer üretmesini beklemek yerine; yeni motivasyonlar yaratmaya çalışmak daha gerçekçi olabilir.",
+          "Yeniden düşünmeyi tetiklemek...",
+          "İnsanların kendi işlerine farklı gözlerle bakmalarını sağlayabilmek...",
+          "Daha anlamlı, daha adil ve daha katılımcı çalışma modellerini birlikte tasarlayabilmek...",
+          "Belki de AI dönüşümünün en önemli tarafı burada yatıyor.",
+          "Farklı bir modelde çalışmak için hep beraber kol kola girme motivasyonunda, yapay zekânın amaçtan çok güçlü bir araç olabileceğini düşünüyorum."
+        ],
+        [
+          "Geçen gün Dr. Gülcan Özer'in bir konuşmasına denk geldim.",
+          "“Z kuşağını çalıştıramıyoruz, ne yapacağız diye soruyorlar bana, belki de insan olduklarını bizden daha erken fark etmişlerdir.” diyordu.",
+          "Demek bu kadar aşikâr diye düşündüm.",
+          "Çünkü bir Y kuşağı kadını olarak, çalışmanın yalnızca ekonomik değil, ahlaki bir değer olduğuna inanarak büyütüldüm ben.",
+          "İyi eğitim almanın, çok çalışmanın, herkesin önüne geçmenin, kendini kanıtlamanın bir gün insanı mutlu bir yere ulaştıracağına inandırılmış bir kuşağın parçasıyım.",
+          "Okuyup, çok bilgi sahibi olmadan bir işe başlamadım.",
+          "Yaptığım işin mutlaka başkaları tarafından takdir toplayacak bir seviyede olduğundan emin olmaya çalıştım.",
+          "Bizim kuşağımız aynı maratonda, aynı uğraşla koştu yıllarca.",
+          "İyi yetiştirilmiş çocuklardık biz.",
+          "Biz de şimdi içten içe bu maratonda koşmaktan yorulacak, “biz niye koşuyorduk?” diye düşünmeye başlayacak, kaç yıldır koşuyorum da gerçekten nereye geldim diye arkasına bakacak, “daha ne kadar koşacağız?” diye kendi kendine soracak ve de; en nihayetinde bu maratonun asıl kazananlarının koşucular değil, maratonu organize edenler olduğunu fark edecek kadar koştuk ...",
+          "Zaten Z kuşağına bakıyor ve “Sen niye koşmuyorsun, neyi sorguluyorsun?” diye onları anlamaya da, yönetmeye uğraşıyoruz.",
+          "Ve belki de ilk kez bir jenerasyon, hayatını yalnızca çalışmanın ve kurumsal hiyerarşilerin içinde anlamlandırmak istemiyor. İyi ki de istemiyor ve bu noktada belki de ilk kez bize başka bir çalışma ve yaşam biçimini düşünmeye zorluyor.",
+          "Bu yüzden yeni çağda; yeni iş modelleri, eşit organizasyonel yapılar, üretim modeli ile gelir modelinin birbirine daha adil bağlandığı sistemler, daha özgürlükçü, daha demokratik ve insanı merkeze alan yapılar kurulmadan; yeni jenerasyonların aynı inançla işe bağlanmasını beklemek çok gerçekçi gelmiyor bana.",
+          "Bu bağlamda Z kuşağına gerçekten güveniyorum.",
+          "Hele ki Alfa kuşağı olan; bugün 3 yaşında, ayda 100K verip okula gönderdiğimiz çocuklarımızın, günün sonunda yalnızca asgari ücretli ve tükenmiş beyaz yakalara dönüşmediği bir dünya kurabilmemizi umuyorum.",
+          "Biz X ve Y kuşağının yeni maratonunun bu olması gerektiğine inanıyorum."
+        ]
+      ],
+      "projectBodies": [
+        [
+          "SAP Activa, yapay zekayı SAP program yönetimi disiplinine taşır. Proje sağlığını skorlar, riski tahmin eder, kaynak tahsisini optimize eder ve durum raporlamasını otomatik üretir, SAP Activate metodolojisini uygulamalı bir AI katmanıyla genişletir.",
+          "Gerçek teslimat deneyiminden doğdu ve büyük programların sessizce rayından çıktığı anları hedefler: kayan kilometre taşları, gizli kaynak çatışmaları ve harekete geçmek için çok geç gelen durum raporları."
+        ],
+        [
+          "Segmentil, kurumsal müşteri portföylerini uygulamalı AI ile segmentler ve davranış tahmini üretir, RFM analizi, churn tahmini ve müşteri yaşam boyu değeri; satış ve müşteri başarı ekipleri için bir karar destek aracı olarak.",
+          "Amaç, daha net bir sonraki adımdır: hangi hesapların korunacağı, hangilerinin büyütüleceği ve ilginin en çok değer yarattığı yer."
+        ],
+        [
+          "Yazbix, yapay zeka destekli bir dijital günlük, düşünceleri, anıları ve notları yakalamak için bir yer; sesten metne, duygu analizi ve akıllı etiketleme ile zenginleştirilmiş. Uygulamalı AI'ın günlük hafıza için ne yapabileceğine dair kişisel bir deney olarak başladı.",
+          "Portföydeki en kişisel proje ve AI'ın sessiz, yardımcı ve insani olabileceğini en doğrudan keşfedeni."
+        ],
+        [
+          "Sosyal Medya Stüdyosu, küçük işletmeler ve girişimciler için yapay zeka destekli bir içerik ve zamanlama platformudur, içerik önerileri, zamanlama optimizasyonu ve hafif performans analitikleri tek bir yerde.",
+          "Basit bir fikri sınamak için var: uygulamalı AI, tek kişilik bir işletmeye küçük bir ekibin gücünü verebilir."
+        ],
+        [
+          "Çocuklar için İngilizce, genç öğrenciler için tasarlanmış interaktif bir İngilizce kelime platformudur, görsel kartlar, sesli telaffuz ve AI ile kişiselleştirilmiş bir yolda oyunlaştırılmış tekrar.",
+          "Arkasındaki tasarım sorusu: AI, öğrenmeyi keyfini koruyarak nasıl kişiselleştirir? Yanıt her ekranı şekillendiriyor."
+        ],
+        [
+          "Şu anda geliştirme aşamasında, kurumsal dönüşümdeki gerçek bir problemi hedefleyen yeni bir uygulamalı AI projesi var. Erken aşamada, bilinçli olarak öyle; paylaşmanın doğru zamanı, çalıştığı andır.",
+          "Detaylar paylaşılacak. Ne zaman yayınlanacağını duymak için iletişim sayfasından kısa bir not en iyi yol."
+        ]
+      ],
+      "projectFeatures": [
+        [
+          "Proje sağlık skorlama",
+          "Risk tahmini",
+          "Kaynak optimizasyonu",
+          "Otomatik durum raporlama"
+        ],
+        [
+          "RFM segmentasyonu",
+          "Churn tahmini",
+          "Müşteri yaşam boyu değeri",
+          "Satış karar desteği"
+        ],
+        [
+          "Sesten metne yakalama",
+          "Duygu analizi",
+          "Akıllı etiketleme",
+          "Tasarımı gereği gizli"
+        ],
+        [
+          "İçerik önerileri",
+          "Zamanlama optimizasyonu",
+          "Performans analitiği",
+          "Küçük ekipler için"
+        ],
+        [
+          "Görsel kartlar",
+          "Sesli telaffuz",
+          "Oyunlaştırılmış tekrar",
+          "AI ile kişiselleştirilmiş yol"
+        ],
+        [
+          "Aktif geliştirmede",
+          "Kurumsal dönüşüm odağı",
+          "Uygulamalı AI",
+          "Yakında"
+        ]
+      ]
+    }
   },
-
-  en: {
-    brand: { name: "Vildan Kara Kayacan", role: "Executive Advisory" },
-    nav: [
-      { id: "services", label: "Services", href: "index.html#services" },
-      { id: "projects", label: "Projects", href: "projects.html" },
-      { id: "insights", label: "Insights", href: "insights.html" },
-      { id: "about", label: "About", href: "about.html" },
-      { id: "contact", label: "Contact", href: "index.html#contact" },
+  "en": {
+    "brand": {
+      "name": "Vildan Kara Kayacan",
+      "role": "Enterprise Transformation Leader"
+    },
+    "nav": [
+      {
+        "id": "services",
+        "label": "Services",
+        "href": "services.html"
+      },
+      {
+        "id": "projects",
+        "label": "Projects",
+        "href": "projects.html"
+      },
+      {
+        "id": "insights",
+        "label": "Insights",
+        "href": "insights.html"
+      },
+      {
+        "id": "about",
+        "label": "About",
+        "href": "about.html"
+      },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "href": "index.html#contact"
+      }
     ],
-    cta: "Arrange a consultation",
-
-    hero: {
-      eyebrow: "Executive Advisory",
-      title: ["SAP. AI. Business Transformation."],
-      subline: "Technology changes systems. People change organizations.",
-      lede: "Executive advisory for SAP, AI and business transformation; from strategy definition and vendor selection to programme delivery and operating model design, providing independent guidance aligned with your business priorities, strategic objectives and people.",
-      meta: ["25+ years", "EMEA & MENA", "People-led change", "SAP × AI"],
-      ctaPrimary: "Arrange a consultation",
-      ctaSecondary: "See the services",
-      panelLabel: "Practice areas",
-    },
-
-    landing: {
-      eyebrow: "Services",
-      hero1: {
-        eyebrow: "Executive Advisory",
-        headline: ["Strategy.", "Transformation.", "Operations."],
-        subhead: "Your end-to-end transformation partner.",
-        lede: "Executive advisory across the full transformation lifecycle\nfrom strategic decisions and delivery to operating models\nand sustainable support organisations.",
-        ctaPrimary: "Arrange a consultation",
-        ctaSecondary: "See the services",
-        enableLabel: "AI Enablement Layer",
-        railNodes: [ { title: "Strategy" }, { title: "Transformation" }, { title: "Operations" } ],
-        pillars: [
-          { title: "Strategy", bullets: ["Conduct 360° readiness and maturity assessments", "Define transformation roadmaps and AI adoption strategies", "Build business cases and investment models", "Lead RFP processes", "Support vendor evaluation and selection"] },
-          { title: "Transformation", bullets: ["SAP transformation programme management", "Define and plan AI transformation initiatives", "Establish governance and PMO structures", "Manage delivery, risks and change", "Drive adoption and maximise value realisation"] },
-          { title: "Operations", bullets: ["Design sustainable operating models", "Build and structure support organisations", "Define AMS strategy and governance", "Establish service management and reporting", "Drive continuous improvement and operational excellence"] },
+    "cta": "Arrange a consultation",
+    "landing": {
+      "eyebrow": "Services",
+      "hero1": {
+        "eyebrow": "Executive Advisory",
+        "headline": [
+          "Strategy.",
+          "Transformation.",
+          "Operations."
         ],
-        tagline: "Independent advice. Practical experience. End-to-end impact.",
+        "subhead": "Your end-to-end transformation partner.",
+        "lede": "Executive advisory across strategy, operating model design and enterprise transformation.",
+        "ctaPrimary": "Arrange a consultation",
+        "ctaSecondary": "See the services",
+        "tagline": "Independent advice. Practical experience. End-to-end impact."
       },
-      headline: ["An end-to-end partner", "for your transformation."],
-      lede: "From strategy and project management to building sustainable support organisations — beside you at every phase of the transformation.",
-      features: [
-        { icon: "target", title: "Independent perspective", body: "Objective, experience-based advice with no product or vendor agenda." },
-        { icon: "people", title: "End-to-end expertise", body: "Beside you across every phase of strategy, transformation and operations." },
-        { icon: "shield", title: "Lasting value", body: "A focus on durable, measurable business value beyond short-term results." },
+      "headline": [
+        "A committed partner",
+        "for your transformation."
       ],
-      servicesHead: {
-        eyebrow: "Our services",
-        title: "Beside you at every step of the journey.",
-        lede: "From the first strategic decision through successful delivery to a sustainable operation — end-to-end advisory across the whole arc.",
-      },
-      nodes: [ { title: "Strategy" }, { title: "Transformation" }, { title: "Operations" } ],
-      groups: [
-        { title: "Strategy", sub: "Building the right foundation.", tone: "navy", items: [
-          { icon: "assessment", title: "IT & Transformation Assessments", body: "We analyse your current state, maturity, risks and readiness." },
-          { icon: "doc", title: "RFP & Vendor Advisory", body: "We define your needs, run the RFP, evaluate vendors and support the selection decision." },
-          { icon: "route", title: "AI Strategy & Roadmaps", body: "We identify AI opportunities, sharpen priorities and build actionable AI roadmaps." },
-        ] },
-        { title: "Transformation", sub: "Turning vision into reality.", tone: "navy-deep", items: [
-          { icon: "layers", title: "SAP Transformation Advisory", body: "Independent advisory for your SAP S/4HANA and enterprise-transformation initiatives." },
-          { icon: "pmo", title: "Program & Portfolio Management", body: "Governance, PMO setup, risk management and executive reporting support." },
-          { icon: "people", title: "Organizational Change & Adoption", body: "We drive stakeholder alignment, change management and communication programmes." },
-        ] },
-        { title: "Operations", sub: "Securing lasting value.", tone: "gold", items: [
-          { icon: "opmodel", title: "Operating Model Design", body: "We design the future operating model that fits your business goals." },
-          { icon: "headset", title: "AMS & Support Organization Design", body: "We structure support organisations, governance and resourcing models." },
-          { icon: "barup", title: "CoE & Service Excellence", body: "We establish Centers of Excellence and a culture of service and continuous improvement." },
-        ] },
+      "lede": "From strategy and project management to building growing, evolving organisations, beside you at every phase of the transformation.",
+      "features": [
+        {
+          "icon": "target",
+          "title": "Independent perspective",
+          "body": "Objective, experience-based advice, fully independent and focused solely on the enterprise's outcome."
+        },
+        {
+          "icon": "people",
+          "title": "Hands-on across every phase",
+          "body": "Strategy is defined, the roadmap is planned and execution is led, each backed by real delivery experience."
+        },
+        {
+          "icon": "shield",
+          "title": "Lasting value",
+          "body": "A focus on durable, measurable business value beyond short-term results."
+        }
       ],
-      trust: [
-        { icon: "shield", title: "Experience", body: "20+ years of SAP and transformation advisory." },
-        { icon: "globe", title: "Independence", body: "Not tied to any software or system vendor." },
-        { icon: "trend", title: "Outcome focus", body: "Focused on measurable business value and sustainable results." },
-        { icon: "people", title: "Leadership support", body: "Strategic guidance at executive level." },
+      "servicesHead": {
+        "eyebrow": "The services",
+        "title": "One coordinated management across every stage of the journey.",
+        "lede": "From the first strategic decision through successful delivery to a sustainable operation, management stays coordinated across the whole arc."
+      },
+      "nodes": [
+        {
+          "title": "Strategy"
+        },
+        {
+          "title": "Transformation"
+        },
+        {
+          "title": "Operations"
+        }
       ],
-      ctaBand: {
-        title: "Let's shape your transformation journey together.",
-        body: "Get in touch to discuss your strategic priorities.",
-        cta: "Arrange a consultation",
-      },
+      "groups": [
+        {
+          "title": "Strategy",
+          "sub": "Building the right foundation.",
+          "tone": "navy",
+          "items": [
+            {
+              "icon": "assessment",
+              "title": "IT & Transformation Assessments",
+              "body": "Current state, maturity, risks and readiness are analysed in depth, across process, technology and organisation. The result is a clear, evidence-based view of where the real opportunities sit."
+            },
+            {
+              "icon": "doc",
+              "title": "RFP & Vendor Advisory",
+              "body": "Needs are defined, the RFP process is run, vendors are evaluated and the selection decision is supported from the enterprise's side of the table. The outcome is a defensible, well-governed decision that protects budget from day one."
+            },
+            {
+              "icon": "route",
+              "title": "AI Strategy & Roadmaps",
+              "body": "AI opportunities are identified, priorities sharpened and actionable roadmaps built around real business value. The focus stays on use cases that can move from pilot to production."
+            }
+          ]
+        },
+        {
+          "title": "Transformation",
+          "sub": "Turning vision into reality.",
+          "tone": "navy-deep",
+          "items": [
+            {
+              "icon": "layers",
+              "title": "SAP Transformation Advisory",
+              "body": "Independent management for SAP S/4HANA and enterprise-transformation initiatives, from the business model through to go-live. The platform and the operating model are treated as a single, connected decision."
+            },
+            {
+              "icon": "pmo",
+              "title": "Program & Portfolio Management",
+              "body": "Governance, PMO setup, risk management and executive reporting are put in place to keep large, complex programmes on scope, on budget and on plan. Leadership gets a clear, honest view of progress at every stage."
+            },
+            {
+              "icon": "people",
+              "title": "Organisational Change & Adoption",
+              "body": "Stakeholder alignment, change management and communication programmes are driven with discipline from the first milestone. Adoption is treated as a core workstream, present from the very start."
+            }
+          ]
+        },
+        {
+          "title": "Operations",
+          "sub": "Securing lasting value.",
+          "tone": "gold",
+          "items": [
+            {
+              "icon": "opmodel",
+              "title": "Operating Model Design",
+              "body": "The future operating model is designed to fit the enterprise's business goals, roles and ways of working. It is translated into concrete roles, governance and routines that people follow every day."
+            },
+            {
+              "icon": "headset",
+              "title": "AMS & Support Organization Design",
+              "body": "Support organisations, governance and resourcing models are structured for scale, with the right SLAs and reporting in place from day one. The result is a service that keeps improving every quarter."
+            },
+            {
+              "icon": "barup",
+              "title": "CoE & Service Excellence",
+              "body": "Centers of Excellence and a culture of service and continuous improvement are established to sustain value long after go-live. Standards and ways of working are captured so they outlast any single programme."
+            }
+          ]
+        }
+      ],
+      "trust": [
+        {
+          "icon": "shield",
+          "title": "Experience",
+          "body": "20+ years of SAP and transformation management experience."
+        },
+        {
+          "icon": "globe",
+          "title": "Independence",
+          "body": "Independent assessment and management experience, free of any corporate service provider."
+        },
+        {
+          "icon": "trend",
+          "title": "Outcome focus",
+          "body": "Goals and OKRs are clarified before transformation begins; where they stand against those goals afterwards is measured just as clearly."
+        },
+        {
+          "icon": "people",
+          "title": "End-to-End Transformation Leadership",
+          "body": "Leadership, when needed, is exercised from right inside the process."
+        }
+      ],
+      "ctaBand": {
+        "title": "A transformation journey, shaped together.",
+        "body": "Get in touch to discuss your strategic priorities.",
+        "cta": "Arrange a consultation"
+      }
     },
-
-    projectsSoon: {
-      eyebrow: "Projects",
-      title: "Carefully in the making.",
-      body: "We are meticulously developing initiatives designed to deliver the highest value for our country and its enterprises, powered by artificial intelligence. Our aim is to bring forward corporate solutions that turn strategic priorities into measurable, sustainable outcomes. As each one matures, we will share it here.",
-      cta: "Get in touch",
+    "projectsSoon": {
+      "eyebrow": "Projects",
+      "title": "Carefully in the making.",
+      "body": "Initiatives designed to deliver the highest value for the country and its enterprises, powered by artificial intelligence, are being carefully developed. The aim is to bring forward corporate solutions that turn strategic priorities into measurable, sustainable outcomes. As each one matures, it will be shared here.",
+      "cta": "Get in touch"
     },
-
-    home: {
-      perspective: {
-        eyebrow: "The perspective",
-        title: ["Transformation succeeds when", "everything moves together."],
-        lede: "Lasting value comes from aligning strategy, technology, people and operations to shape, deliver and sustain transformation across the entire journey.",
-        flow: [
-          { icon: "target", title: "Strategy", body: "Assess, prioritise and plan the right path." },
-          { icon: "gear", title: "Transformation", body: "Design and deliver programmes that create impact." },
-          { icon: "opmodel", title: "Operations", body: "Build operating models that sustain and scale." },
-          { icon: "trend", title: "Value", body: "Realise measurable value and drive continuous impact." },
+    "home": {
+      "perspective": {
+        "eyebrow": "The perspective",
+        "title": [
+          "Transformation succeeds",
+          "when all is addressed together."
         ],
-        enable: { label: "AI Enablement Layer", items: ["Data", "Analytics", "Automation", "Intelligence"] },
-        people: { label: "People & Adoption", body: "Drive change adoption and embed new ways of working.", note: ["Transformation changes systems.", "People change organisations."] },
-      },
-      whereIHelp: {
-        eyebrow: "Where I help",
-        title: "Three fronts, one accountable partner.",
-        cta: "Explore",
-        items: [
-          { icon: "target", title: "Strategy Advisory", sub: "Make the right decisions.", body: "Assess, plan and prioritise the right strategies, roadmaps and partners — before budgets are committed." },
-          { icon: "gear", title: "Transformation Advisory", sub: "Turn strategy into reality.", body: "Lead and govern transformation programmes that deliver results, manage change and drive adoption." },
-          { icon: "people", title: "Operations Advisory", sub: "Sustain and scale value.", body: "Design operating models and support organisations that secure long-term performance." },
+        "lede": "Sustainable impact comes from aligning strategy, people, transformation and operations, supported and accelerated by AI.",
+        "flow": [
+          {
+            "icon": "compass",
+            "title": "Strategy",
+            "body": "Defines direction and creates focus."
+          },
+          {
+            "icon": "people",
+            "title": "People",
+            "body": "Drives adoption and builds capability."
+          },
+          {
+            "icon": "trend",
+            "title": "Transformation",
+            "body": "Turns ambition into action and delivers change."
+          },
+          {
+            "icon": "gear",
+            "title": "Operations",
+            "body": "Embeds new ways of working and sustains performance."
+          }
         ],
+        "enable": {
+          "label": "AI Acceleration Layer",
+          "items": [
+            "Data",
+            "Analytics",
+            "Automation",
+            "Intelligence"
+          ]
+        },
+        "note": {
+          "lead": "",
+          "rest": "When strategy, people, transformation and operations work together,",
+          "em": "lasting change becomes inevitable."
+        }
       },
-      whyClients: {
-        eyebrow: "Why clients call me",
-        title: "Independent. Experienced. Outcome-driven.",
-        cta: "Learn more",
-        items: [
-          { icon: "target", title: "Strategy", sub: "Pragmatic. Outcome-focused.", body: "Years on the delivery side taught me that the best strategy is the one that can actually be executed. I focus on pragmatic choices, realistic roadmaps and measurable outcomes." },
-          { icon: "gear", title: "Transformation", sub: "Disciplined. People-centered.", body: "Technology rarely fails — transformations do, when governance, alignment and adoption are underestimated. I bring structure and clarity to deliver results and embed change." },
-          { icon: "people", title: "Operations", sub: "Sustainable. Value-driven.", body: "The real value of transformation starts after go-live. I design operating models that sustain performance, efficiency and continuous improvement over the long term." },
+      "howIThink": {
+        "eyebrow": "Perspectives",
+        "title": [
+          "The real value of transformation",
+          "is in how it lands."
         ],
-      },
-      howIThink: {
-        eyebrow: "How I think",
-        title: ["The real value of transformation", "is in how it lands."],
-        quotes: [
-          { text: "Technology is the easy part. Governance, alignment and adoption are where programmes succeed or fail.", attr: "On transformation" },
-          { text: "Simplicity in strategy doesn't mean strategy is simple — it means the hard thinking was done first.", attr: "On strategy" },
-          { text: "An operating model is only valuable if the organisation can actually run it.", attr: "On operations" },
+        "sub": "Perspectives on transformation, technology, people and impact. Ideas shaped by experience. Rooted in reality. Written to spark meaningful change.",
+        "posts": [
+          {
+            "img": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=70",
+            "label": "Perspective 01",
+            "title": "Pragmatic Transformation",
+            "body": "Less Concepts. More Outcomes. We use “digital transformation” so often that it now describes almost everything, yet doesn’t quite explain anything.",
+            "quote": "That is why, in the age of AI, I wish everyone a little more pragmatism.",
+            "href": "article.html?id=0"
+          },
+          {
+            "img": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=900&q=70",
+            "label": "Perspective 02",
+            "title": "AI: Technology vs Human Nature",
+            "body": "What Actually Makes AI Work? The world’s simplest technology to understand, and yet what stands in front of it is the human being itself.",
+            "quote": "And how strange it is that what stands in front of AI is the human being itself.",
+            "href": "article.html?id=1"
+          },
+          {
+            "img": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=70",
+            "label": "Perspective 03",
+            "title": "People, Purpose & New Ways of Working",
+            "body": "Why Purpose Matters More Than Ever. Perhaps for the first time, a generation looks for meaning beyond work and corporate hierarchy alone.",
+            "quote": "I believe this should be the new marathon of us, the X and Y generations.",
+            "href": "article.html?id=2"
+          }
         ],
+        "readMore": "Read more",
+        "more": "More perspectives coming soon.",
+        "cta": "Explore All Articles"
       },
-      aboutTeaser: {
-        eyebrow: "About",
-        title: ["Independent perspective.", "Practical experience."],
-        body: "With 25+ years across enterprise transformation in multiple organisations and geographies, I bring an independent, vendor-neutral perspective. The focus is simple: help organisations make the right decisions, execute with discipline and achieve lasting impact.",
-        cta: "More about me",
-      },
-      approach: {
-        eyebrow: "The approach",
-        flowTitle: "From first decision to lasting operation.",
-        title: ["Assess. Plan.", "Deliver. Sustain."],
-        lede: "A clear, client-side method that runs through every engagement — structured enough to de-risk the work, flexible enough to fit your context.",
-        stages: [
-          { step: "Assess", items: ["360° Assessments", "Maturity Reviews", "AI Readiness"] },
-          { step: "Plan", items: ["Roadmaps", "Business Cases", "RFP & Vendor Selection"] },
-          { step: "Deliver", items: ["SAP Programmes", "PMO & Governance", "Change Management"] },
-          { step: "Sustain", items: ["AMS Operating Models", "Managed Service Designs", "Support Organisations"] },
+      "aboutTeaser": {
+        "eyebrow": "Who is Vildan?",
+        "title": [
+          "End-to-end experience.",
+          "Innovative perspective.",
+          "Disciplined execution."
         ],
+        "cta": "More about Vildan",
+        "items": [
+          {
+            "icon": "compass",
+            "title": "Integrated Transformation Leadership",
+            "body": "Experience across enterprise transformation, SAP programmes, managed services, support models, bid and commercial processes, and complex programme delivery."
+          },
+          {
+            "icon": "bulb",
+            "title": "Strategy Meets Execution",
+            "body": "Combining the structured thinking of strategic advisory with the execution discipline required to deliver results in real business environments."
+          },
+          {
+            "icon": "people",
+            "title": "Pragmatic. Innovative. Outcome Focused.",
+            "body": "A pragmatic and innovative approach to complex agendas where strategy, technology, people, operating models and commercial realities need to move together."
+          },
+          {
+            "icon": "shield",
+            "title": "Discipline. Professionalism. Ownership.",
+            "body": "Career foundations shaped within German business culture, bringing discipline, professionalism, ownership and clarity to the way transformation agendas are designed, governed and delivered."
+          },
+          {
+            "icon": "barup",
+            "title": "Measurable Impact",
+            "body": "Experienced in leading complex initiatives that connect strategic decisions, delivery capabilities, service models and commercial realities to create measurable and sustainable business impact."
+          }
+        ],
+        "quote": "Turning complexity into clarity. Ambition into impact."
       },
+      "manifesto": {
+        "eyebrow": "The Approach",
+        "title": [
+          "Strategy shapes the future.",
+          "Transformation brings it to life.",
+          "Operations make the value last."
+        ],
+        "paras": [
+          "Every organisation pursues growth, efficiency, innovation and greater customer value. Achieving these ambitions requires a clear strategy, effective transformation and strong operational foundations working together in alignment. Lasting business outcomes emerge when strategic priorities, transformation initiatives and operating models come together as parts of a unified whole.",
+          "Strategy sets the direction. Transformation turns ambition into action. Operations embed new capabilities and ways of working into the fabric of the organisation.",
+          "Real value is created by aligning leadership, technology, processes and people around a common purpose. By connecting strategy, transformation and operations as a single integrated journey, organisations can move seamlessly from vision to execution and from execution to sustainable value creation."
+        ],
+        "cite": "Vildan Kara Kayacan"
+      }
     },
-
-    stats: [
-      { figure: "25+", label: "Years in enterprise transformation" },
-      { figure: "16", label: "Countries delivered across EMEA & MENA" },
-      { figure: "€1M+", label: "Programmes delivered to plan" },
-      { figure: "35%", label: "Operating-cost reduction delivered" },
+    "stats": [
+      {
+        "figure": "20+",
+        "label": "Years transformation experience"
+      },
+      {
+        "figure": "16",
+        "label": "Countries across MENA and EMEA regions"
+      },
+      {
+        "figure": "€35M",
+        "label": "Budget under management"
+      },
+      {
+        "figure": "Up to 65%",
+        "label": "Operation cost reduction"
+      }
     ],
-
-    services: {
-      eyebrow: "The practice areas",
-      title: "Six practice areas, in detail.",
-      lede: "Advisory across the full enterprise-transformation agenda — from strategy and vendor selection through delivery, go-live and the operating model. Technology is the easy half; the work that lasts is organisational change, governance and the people who carry it. Every engagement is run for the client's outcome, free of any product or vendor agenda.",
-      items: [
-        { title: "Bid, RFP & Vendor Advisory", short: "On the client's side of the table.", bullets: ["RFP / RFI design & evaluation", "Win strategy & solution shaping", "Pricing & commercial modelling", "Final-round negotiation support"], tags: ["RFP / RFI", "Win strategy", "Pricing"] },
-        { title: "Program & Portfolio (PMO)", short: "Large programmes kept on track.", bullets: ["PMO setup & governance frameworks", "Portfolio oversight & reporting", "Risk, scope & budget control", "€1M+ programme delivery"], tags: ["PMO", "Governance", "Delivery"] },
-        { title: "SAP S/4HANA", short: "Migration and transformation, end to end.", bullets: ["Staged, low-risk transformation roadmap", "Program leadership through go-live", "Target operating model & governance", "Stabilisation & post-go-live support"], tags: ["S/4HANA", "Roadmap", "Go-live"] },
-        { title: "Artificial Intelligence & Data", short: "From AI pilots to production value.", bullets: ["Generative-AI strategy & use-case selection", "Data & decision governance", "Adoption & operating-model design", "From pilot to measurable value"], tags: ["GenAI", "Governance", "Adoption"] },
-        { title: "Organisational Change & Transformation", short: "People-led change that actually sticks.", bullets: ["Leadership alignment & stakeholder engagement", "Communication & adoption strategy", "Change-readiness & impact assessment", "Training, enablement & go-live support"], tags: ["OCM", "Adoption", "Leadership"] },
-        { title: "Managed Services, Operating Model & CoE", short: "Service models built to last.", bullets: ["ITIL-based service & operating models", "SLA / KPI frameworks & P&L ownership", "Multi-region delivery setup", "SAP / AI Centers of Excellence"], tags: ["ITIL", "Operating model", "CoE"] },
+    "svc": {
+      "eyebrow": "Services",
+      "title": [
+        "From Strategy to",
+        "Sustainable Impact",
+        "with a comprehensive approach"
       ],
-      healthcheck: {
-        eyebrow: "Start here",
-        title: "Transformation Health Check",
-        body: "An independent diagnostic of where a programme or SAP landscape truly stands — risks, gaps and a clear set of next moves. Often the right first step before committing budget.",
-        bullets: ["Programme & delivery risk review", "Operating-model & governance gaps", "Clear, prioritised recommendations"],
-        cta: "Request a health check",
-      },
-      journey: {
-        eyebrow: "01 — Services",
-        title: "Beside you at every step of the journey.",
-        lede: "From the first strategy conversation to a running, improving operation — these are the points where the work happens side by side. One accountable partner across the whole arc, not a hand-off between strategy, delivery and support.",
-        steps: [
-          { title: "Strategy Definition", body: "Align on vision, priorities and business value." },
-          { title: "Vendor Selection & RFP", body: "Identify the right partners and build strong commercial foundations." },
-          { title: "Programme Mobilisation", body: "Establish governance, plan, and set the programme up for success." },
-          { title: "Delivery & Transformation", body: "Lead execution with discipline, transparency and continuous focus on value." },
-          { title: "Change & Adoption", body: "Engage people, build capability and drive sustainable adoption." },
-          { title: "Operating Model & CoE", body: "Design the right operating model and establish Centers of Excellence." },
-          { title: "Managed Services & Continuous Improvement", body: "Operate, optimise and evolve for long-term impact." },
+      "lede": "Experience across enterprise transformation, SAP programmes, RFP, bid and commercial processes, managed services, AI and operating models.",
+      "asideBody": "Focused on assessing complexity, structuring execution and delivering measurable business outcomes.",
+      "stages": [
+        {
+          "icon": "layers",
+          "step": "Enterprise Transformation & Change Management",
+          "body": "Assessing transformation readiness, shaping operating models and leading enterprise change agendas across governance, stakeholders, adoption and execution.",
+          "items": [
+            "Transformation assessment",
+            "Operating model & governance",
+            "PMO / Transformation Office",
+            "Change management & adoption"
+          ]
+        },
+        {
+          "icon": "pmo",
+          "step": "SAP Transformation & Programme Leadership",
+          "body": "Leading SAP transformation programmes from roadmap to delivery, with focus on governance, risk control, go-live readiness and stabilisation.",
+          "items": [
+            "SAP roadmap & programme setup",
+            "Programme / project leadership",
+            "Delivery risk management",
+            "Go-live & stabilisation"
+          ]
+        },
+        {
+          "icon": "doc",
+          "step": "RFP, Bid &\nCommercial\nAdvisory",
+          "body": "RFP — Request for Proposal preparation and evaluation, and suitable service provider or vendor selection, with commercial clarity, governance and decision discipline.",
+          "items": [
+            "RFP / RFI process management",
+            "Bid strategy & evaluation",
+            "Vendor selection",
+            "Pricing & commercial models"
+          ]
+        },
+        {
+          "icon": "opmodel",
+          "step": "Managed Services,\nAI & Operating\nModels",
+          "body": "Designing service, support and AI-enabled operating models that align business priorities, operational capabilities and sustainable value creation.",
+          "items": [
+            "AMS & managed service models",
+            "Support organisation design",
+            "AI readiness & roadmaps",
+            "CoE, SLA / KPI & governance"
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "Ensuring Quality Across Transformation",
+        "title": "Quality Assurance Services & Health Checks",
+        "paras": [
+          "Applied across all transformation leadership areas and service blocks, quality assurance and health checks provide an independent view of delivery quality, governance, risks, controls and readiness.",
+          "Each review assesses whether the right standards, quality gates, controls and governance mechanisms are in place across the relevant phase of execution, helping leadership teams identify gaps, dependencies and priority actions with clarity."
         ],
+        "bullets": [
+          "Quality Assurance Services",
+          "Programme & Project Health Checks",
+          "Quality Gates & Control Reviews",
+          "Governance, Risk & Dependency Assessment",
+          "Independent Executive Reporting"
+        ],
+        "button": "Request a quality review"
       },
+      "areasLabel": "End-to-end services portfolio"
     },
-
-    approach: {
-      eyebrow: "Method",
-      title: "A cycle, not a straight line.",
-      lede: "Every engagement follows the same rigour — and keeps looping: understand before advising, design before building, deliver, then improve and begin again.",
-      steps: [
-        { n: "01", title: "Diagnose & Define", body: "The landscape, operating model, risks and stakeholders are mapped — a clear, unvarnished read of where things truly stand, and what success means." },
-        { n: "02", title: "Plan & Design", body: "A staged, low-risk roadmap and target operating model are defined, with governance, KPIs and a direct line to business value." },
-        { n: "03", title: "Deliver & Improve", body: "Programmes are led through go-live and stabilisation — then measured, refined and continually improved, feeding the next cycle." },
+    "services": {
+      "eyebrow": "The practice areas",
+      "title": "Expertise areas shaped by experience and methodology.",
+      "lede": "Management across the full enterprise-transformation agenda, from strategy and vendor selection through delivery, go-live and the operating model, backed by 20+ years of hands-on delivery across every domain below. Technology is the easy half; the work that lasts is organisational change, governance and the people who carry it. Engagements can run the full arc or focus on a single phase, and every one is shaped solely by enterprises' needs and expectations.",
+      "items": [
+        {
+          "title": "RFP & Vendor Advisory",
+          "short": "On the enterprise's side of the table.",
+          "desc": "Independent support on the enterprise's side of the RFP table, from shaping requirements to evaluating proposals. The outcome is a defensible, well-governed selection that protects budget and lowers delivery risk from day one.",
+          "bullets": [
+            "RFP / RFI design & evaluation",
+            "Win strategy & solution shaping",
+            "Pricing & commercial modelling",
+            "Final-round negotiation support"
+          ],
+          "tags": [
+            "RFP / RFI",
+            "Win strategy",
+            "Pricing"
+          ]
+        },
+        {
+          "title": "Program & Portfolio (PMO)",
+          "short": "Large programmes kept on track.",
+          "desc": "Structure and governance that keep large, complex programmes on scope, on budget and on plan. Delivery, risk and reporting are set up to give leadership a clear, honest view at every stage.",
+          "bullets": [
+            "PMO setup & governance frameworks",
+            "Portfolio oversight & reporting",
+            "Risk, scope & budget control",
+            "€1M+ programme delivery"
+          ],
+          "tags": [
+            "PMO",
+            "Governance",
+            "Delivery"
+          ]
+        },
+        {
+          "title": "SAP Transformation Advisory",
+          "short": "A staged path from migration to transformation.",
+          "desc": "Management for SAP S/4HANA grounded in direct delivery experience; a staged, low-risk roadmap through go-live and stabilisation. The focus stays on the target operating model and the people, as much as the platform itself.",
+          "bullets": [
+            "Staged, low-risk transformation roadmap",
+            "Program leadership through go-live",
+            "Target operating model & governance",
+            "Stabilisation & post-go-live support"
+          ],
+          "tags": [
+            "S/4HANA",
+            "Roadmap",
+            "Go-live"
+          ]
+        },
+        {
+          "title": "AI Strategy & Roadmaps",
+          "short": "From AI pilots to production value.",
+          "desc": "A pragmatic path from AI ambition to real value, shaped by hands-on experience building and shipping applied-AI products, covering use-case selection, data and decision governance and adoption. The aim is measurable outcomes and pilots that scale into production.",
+          "bullets": [
+            "Generative-AI strategy & use-case selection",
+            "Data & decision governance",
+            "Adoption & operating-model design",
+            "From pilot to measurable value"
+          ],
+          "tags": [
+            "GenAI",
+            "Governance",
+            "Adoption"
+          ]
+        },
+        {
+          "title": "Organisational Change & Adoption",
+          "short": "Identifying impacted areas and turning adoption into an action plan.",
+          "desc": "In transformation projects, the areas and stakeholders affected by change are identified against strategy and goals; stakeholder and impact analysis shape the strategy for adoption. That strategy is turned into concrete steps through an action plan, a communication plan, a training plan and change-impact surveys.",
+          "bullets": [
+            "Stakeholder & impact analysis",
+            "Adoption strategy & action plan",
+            "Communication plan",
+            "Training plan"
+          ],
+          "tags": [
+            "OCM",
+            "Adoption",
+            "Leadership"
+          ]
+        },
+        {
+          "title": "Managed Services, Operating Model & CoE",
+          "short": "The operating model, designed and managed end to end.",
+          "desc": "The operating model is designed end to end: shoring and service models, and commercial models, are compared to decide the structure best suited to the enterprise's strategic goals. SLAs and KPIs grounded in best practice, the criteria expected of the service provider, optimal team size and the governance model are all defined and managed.",
+          "bullets": [
+            "Shoring & service-model evaluation",
+            "SLA/KPI design",
+            "Team-size optimisation",
+            "Governance model & management"
+          ],
+          "tags": [
+            "ITIL",
+            "Operating model",
+            "CoE"
+          ]
+        }
       ],
-      caption: "Strategy translated into a staged, governable, continually-improving programme.",
-      tagline: "In a methodical approach, success is no accident — it is engineered.",
+      "healthcheck": {
+        "eyebrow": "Start here",
+        "title": "Transformation Health Check",
+        "body": "An independent diagnostic of where a programme or SAP landscape truly stands, risks, gaps and a clear set of next moves. Often the right first step before committing budget.",
+        "bullets": [
+          "Programme & delivery risk review",
+          "Operating-model & governance gaps",
+          "Clear, prioritised recommendations"
+        ],
+        "cta": "Request a health check"
+      }
     },
-
-    work: {
-      eyebrow: "02 — Selected Engagements",
-      title: "Engagements that set the reference.",
-      items: [
-        { result: "Turkey's first SAP HANA reference implementation in financial services — delivered to plan with a 22-person team.", sector: "Financial Services", role: "Programme Manager", client: "Eureko Sigorta" },
-        { result: "Organisational change directed for the country's largest-ever ERP transformation — a ~150-person global programme.", sector: "Aviation", role: "OCM Lead", client: "Turkish Airlines" },
-        { result: "Turkey's first SAP global support hub of 100+ FTE established from the ground up, consolidating worldwide delivery for a global OEM.", sector: "Automotive", role: "Senior Service Manager", client: "Daimler CoE" },
-        { result: "A 75+ person regional IT service organisation built from zero in three months — demanding SLAs met from day one.", sector: "Manufacturing", role: "Service Delivery Lead", client: "Bosch-Siemens (B/S/H)" },
-        { result: "Comprehensive master-data management implementation led with a 12-person team, strengthening data architecture and governance.", sector: "Consumer Durables", role: "Programme Manager", client: "Arçelik" },
-        { result: "Managed-services portfolio doubled with strong recurring-revenue growth, while operating costs were reduced by 35% across global delivery.", sector: "Cross-industry", role: "Service Sales & Delivery Director", client: "NTT DATA" },
+    "projects": {
+      "eyebrow": "Applied AI",
+      "title": "Projects built in-house.",
+      "lede": "Beyond advisory, artificial intelligence is applied directly, a growing portfolio of products built to test where AI creates real value, in enterprise transformation and beyond. Each began as a working experiment; several are live.",
+      "visit": "Visit project",
+      "details": "View details",
+      "all": "All projects",
+      "items": [
+        {
+          "name": "SAP Activa",
+          "kind": "SAP × AI",
+          "status": "Active",
+          "body": "An AI toolkit that strengthens SAP programme management: project health scoring, risk prediction, resource optimisation and automated status reporting, SAP Activate methodology integrated with AI.",
+          "link": "#"
+        },
+        {
+          "name": "Segmentil",
+          "kind": "Analytics",
+          "status": "In development",
+          "body": "An AI platform that segments enterprise customer portfolios and predicts behaviour, RFM analysis, churn prediction and customer-lifetime-value, as a decision-support tool for sales and customer-success teams.",
+          "link": "#"
+        },
+        {
+          "name": "Yazbix",
+          "kind": "Applied AI",
+          "status": "Active",
+          "body": "An AI-assisted digital journal that captures thoughts, memories and notes, with speech-to-text, sentiment analysis and smart tagging, as a personal memory platform.",
+          "link": "#"
+        },
+        {
+          "name": "Social Media Studio",
+          "kind": "Applied AI",
+          "status": "In development",
+          "body": "An AI-assisted content and scheduling platform for small businesses and founders, content suggestions, timing optimisation and performance analytics.",
+          "link": "#"
+        },
+        {
+          "name": "English for Children",
+          "kind": "EdTech",
+          "status": "Active",
+          "body": "An interactive English-vocabulary platform for children: visual cards, spoken pronunciation and gamified repetition on an AI-personalised learning path.",
+          "link": "#"
+        },
+        {
+          "name": "In Progress",
+          "kind": "Coming soon",
+          "status": "Coming soon",
+          "body": "A new applied-AI project in development, aimed at a real problem in enterprise transformation. Details to follow, stay in touch.",
+          "link": "#contact"
+        }
+      ]
+    },
+    "insights": {
+      "eyebrow": "Insights",
+      "title": "Notes from the transformation frontline.",
+      "lede": "Perspectives on SAP, AI and the operating models that make change last, written for CIOs and senior IT leaders.",
+      "readMore": "Read",
+      "all": "All insights",
+      "items": [
+        {
+          "tag": "Perspective",
+          "read": "4 min read",
+          "title": "Pragmatic Transformation",
+          "text": "Less Concepts. More Outcomes. We use “digital transformation” so often that it now describes almost everything, yet doesn’t quite explain anything, so, what exactly did you do?"
+        },
+        {
+          "tag": "Perspective",
+          "read": "6 min read",
+          "title": "AI: Technology vs Human Nature",
+          "text": "What Actually Makes AI Work? The world’s simplest technology to understand, and yet what stands in front of it turns out to be the human being itself."
+        },
+        {
+          "tag": "Perspective",
+          "read": "5 min read",
+          "title": "People, Purpose & New Ways of Working",
+          "text": "Why Purpose Matters More Than Ever. Perhaps for the first time, a generation looks for meaning beyond work and corporate hierarchy alone."
+        }
+      ]
+    },
+    "ctaBand": {
+      "eyebrow": "Get in touch",
+      "title": "Transformation that lasts starts with a conversation.",
+      "cta": "Arrange a consultation"
+    },
+    "footprintHead": {
+      "eyebrow": "Global Footprint",
+      "title": "Sixteen countries. One standard of delivery.",
+      "lede": "Across EMEA & MENA, programmes and service organisations have been delivered in sixteen countries. Select a marker to see the work.",
+      "hint": "Select a country"
+    },
+    "aboutPage": {
+      "eyebrow": "About",
+      "name": "Vildan Kara Kayacan",
+      "role": "Business, Technology & AI Transformation Executive",
+      "tags": "SAP & Enterprise Architecture · Managed Services · AI Transformation",
+      "lede": "Twenty years turning transformation strategy into measurable business value, for strategic enterprises across EMEA & MENA.",
+      "bio": [
+        "Vildan Kara Kayacan is a business and technology transformation executive with 20+ years of experience leading large-scale transformation, managed services and global delivery for strategic enterprises across EMEA & MENA. The track record is concrete: a managed-services portfolio doubled, operating costs cut by a third, and multi-country delivery organisations built from the ground up.",
+        "Her work sits at the rare intersection of enterprise SAP transformation and applied artificial intelligence, leading both the technology and the organisational change behind its adoption. Deep SAP delivery, hands-on AI and genuine change management within a single profile: precisely what large organisations need now.",
+        "Today she leads as a trusted partner to CIOs and executive teams, taking a direct role in S/4HANA migration, managed-services restructuring, AI adoption, the design of a Center of Excellence, or a high-stakes bid that warrants an experienced hand at the table. Engagements are accepted selectively, in a management or senior programme-leadership capacity."
       ],
-    },
-
-    projects: {
-      eyebrow: "Applied AI",
-      title: "Projects built in-house.",
-      lede: "Beyond advisory, artificial intelligence is applied directly — a growing portfolio of products built to test where AI creates real value, in enterprise transformation and beyond. Each began as a working experiment; several are live.",
-      visit: "Visit project",
-      details: "View details",
-      all: "All projects",
-      items: [
-        { name: "SAP Activa", kind: "SAP × AI", status: "Active", body: "An AI toolkit that strengthens SAP programme management: project health scoring, risk prediction, resource optimisation and automated status reporting — SAP Activate methodology integrated with AI.", link: "#" },
-        { name: "Segmentil", kind: "Analytics", status: "In development", body: "An AI platform that segments enterprise customer portfolios and predicts behaviour — RFM analysis, churn prediction and customer-lifetime-value, as a decision-support tool for sales and customer-success teams.", link: "#" },
-        { name: "Yazbix", kind: "Applied AI", status: "Active", body: "An AI-assisted digital journal that captures thoughts, memories and notes — with speech-to-text, sentiment analysis and smart tagging, as a personal memory platform.", link: "#" },
-        { name: "Social Media Studio", kind: "Applied AI", status: "In development", body: "An AI-assisted content and scheduling platform for small businesses and founders — content suggestions, timing optimisation and performance analytics.", link: "#" },
-        { name: "English for Children", kind: "EdTech", status: "Active", body: "An interactive English-vocabulary platform for children: visual cards, spoken pronunciation and gamified repetition on an AI-personalised learning path.", link: "#" },
-        { name: "In Progress", kind: "Coming soon", status: "Coming soon", body: "A new applied-AI project in development, aimed at a real problem in enterprise transformation. Details to follow — stay in touch.", link: "#contact" },
-      ],
-    },
-
-    insights: {
-      eyebrow: "Insights",
-      title: "Notes from the transformation frontline.",
-      lede: "Perspectives on SAP, AI and the operating models that make change last — written for CIOs and senior IT leaders.",
-      readMore: "Read",
-      all: "All insights",
-      items: [
-        { tag: "Article", read: "5 min read", title: "Why SAP S/4HANA migrations fail", text: "The root cause is rarely the technology — it is the gaps in people and process. What separates the programmes that endure." },
-        { tag: "Article", read: "4 min read", title: "How AI is transforming the enterprise", text: "AI is not merely a technology; it is an organisational transformation. Where adoption actually succeeds — and why." },
-        { tag: "Article", read: "3 min read", title: "Staying ahead of the sector", text: "Change is accelerating. The three areas CIOs need to prepare for today, before they become urgent." },
-        { tag: "Article", read: "6 min read", title: "Ten critical mistakes in vendor selection", text: "The wrong vendor can be the single largest risk to a transformation programme. The ten mistakes that surface most often." },
-        { tag: "Article", read: "4 min read", title: "Creating value in managed services", text: "ITIL is not just a framework; it is the foundation of operational excellence. How service models create — or destroy — value." },
-        { tag: "Article", read: "5 min read", title: "A passing trend, or lasting change?", text: "Should every new technology be treated as a trend? A simple test for telling signal from noise." },
-      ],
-    },
-
-    ctaBand: {
-      eyebrow: "Let's talk",
-      title: "Transformation that lasts starts with a conversation.",
-      cta: "Arrange a consultation",
-    },
-
-    footprintHead: {
-      eyebrow: "Global Footprint",
-      title: "Sixteen countries. One standard of delivery.",
-      lede: "Across EMEA & MENA, programmes and service organisations have been delivered in sixteen countries. Select a marker to see the work.",
-      hint: "Select a country",
-    },
-
-    /* ---- ABOUT PAGE ---- */
-    aboutPage: {
-      eyebrow: "About",
-      name: "Vildan Kara Kayacan",
-      role: "Business, Technology & AI Transformation Executive",
-      tags: "SAP & Enterprise Architecture · Managed Services · AI Transformation",
-      lede: "Twenty-five years turning transformation strategy into measurable business value — for strategic enterprises across EMEA & MENA.",
-      bio: [
-        "Vildan Kara Kayacan is a business and technology transformation executive with 25+ years of experience leading large-scale transformation, managed services and global delivery for strategic enterprises across EMEA & MENA. The track record is concrete: a managed-services portfolio doubled, operating costs cut by a third, and multi-country delivery organisations built from the ground up.",
-        "Her work sits at the rare intersection of enterprise SAP transformation and applied artificial intelligence — leading both the technology and the organisational change behind its adoption. Deep SAP delivery, hands-on AI and genuine change management within a single profile: precisely what large organisations need now.",
-        "Today she advises CIOs and executive teams as a trusted partner — guiding them as they navigate S/4HANA migration, managed-services restructuring, AI adoption, the design of a Center of Excellence, or a high-stakes bid that warrants an experienced hand at the table. Engagements are accepted selectively, in an advisory or senior programme-leadership capacity.",
-      ],
-      cvLabel: "Download CV (PDF)",
-      cvHref: "#",
-      profileTitle: "Selected achievements",
-      achievements: [
+      "cvLabel": "Download CV (PDF)",
+      "cvHref": "#",
+      "profileTitle": "Selected achievements",
+      "achievements": [
         "Established Turkey's first SAP global support hub (100+ FTE) to centralise worldwide service delivery for a global automotive OEM.",
         "Cut operating costs by 35% while improving service quality and delivery efficiency across global service operations.",
-        "Built a 75+ person regional IT service organisation in three months — meeting demanding SLAs from day one.",
+        "Built a 75+ person regional IT service organisation in three months, meeting demanding SLAs from day one.",
         "Led the financial-services sector's first SAP HANA reference implementation as an industry reference.",
         "Doubled the managed-services portfolio with significant recurring-revenue growth on strategic enterprise accounts.",
-        "Delivered €1M+ transformation programmes consistently on time, on budget and with stable go-lives.",
+        "Delivered €1M+ transformation programmes consistently on time, on budget and with stable go-lives."
       ],
-      competenciesTitle: "Core competencies",
-      competencies: ["Enterprise & Org. Transformation", "Managed Services & P&L", "Operating-Model Design", "Global Multi-Region Delivery", "Governance, Risk & Quality", "Enterprise Architecture (TOGAF)", "Bid & Proposal Management", "SLA / KPI & Performance", "AI Adoption & Change", "AI & Data-Led Transformation", "SAP / S/4HANA Transformation", "Program & Portfolio Leadership"],
-      experienceTitle: "Professional experience",
-      experience: [
-        { company: "NTT DATA Business Solutions", dates: "Nov 2014 – Present", note: "Progressive leadership in service strategy, global delivery and programme management for major enterprises across EMEA & MENA.", roles: [
-          { role: "Director, Service Sales & Delivery Strategy", points: ["Owned end-to-end multi-million-euro RFP/RFI processes for strategic IT and managed-services deals — win strategy, solution design, bid management, risk, pricing and final-round negotiation.", "Shaped commercial strategy for multi-year engagements: pricing frameworks, financial modelling, cost structures and contract design.", "Built service strategy and target operating models for managed services and large-scale transformation programmes."] },
-          { role: "Director, Global Services Business Integration & Development", points: ["Led service integration and expansion across EMEA & MENA, scaling delivery centers and mentoring senior leaders.", "Managed strategic transitions from global to local delivery and from external providers to internal Centers of Excellence."] },
-          { role: "Head of PMO & Customer Engagement Office", points: ["Set up and ran the PMO, standardising delivery methodology across the portfolio and directing a team of project managers.", "Served as Program / Transformation Lead on priority programmes (incl. B/S/H regional IT org and Daimler 100+ FTE global support hub)."] },
-        ] },
-        { company: "SAP Türkiye", dates: "May 2011 – Oct 2014", note: "Senior Business Transformation Project Manager — SAP S/4HANA transformation for sector leaders in manufacturing, automotive, financial services and aviation.", roles: [
-          { role: "Selected programmes", points: ["Turkish Airlines — OCM Lead on the country's largest ERP transformation (~150 global team members).", "Eureko Sigorta — Programme Manager on the FS sector's first SAP HANA reference (22-person team).", "Arçelik — Programme Manager on a comprehensive MDM implementation (12-person team).", "Yapı Kredi Bank — trusted-advisor role on the first banking-sector ERP reference."] },
-        ] },
-        { company: "Metro Group Information AG — Düsseldorf, Germany", dates: "Oct 2005 – Apr 2011", note: "Senior Financial Consultant & Developer.", roles: [
-          { role: "International SAP roll-outs", points: ["Progressed from ABAP development and SAP Basis into finance consulting, delivering international SAP roll-outs across Egypt, Kazakhstan, Slovakia, Türkiye, Belgium, Spain, Bulgaria and Pakistan."] },
-        ] },
+      "competenciesTitle": "Core competencies",
+      "competencies": [
+        "Enterprise & Org. Transformation",
+        "Managed Services & P&L",
+        "Operating-Model Design",
+        "Global Multi-Region Delivery",
+        "Governance, Risk & Quality",
+        "Enterprise Architecture (TOGAF)",
+        "Bid & Proposal Management",
+        "SLA / KPI & Performance",
+        "AI Adoption & Change",
+        "AI & Data-Led Transformation",
+        "SAP / S/4HANA Transformation",
+        "Program & Portfolio Leadership"
       ],
+      "experienceTitle": "Professional experience",
+      "experience": [
+        {
+          "company": "NTT DATA Business Solutions",
+          "dates": "Nov 2014 – Present",
+          "note": "Progressive leadership in service strategy, global delivery and programme management for major enterprises across EMEA & MENA.",
+          "roles": [
+            {
+              "role": "Director, Service Sales & Delivery Strategy",
+              "points": [
+                "Owned end-to-end multi-million-euro RFP/RFI processes for strategic IT and managed-services deals, win strategy, solution design, bid management, risk, pricing and final-round negotiation.",
+                "Shaped commercial strategy for multi-year engagements: pricing frameworks, financial modelling, cost structures and contract design.",
+                "Built service strategy and target operating models for managed services and large-scale transformation programmes."
+              ]
+            },
+            {
+              "role": "Director, Global Services Business Integration & Development",
+              "points": [
+                "Led service integration and expansion across EMEA & MENA, scaling delivery centers and mentoring senior leaders.",
+                "Managed strategic transitions from global to local delivery and from external providers to internal Centers of Excellence."
+              ]
+            },
+            {
+              "role": "Head of PMO & Customer Engagement Office",
+              "points": [
+                "Set up and ran the PMO, standardising delivery methodology across the portfolio and directing a team of project managers.",
+                "Served as Program / Transformation Lead on priority programmes (incl. B/S/H regional IT org and Daimler 100+ FTE global support hub)."
+              ]
+            }
+          ]
+        },
+        {
+          "company": "SAP Türkiye",
+          "dates": "May 2011 – Oct 2014",
+          "note": "Senior Business Transformation Project Manager, SAP S/4HANA transformation for sector leaders in manufacturing, automotive, financial services and aviation.",
+          "roles": [
+            {
+              "role": "Selected programmes",
+              "points": [
+                "Turkish Airlines, OCM Lead on the country's largest ERP transformation (~150 global team members).",
+                "Eureko Sigorta, Programme Manager on the FS sector's first SAP HANA reference (22-person team).",
+                "Arçelik, Programme Manager on a comprehensive MDM implementation (12-person team).",
+                "Yapı Kredi Bank, trusted-advisor role on the first banking-sector ERP reference."
+              ]
+            }
+          ]
+        },
+        {
+          "company": "Metro Group Information AG, Düsseldorf, Germany",
+          "dates": "Oct 2005 – Apr 2011",
+          "note": "Senior Financial Consultant & Developer.",
+          "roles": [
+            {
+              "role": "International SAP roll-outs",
+              "points": [
+                "Progressed from ABAP development and SAP Basis into finance consulting, delivering international SAP roll-outs across Egypt, Kazakhstan, Slovakia, Türkiye, Belgium, Spain, Bulgaria and Pakistan."
+              ]
+            }
+          ]
+        }
+      ]
     },
-
-    credentials: {
-      eyebrow: "Capabilities",
-      title: "Certified. Multilingual. Multi-country.",
-      groups: [
-        { label: "Certifications", items: ["PMI-RMP® — Risk Management Professional", "TOGAF® Enterprise Architecture", "ITIL® Foundation", "SAP Enterprise Architecture", "SAP Activate (Agile — Certified)", "SAP Business Transformation — SAP Academy", "Financial Reporting & Analysis — Deloitte"] },
-        { label: "Education", items: ["B.Sc. Business Information Systems (Wirtschaftsinformatik)", "Marmara University — German programme (2000–2005)"] },
-        { label: "Languages", items: ["Turkish — native", "English — fluent (written & spoken)", "German — advanced"] },
-        { label: "Reach", items: ["EMEA & MENA", "Egypt · Kazakhstan · Slovakia · Austria", "Belgium · Spain · Bulgaria · Pakistan · UAE · KSA"] },
+    "credentials": {
+      "eyebrow": "Capabilities",
+      "title": "Certified. Multilingual. Multi-country.",
+      "groups": [
+        {
+          "label": "Certifications",
+          "items": [
+            "PMI-RMP®,Risk Management Professional",
+            "TOGAF® Enterprise Architecture",
+            "ITIL® Foundation",
+            "SAP Enterprise Architecture",
+            "SAP Activate (Agile, Certified)",
+            "SAP Business Transformation, SAP Academy",
+            "Financial Reporting & Analysis, Deloitte"
+          ]
+        },
+        {
+          "label": "Education",
+          "items": [
+            "B.Sc. Business Information Systems (Wirtschaftsinformatik)",
+            "Marmara University, German programme (2000–2005)"
+          ]
+        },
+        {
+          "label": "Languages",
+          "items": [
+            "Turkish, native",
+            "English, fluent (written & spoken)",
+            "German, advanced"
+          ]
+        },
+        {
+          "label": "Reach",
+          "items": [
+            "EMEA & MENA",
+            "Egypt · Kazakhstan · Slovakia · Austria",
+            "Belgium · Spain · Bulgaria · Pakistan · UAE · KSA"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "A conversation starts here.",
+      "lede": "Whether a major transformation is being prepared in your organisation, an SAP or AI programme is underway, or an operating model needs redesign, a conversation is welcome.",
+      "fields": {
+        "name": "Name",
+        "org": "Organisation",
+        "email": "Email",
+        "topic": "Area of interest",
+        "message": "What would you like to discuss?"
+      },
+      "topics": [
+        "SAP & S/4HANA",
+        "Artificial Intelligence",
+        "Managed Services",
+        "Program & PMO",
+        "Bid & RFP Advisory",
+        "Center of Excellence",
+        "Other"
       ],
+      "send": "Send message",
+      "sent": "Thank you, your message has been received.",
+      "location": "Istanbul, Türkiye, available globally (remote & onsite)",
+      "email": "vildan@vildankara.com",
+      "phone": "+90 553 296 55 75",
+      "langs": "Turkish · English · German",
+      "linkedin": "LinkedIn"
     },
-
-    contact: {
-      eyebrow: "Contact",
-      title: "Let's work together.",
-      lede: "Whether a major bid is being prepared, an SAP or AI programme is underway, or an operating model needs rethinking, a conversation is welcome — including before the path is clear.",
-      fields: { name: "Name", org: "Organisation", email: "Email", topic: "Area of interest", message: "How can I help?" },
-      topics: ["SAP & S/4HANA", "Artificial Intelligence", "Managed Services", "Program & PMO", "Bid & RFP Advisory", "Center of Excellence", "Other"],
-      send: "Send message",
-      sent: "Thank you — your message has been received.",
-      location: "Istanbul, Türkiye — available globally (remote & onsite)",
-      email: "vildan@vildankara.com",
-      phone: "+90 553 296 55 75",
-      langs: "Turkish · English · German",
-      linkedin: "LinkedIn",
+    "footer": {
+      "tagline": "A senior executive across enterprise transformation, SAP, AI, managed services and major bids.",
+      "copy": "© 2026 Vildan Kara Kayacan. All rights reserved.",
+      "colPages": "Pages",
+      "colContact": "Contact",
+      "colFollow": "Follow"
     },
-
-    footer: { tagline: "Executive advisory for enterprise transformation — SAP, AI, managed services and major bids, across EMEA & MENA.", copy: "© 2026 Vildan Kara Kayacan. All rights reserved.", colPages: "Pages", colContact: "Contact", colFollow: "Follow" },
+    "svcDetail": {
+      "groups": [
+        {
+          "num": "01",
+          "title": "Enterprise Transformation & Change Management",
+          "intro": [
+            "Enterprise transformation requires more than a roadmap. It requires a clear understanding of the current reality, the right operating model, strong governance, aligned stakeholders and a disciplined approach to execution.",
+            "This area focuses on assessing transformation readiness, identifying organisational gaps, shaping governance structures and supporting change agendas that need to land across business, technology and operations.",
+            "It is designed for organisations that need clarity on where they stand, what needs to change and how transformation should be structured to create sustainable business impact."
+          ],
+          "image": "assets/img/hero-boardroom.png",
+          "rows": [
+            {
+              "title": "Transformation Assessment",
+              "desc": [
+                "A structured assessment of the current transformation agenda, including objectives, scope, governance, delivery structure, risks, dependencies and organisational readiness.",
+                "The aim is to create a clear baseline of the current situation and identify the gaps, risks and priority actions required to move forward with confidence."
+              ]
+            },
+            {
+              "title": "Operating Model & Governance",
+              "desc": [
+                "Reviewing and designing operating models, decision structures, roles, responsibilities and governance mechanisms required to support transformation execution.",
+                "This includes clarifying how business, technology, delivery teams and leadership bodies should work together across the transformation lifecycle."
+              ]
+            },
+            {
+              "title": "PMO / Transformation Office",
+              "desc": [
+                "Designing or improving the programme management office or transformation office structure, including reporting, governance cadence, risk management, dependency tracking and executive decision support.",
+                "The focus is on creating transparency, discipline and control across complex transformation environments."
+              ]
+            },
+            {
+              "title": "Change Management & Adoption",
+              "desc": [
+                "Supporting the people side of transformation through stakeholder alignment, impact analysis, communication planning, training coordination and adoption tracking.",
+                "The objective is to help change move beyond project delivery and become part of everyday ways of working."
+              ]
+            }
+          ]
+        },
+        {
+          "num": "02",
+          "title": "SAP Transformation & Programme Leadership",
+          "intro": [
+            "SAP transformation programmes are large, interdependent and business critical. They require strong programme leadership, clear governance, risk visibility and disciplined execution from roadmap through go-live and stabilisation.",
+            "This area focuses on leading SAP transformation initiatives with an end-to-end view across business priorities, delivery realities, vendor coordination, readiness, cutover and post-go-live stabilisation.",
+            "It is designed for organisations that need experienced leadership to keep complex SAP programmes structured, visible and outcome focused."
+          ],
+          "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=70",
+          "rows": [
+            {
+              "title": "SAP Roadmap & Programme Setup",
+              "desc": [
+                "Structuring the SAP transformation roadmap, programme scope, delivery approach, governance model and key workstreams.",
+                "This includes setting up the programme foundation required to manage complexity, align stakeholders and create a realistic delivery path."
+              ]
+            },
+            {
+              "title": "Programme / Project Leadership",
+              "desc": [
+                "Leading SAP programme and project execution across business, technology, vendors and delivery teams.",
+                "The focus is on maintaining delivery discipline, managing priorities, enabling decision making and keeping the programme aligned with business outcomes."
+              ]
+            },
+            {
+              "title": "Delivery Risk Management",
+              "desc": [
+                "Identifying, tracking and managing delivery risks, dependencies, scope issues, resource constraints and governance gaps across the programme.",
+                "This provides leadership teams with visibility into what may impact delivery and what actions are required to reduce risk."
+              ]
+            },
+            {
+              "title": "Go-live & Stabilisation",
+              "desc": [
+                "Supporting go-live readiness, cutover coordination, issue management, hypercare and stabilisation planning.",
+                "The focus is on ensuring the transition into live operations is controlled, supported and aligned with business continuity expectations."
+              ]
+            }
+          ]
+        },
+        {
+          "num": "03",
+          "title": "RFP, Bid & Commercial Advisory",
+          "intro": [
+            "RFP, bid and vendor selection processes shape major business and technology decisions. They require structure, commercial clarity, evaluation discipline and an independent view of what best serves the organisation’s long-term interests.",
+            "This area focuses on managing RFP, RFI, bid, vendor selection and commercial model processes with a structured, transparent and decision-oriented approach.",
+            "It is designed for organisations that need to select the right partner, shape a defensible decision process and align commercial models with transformation and operational objectives."
+          ],
+          "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=70",
+          "rows": [
+            {
+              "title": "RFP / RFI Process Management",
+              "desc": [
+                "Structuring and managing RFP and RFI processes from preparation to evaluation and decision support.",
+                "This includes defining requirements, coordinating stakeholders, managing timelines, supporting vendor communication and ensuring the process remains transparent and well governed."
+              ]
+            },
+            {
+              "title": "Bid Strategy & Evaluation",
+              "desc": [
+                "Supporting bid strategy, proposal evaluation, scoring models and decision criteria.",
+                "The focus is on helping organisations compare options in a structured way and make decisions based on business value, delivery capability, risk and commercial fit."
+              ]
+            },
+            {
+              "title": "Vendor Selection",
+              "desc": [
+                "Supporting vendor selection processes with independent analysis, evaluation governance and stakeholder alignment.",
+                "This includes comparing vendor capabilities, delivery models, solution approaches, pricing structures and long-term partnership fit."
+              ]
+            },
+            {
+              "title": "Pricing & Commercial Models",
+              "desc": [
+                "Reviewing pricing models, commercial structures, service assumptions, contract logic and cost drivers.",
+                "The aim is to identify commercial risks, improve negotiation clarity and ensure the selected model is sustainable for both delivery and operations."
+              ]
+            }
+          ]
+        },
+        {
+          "num": "04",
+          "title": "Managed Services, AI & Operating Models",
+          "intro": [
+            "Managed services, AI and operating models all require one essential capability: the ability to translate strategic intent into sustainable ways of working.",
+            "This area focuses on designing service, support and AI-enabled operating models that connect business priorities, operational capabilities, governance structures and long-term value creation.",
+            "It is designed for organisations that need to improve support models, redesign AMS or managed services, define CoE structures, or turn AI ambition into a practical and governable roadmap."
+          ],
+          "image": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1000&q=70",
+          "rows": [
+            {
+              "title": "AMS & Managed Service Models",
+              "desc": [
+                "Designing or reviewing AMS and managed service models, including scope, roles, responsibilities, service levels, governance and delivery structure.",
+                "The focus is on creating support models that are fit for purpose, commercially sustainable and aligned with business needs."
+              ]
+            },
+            {
+              "title": "Support Organisation Design",
+              "desc": [
+                "Reviewing and redesigning support organisations, including internal teams, external providers, escalation paths, ownership structures and service management responsibilities.",
+                "The aim is to create a clear and efficient support model that improves accountability, responsiveness and operational stability."
+              ]
+            },
+            {
+              "title": "AI Readiness & Roadmaps",
+              "desc": [
+                "Assessing AI readiness across business opportunities, use cases, data maturity, governance, adoption needs and operating model implications.",
+                "The focus is on turning AI ambition into a pragmatic roadmap that can move from idea to pilot, and from pilot to measurable business value."
+              ]
+            },
+            {
+              "title": "CoE, SLA / KPI & Governance",
+              "desc": [
+                "Designing Centre of Excellence structures, SLA and KPI frameworks, governance models and performance management mechanisms.",
+                "This helps organisations manage service quality, continuous improvement and long-term operational performance with greater clarity."
+              ]
+            }
+          ]
+        },
+        {
+          "num": "05",
+          "title": "Quality Assurance Services & Health Checks",
+          "intro": [
+            "Quality assurance and health checks provide an independent view of whether transformation initiatives are structured, governed and delivered with the right level of quality, control and discipline.",
+            "These services can be applied across all transformation leadership areas, including Enterprise Transformation & Change Management, SAP Transformation, RFP and Bid processes, Managed Services, AI readiness and Operating Models.",
+            "Across each phase and service block, the review assesses whether the right standards, controls, quality gates, governance mechanisms and delivery disciplines are in place to support successful execution.",
+            "The outcome is an independent, vendor-neutral view of programme quality, delivery risks, governance gaps, critical dependencies and priority actions required to move forward with greater confidence."
+          ],
+          "image": null,
+          "rows": [
+            {
+              "title": "Quality Assurance Services",
+              "desc": [
+                "Independent quality assurance across transformation programmes, delivery workstreams, governance structures and critical project phases.",
+                "The focus is on assessing whether the programme is being managed with the right controls, standards, decision mechanisms and delivery discipline."
+              ]
+            },
+            {
+              "title": "Programme & Project Health Checks",
+              "desc": [
+                "Focused reviews of programme or project status, including scope, timeline, budget, risks, governance, stakeholder alignment, delivery performance and readiness.",
+                "The objective is to identify early warning signs, delivery gaps and practical actions required to improve control and confidence."
+              ]
+            },
+            {
+              "title": "Quality Gates & Control Reviews",
+              "desc": [
+                "Assessment of key quality gates, control points, approval mechanisms and phase-entry or phase-exit criteria across the transformation lifecycle.",
+                "This helps ensure that major decisions, go-live steps or critical transitions are supported by sufficient evidence, readiness and governance."
+              ]
+            },
+            {
+              "title": "Governance, Risk & Dependency Assessment",
+              "desc": [
+                "Reviewing governance effectiveness, escalation mechanisms, risk visibility, dependency tracking and decision-making structures.",
+                "The focus is on improving transparency, accountability and leadership control across complex delivery environments."
+              ]
+            },
+            {
+              "title": "Independent Executive Reporting",
+              "desc": [
+                "Preparation of clear, independent executive reports summarising current maturity, quality observations, delivery risks, governance gaps, dependencies and prioritised recommendations.",
+                "The report is designed to support leadership teams with a direct, practical and decision-ready view of the transformation status."
+              ]
+            }
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Let’s define the right starting point.",
+        "paras": [
+          "Whether the need is a transformation review, SAP programme leadership, RFP support, managed service design, AI roadmap or independent quality assurance, the first step is to understand the current situation clearly."
+        ],
+        "button": "Arrange a consultation"
+      },
+      "lead": {
+        "eyebrow": "Services",
+        "title": "Transformation Leadership Areas",
+        "lede": [
+          "End-to-end experience across enterprise transformation, SAP programmes, RFP, bid and commercial processes, managed services, AI and operating models.",
+          "The focus is on reading complexity clearly, structuring execution, establishing strong governance, and advancing the transformation agenda toward measurable business outcomes."
+        ]
+      }
+    }
   },
-
-  tr: {
-    brand: { name: "Vildan Kara Kayacan", role: "Executive Advisory" },
-    nav: [
-      { id: "services", label: "Hizmetler", href: "index.html#services" },
-      { id: "projects", label: "Projeler", href: "projects.html" },
-      { id: "insights", label: "Yazılar", href: "insights.html" },
-      { id: "about", label: "Hakkında", href: "about.html" },
-      { id: "contact", label: "İletişim", href: "index.html#contact" },
+  "tr": {
+    "brand": {
+      "name": "Vildan Kara Kayacan",
+      "role": "Kurumsal Dönüşüm Lideri"
+    },
+    "nav": [
+      {
+        "id": "services",
+        "label": "Hizmetler",
+        "href": "services.html"
+      },
+      {
+        "id": "projects",
+        "label": "Projeler",
+        "href": "projects.html"
+      },
+      {
+        "id": "insights",
+        "label": "Yazılar",
+        "href": "insights.html"
+      },
+      {
+        "id": "about",
+        "label": "Hakkında",
+        "href": "about.html"
+      },
+      {
+        "id": "contact",
+        "label": "İletişim",
+        "href": "index.html#contact"
+      }
     ],
-    cta: "Görüşme planlayın",
-
-    hero: {
-      eyebrow: "Executive Advisory",
-      title: ["SAP. AI. İş Dönüşümü."],
-      subline: "Teknoloji sistemleri değiştirir. İnsanlar kurumları değiştirir.",
-      lede: "SAP, yapay zeka ve iş dönüşümü için executive advisory; strateji tanımı ve tedarikçi seçiminden program teslimatı ve işletme modeli tasarımına, iş önceliklerinize, stratejik hedeflerinize ve insanlarınıza uyumlu bağımsız rehberlik.",
-      meta: ["25+ yıl", "EMEA & MENA", "İnsan odaklı değişim", "SAP × AI"],
-      ctaPrimary: "Görüşme planlayın",
-      ctaSecondary: "Hizmetleri görün",
-      panelLabel: "Uzmanlık alanları",
-    },
-
-    landing: {
-      eyebrow: "Hizmetler",
-      hero1: {
-        eyebrow: "Executive Advisory",
-        headline: ["Strateji.", "Dönüşüm.", "Operasyon."],
-        subhead: "Uçtan uca dönüşüm ortağınız.",
-        lede: "Stratejik kararlardan teslimata, işletme modellerinden sürdürülebilir destek organizasyonlarına kadar dönüşümün tüm yaşam döngüsünde executive advisory.",
-        ctaPrimary: "Görüşme ayarlayın",
-        ctaSecondary: "Hizmetleri görün",
-        enableLabel: "AI Enablement Katmanı",
-        railNodes: [ { title: "Strateji" }, { title: "Dönüşüm" }, { title: "Operasyon" } ],
-        pillars: [
-          { title: "Strateji", bullets: ["360° hazırlık ve olgunluk değerlendirmeleri yapın", "Dönüşüm yol haritaları ve AI benimseme stratejileri tanımlayın", "İş gerekçeleri ve yatırım modelleri oluşturun", "RFP süreçlerini yönetin", "Tedarikçi değerlendirme ve seçimini destekleyin"] },
-          { title: "Dönüşüm", bullets: ["SAP dönüşüm program yönetimi", "AI dönüşüm girişimlerini tanımlayın ve planlayın", "Yönetişim ve PMO yapıları kurun", "Teslimatı, riskleri ve değişimi yönetin", "Benimsemeyi sağlayın, değer realizasyonunu en üst düzeye çıkarın"] },
-          { title: "Operasyon", bullets: ["Sürdürülebilir işletme modelleri tasarlayın", "Destek organizasyonlarını kurun ve yapılandırın", "AMS stratejisi ve yönetişimi tanımlayın", "Servis yönetimi ve raporlama kurun", "Sürekli iyileştirme ve operasyonel mükemmelliği sağlayın"] },
+    "cta": "Görüşme planlayın",
+    "landing": {
+      "eyebrow": "Hizmetler",
+      "hero1": {
+        "eyebrow": "Executive Advisory",
+        "headline": [
+          "Strateji.",
+          "Dönüşüm.",
+          "Operasyon."
         ],
-        tagline: "Bağımsız tavsiye. Sahada deneyim. Uçtan uca etki.",
+        "subhead": "Uçtan uca dönüşüm ortağınız.",
+        "lede": "Strateji, operating model tasarımı ve kurumsal dönüşüm alanlarında üst düzey yönetici danışmanlığı.",
+        "ctaPrimary": "Görüşme ayarlayın",
+        "ctaSecondary": "Hizmetleri görün",
+        "tagline": "Tarafsız değerlendirme. Operasyonun her aşamasında deneyim. Pragmatik, sonuç odaklı, çevik yaklaşımlar."
       },
-      headline: ["Uçtan uca yanınızda", "bir dönüşüm partneri."],
-      lede: "Stratejiden proje yönetimine, sürdürülebilir destek organizasyonlarının kurulmasına kadar dönüşümün her aşamasında yanınızdayız.",
-      features: [
-        { icon: "target", title: "Bağımsız bakış açısı", body: "Objektif, deneyime dayalı ve çıkar odaklı olmayan öneriler." },
-        { icon: "people", title: "Uçtan uca uzmanlık", body: "Strateji, dönüşüm ve operasyonun tüm aşamalarında sizinle birlikte." },
-        { icon: "shield", title: "Sürdürülebilir değer", body: "Kısa vadeli sonuçların ötesinde, kalıcı ve ölçülebilir iş değeri odaklı yaklaşım." },
+      "headline": [
+        "Dönüşümünüzde",
+        "uçtan uca stratejik ortağınız."
       ],
-      servicesHead: {
-        eyebrow: "Hizmetlerimiz",
-        title: "Dönüşüm yolculuğunun her aşamasında yanınızdayız.",
-        lede: "Stratejik kararların alınmasından programların başarıyla hayata geçirilmesine ve sürdürülebilir operasyonların kurulmasına kadar uçtan uca danışmanlık desteği sağlıyoruz.",
-      },
-      nodes: [ { title: "Strateji" }, { title: "Dönüşüm" }, { title: "Operasyon" } ],
-      groups: [
-        { title: "Strateji", sub: "Doğru temeli atmak.", tone: "navy", items: [
-          { icon: "assessment", title: "IT & Dönüşüm Değerlendirmeleri", body: "Mevcut durum, olgunluk, risk ve hazırlık seviyenizi analiz ederiz." },
-          { icon: "doc", title: "RFP & Tedarikçi Danışmanlığı", body: "İhtiyaçlarınızı tanımlar, RFP sürecinizi yönetir, tedarikçi değerlendirmesi yapar ve seçim kararınıza destek oluruz." },
-          { icon: "route", title: "AI Stratejisi & Yol Haritaları", body: "Yapay zeka fırsatlarını belirler, önceliklerinizi netleştirir ve uygulanabilir AI yol haritaları oluştururuz." },
-        ] },
-        { title: "Dönüşüm", sub: "Vizyonu gerçeğe dönüştürmek.", tone: "navy-deep", items: [
-          { icon: "layers", title: "SAP Dönüşüm Danışmanlığı", body: "SAP S/4HANA ve kurumsal dönüşüm inisiyatiflerinizde bağımsız danışmanlık sağlarız." },
-          { icon: "pmo", title: "Program & Portföy Yönetimi", body: "Yönetişim, PMO kurulumu, risk yönetimi ve yönetici raporlama desteği sağlarız." },
-          { icon: "people", title: "Organizasyonel Değişim & Adaptasyon", body: "Paydaşların dönüşüme uyumunu sağlar, değişim yönetimi ve iletişim programlarını yönetiriz." },
-        ] },
-        { title: "Operasyon", sub: "Kalıcı değeri güvence altına almak.", tone: "gold", items: [
-          { icon: "opmodel", title: "İşletme Modeli Tasarımı", body: "İş hedeflerinize uygun geleceğin operasyonel modelini tasarlarız." },
-          { icon: "headset", title: "AMS & Destek Organizasyonu Tasarımı", body: "Destek organizasyonlarını, yönetişim yapılarını ve kaynaklandırma modellerini kurgularız." },
-          { icon: "barup", title: "CoE & Servis Mükemmelliği", body: "Mükemmeliyet merkezleri kurar, hizmet yönetimi ve sürekli iyileştirme kültürünü geliştiririz." },
-        ] },
+      "lede": "Stratejiden hizmet sağlayıcı seçimine, projeler ve program yönetiminden operasyon birimlerinin kurgulanıp oluşturulmasına; dönüşümün her aşamasında yanınızda.",
+      "features": [
+        {
+          "icon": "target",
+          "title": "Bağımsız, uluslararası ve deneyimli bir bakış açısı",
+          "body": "Kurumlara özel düşünülmüş, rasyonel, işin pratiğine uygun ve tarafsız uygulamalar"
+        },
+        {
+          "icon": "people",
+          "title": "Her aşamada hands-on yönetim deneyimi",
+          "body": "Strateji tanımlama, yol haritası planlama ve hayata geçirme ile, her adımda gerçek ve kalıcı sonuçlar elde etme"
+        },
+        {
+          "icon": "shield",
+          "title": "Sonuç odaklı, her aşamayı detaylı gözden geçirme",
+          "body": "En iyi uygulamalar ve standartlara uygun, kalıcı ve değer odaklı yaklaşım"
+        }
       ],
-      trust: [
-        { icon: "shield", title: "Deneyim", body: "20+ yıllık SAP ve dönüşüm danışmanlığı deneyimi." },
-        { icon: "globe", title: "Bağımsızlık", body: "Hiçbir yazılım veya sistem vendorüne bağlı değiliz." },
-        { icon: "trend", title: "Sonuç Odaklılık", body: "Ölçülebilir iş değerine ve sürdürülebilir sonuca odaklanırız." },
-        { icon: "people", title: "Liderlik Desteği", body: "Üst yönetim seviyesinde stratejik rehberlik sunarız." },
+      "servicesHead": {
+        "eyebrow": "Hizmetlerimiz",
+        "title": "Dönüşümün her aşamasında koordineli, planlı ve uygulanabilir bir üst düzey yönetim.",
+        "lede": "Stratejik kararların alınmasından, programların başarıyla hayata geçirilmesine ve sürdürülebilir bir operasyona kadar, tek ve koordineli bir yönetim."
+      },
+      "nodes": [
+        {
+          "title": "Strateji"
+        },
+        {
+          "title": "Dönüşüm"
+        },
+        {
+          "title": "Operasyon"
+        }
       ],
-      ctaBand: {
-        title: "Dönüşüm yolculuğunuzu birlikte şekillendirelim.",
-        body: "Stratejik önceliklerinizi konuşmak için bizimle iletişime geçin.",
-        cta: "Görüşme ayarlayın",
-      },
+      "groups": [
+        {
+          "title": "Strateji",
+          "sub": "Doğru temeli atmak.",
+          "tone": "navy",
+          "items": [
+            {
+              "icon": "assessment",
+              "title": "IT & Dönüşüm Değerlendirmeleri",
+              "body": "Mevcut durumun, olgunluğun, riskin ve hazırlık seviyesinin derinlemesine analiz edilmesi; gerçek fırsatların nerede olduğunu gösteren net ve somut bir tablo."
+            },
+            {
+              "icon": "doc",
+              "title": "RFP & Tedarikçi Danışmanlığı",
+              "body": "İhtiyaçlar tanımlanır, RFP süreci yürütülür, tedarikçiler değerlendirilir ve seçim kararı kurum adına desteklenir; sonuç, bütçeyi en baştan koruyan, sağlam gerekçeli ve iyi yönetilen bir karardır."
+            },
+            {
+              "icon": "route",
+              "title": "AI Stratejisi & Yol Haritaları",
+              "body": "Yapay zeka fırsatları gerçek iş değeri gözetilerek belirlenir, öncelikler netleştirilir ve uygulanabilir yol haritaları oluşturulur; odak, pilottan üretime taşınabilecek kullanım senaryolarında kalır."
+            }
+          ]
+        },
+        {
+          "title": "Dönüşüm",
+          "sub": "Vizyonu gerçeğe dönüştürmek.",
+          "tone": "navy-deep",
+          "items": [
+            {
+              "icon": "layers",
+              "title": "SAP Dönüşüm Danışmanlığı",
+              "body": "SAP S/4HANA ve kurumsal dönüşüm inisiyatiflerinde, iş modelinden go-live'a kadar bağımsız yönetim. Platform ve işletme modeli, tek ve birbirine bağlı bir karar olarak ele alınır."
+            },
+            {
+              "icon": "pmo",
+              "title": "Program & Portföy Yönetimi",
+              "body": "Yönetişim, PMO kurulumu, risk yönetimi ve yönetici raporlama; büyük ve karmaşık programları kapsam, bütçe ve plana sadık tutacak şekilde kurulur. Teslimat, risk ve raporlama, liderliğe her aşamada net ve dürüst bir görünüm verecek şekilde kurgulanır."
+            },
+            {
+              "icon": "people",
+              "title": "Organizasyonel Değişim & Adaptasyon",
+              "body": "Paydaş uyumu, değişim yönetimi ve iletişim programları, ilk kilometre taşından itibaren disiplinle yürütülür; adaptasyon ise işin başından beri temel bir iş kolu olarak ele alınır."
+            }
+          ]
+        },
+        {
+          "title": "Operasyon",
+          "sub": "Kalıcı değeri güvence altına almak.",
+          "tone": "gold",
+          "items": [
+            {
+              "icon": "opmodel",
+              "title": "İşletme Modeli Tasarımı",
+              "body": "Geleceğin işletme modeli, kurumun iş hedeflerine, rollerine ve çalışma biçimine uygun şekilde tasarlanır. Bu model, somut rollere, yönetişime ve insanların her gün takip ettiği rutinlere dönüştürülür."
+            },
+            {
+              "icon": "headset",
+              "title": "AMS & Destek Organizasyonu Tasarımı",
+              "body": "Destek organizasyonları, yönetişim yapıları ve kaynak modelleri, ölçeklenecek şekilde ve doğru SLA'larla en baştan kurgulanır. Sonuç, her çeyrek daha da iyileşen bir hizmettir."
+            },
+            {
+              "icon": "barup",
+              "title": "CoE & Servis Mükemmelliği",
+              "body": "Mükemmeliyet merkezleri ve sürekli iyileştirme kültürü, go-live sonrasında da değerin sürmesi için kurulur. Standartlar ve çalışma biçimleri, herhangi bir programın ötesinde kalıcı olacak şekilde belgelenir."
+            }
+          ]
+        }
+      ],
+      "trust": [
+        {
+          "icon": "shield",
+          "title": "Deneyim",
+          "body": "20+ yıllık SAP ve dönüşüm yönetimi deneyimi."
+        },
+        {
+          "icon": "globe",
+          "title": "Bağımsızlık",
+          "body": "Kurumsal bir hizmet sağlayıcısından bağımsız, tarafsız bir değerlendirme ve yönetim deneyimi."
+        },
+        {
+          "icon": "trend",
+          "title": "Sonuç Odaklılık",
+          "body": "Dönüşüm öncesinde hedefler ve OKR'ler netleştirilir; dönüşüm sonunda bu hedeflere göre nereye gelindiği ölçülebilir biçimde değerlendirilir."
+        },
+        {
+          "icon": "people",
+          "title": "Uçtan Uca Dönüşüm Liderliği",
+          "body": "Liderlik, gerektiğinde sürecin tam içinden yürütülür."
+        }
+      ],
+      "ctaBand": {
+        "title": "Adım adım tanımlanan ve yönetilebilir bir dönüşüm yolculuğu.",
+        "body": "Stratejik önceliklerinizi konuşmak için bizimle iletişime geçin.",
+        "cta": "Görüşme ayarlayın"
+      }
     },
-
-    projectsSoon: {
-      eyebrow: "Projeler",
-      title: "Özenle hazırlıyoruz.",
-      body: "Ülkemiz ve şirketlerimiz için en yüksek katma değeri yaratacak projeleri, yapay zekâ destekli çözümlerle titizlikle hazırlıyoruz. Amacımız; stratejik öncelikleri ölçülebilir ve sürdürülebilir sonuçlara dönüştüren, kurumsal değeri yüksek çözümleri hizmetinize sunmaktır. Çalışmalarımız olgunlaştıkça bu sayfada sizlerle paylaşacağız.",
-      cta: "İletişime geçin",
+    "projectsSoon": {
+      "eyebrow": "Projeler",
+      "title": "Özenle hazırlanıyor.",
+      "body": "Ülkemiz ve kurumlarımız için en yüksek katma değeri yaratacak projeler, yapay zekâ destekli çözümlerle titizlikle hazırlanıyor. Amacımız, stratejik olarak ölçülebilir, sürdürülebilir sonuçlara dönüşen, kurumsal değeri yüksek çözümler ortaya koymaktır. Her bir projemiz olgunlaştıkça bu sayfada sizinle paylaşılacaktır.",
+      "cta": "İletişime geçin"
     },
-
-    home: {
-      perspective: {
-        eyebrow: "Bakış açımız",
-        title: ["Dönüşüm, her şey birlikte", "hareket ettiğinde gerçekleşir."],
-        lede: "Kalıcı değer; strateji, teknoloji, insan ve operasyonun hizalanmasından doğar. Tüm yolculuk boyunca noktaları birleştiriyorum — hiçbir aşama tesadüfe bırakılmıyor.",
-        flow: [
-          { icon: "target", title: "Strateji", body: "Doğru yolu değerlendirin, önceliklendirin ve planlayın." },
-          { icon: "gear", title: "Dönüşüm", body: "Etki yaratan programları tasarlayın ve hayata geçirin." },
-          { icon: "opmodel", title: "Operasyon", body: "Sürdürülebilir ve ölçeklenebilir işletme modelleri kurun." },
-          { icon: "trend", title: "Değer", body: "Ölçülebilir değer ve sürekli etki yaratın." },
+    "home": {
+      "perspective": {
+        "eyebrow": "Bakış açısı",
+        "title": [
+          "Dönüşüm, her şey birlikte ele alındığında",
+          "başarıya ulaşır."
         ],
-        enable: { label: "AI Enablement Katmanı", items: ["Veri", "Analitik", "Otomasyon", "Zeka"] },
-        people: { label: "İnsan & Benimseme", body: "Değişimi yönetin ve yeni çalışma biçimlerini yerleştirin.", note: ["Dönüşüm sistemleri değiştirir.", "İnsanlar organizasyonları değiştirir."] },
-      },
-      whereIHelp: {
-        eyebrow: "Nerede yardımcı oluyorum",
-        title: "Üç cephe, tek sorumlu ortak.",
-        cta: "Keşfet",
-        items: [
-          { icon: "target", title: "Strateji Danışmanlığı", sub: "Doğru kararları verin.", body: "Bütçe bağlanmadan önce doğru stratejileri, yol haritalarını ve ortakları değerlendirin, planlayın ve önceliklendirin." },
-          { icon: "gear", title: "Dönüşüm Danışmanlığı", sub: "Stratejiyi gerçeğe dönüştürün.", body: "Sonuç getiren dönüşüm programlarını yönetin, değişimi yönetin ve benimsemeyi sağlayın." },
-          { icon: "people", title: "Operasyon Danışmanlığı", sub: "Değeri sürdürün ve ölçekleyin.", body: "Uzun vadeli performansı güvence altına alan işletme modelleri ve destek organizasyonları tasarlayın." },
+        "lede": "Dönüşümün kalıcı etkileri, strateji, insanlar, dönüşüm ve operasyonun birbiriyle hizalanmasından ve yapay zeka ile güçlendirilmesinden oluşur.",
+        "flow": [
+          {
+            "icon": "compass",
+            "title": "Strateji",
+            "body": "Yönü belirler, odağı oluşturur."
+          },
+          {
+            "icon": "people",
+            "title": "İnsan",
+            "body": "Adaptasyonu yönlendirir, yetkinlik kazandırır."
+          },
+          {
+            "icon": "trend",
+            "title": "Dönüşüm",
+            "body": "Hedefi aksiyona çevirir, değişimi hayata geçirir."
+          },
+          {
+            "icon": "gear",
+            "title": "Operations",
+            "body": "Yeni çalışma biçimlerini yerleştirir, performansı sürdürür."
+          }
         ],
+        "enable": {
+          "label": "AI Hızlandırma Katmanı",
+          "items": [
+            "Data",
+            "Analytics",
+            "Automation",
+            "Intelligence"
+          ]
+        },
+        "note": {
+          "lead": "",
+          "rest": "Strateji, insan, dönüşüm ve operasyonlar birlikte çalıştığında,",
+          "em": "kalıcı değişim kaçınılmaz olur."
+        }
       },
-      whyClients: {
-        eyebrow: "Müşteriler neden beni arar",
-        title: "Bağımsız. Deneyimli. Sonuç odaklı.",
-        cta: "Daha fazla",
-        items: [
-          { icon: "target", title: "Strateji", sub: "Pragmatik. Sonuç odaklı.", body: "Teslimat tarafındaki yıllar bana en iyi stratejinin gerçekten uygulanabilen olduğunu öğretti. Pragmatik tercihlere, gerçekçi yol haritalarına ve ölçülebilir sonuçlara odaklanıyorum." },
-          { icon: "gear", title: "Dönüşüm", sub: "Disiplinli. İnsan odaklı.", body: "Teknoloji nadiren başarısız olur — yönetişim, hizalama ve benimseme küçümsendiğinde dönüşümler başarısız olur. Sonuç getirmek ve değişimi yerleştirmek için yapı ve netlik getiriyorum." },
-          { icon: "people", title: "Operasyon", sub: "Sürdürülebilir. Değer odaklı.", body: "Dönüşümün gerçek değeri go-live sonrası başlar. Uzun vadede performansı, verimliliği ve sürekli iyileştirmeyi sürdüren işletme modelleri tasarlıyorum." },
+      "howIThink": {
+        "eyebrow": "Bakış açıları",
+        "title": [
+          "Dönüşümün gerçek değeri",
+          "nasıl hayata geçtiğinde ortaya çıkar."
         ],
-      },
-      howIThink: {
-        eyebrow: "Nasıl düşünüyorum",
-        title: ["Dönüşümün gerçek değeri", "nasıl yerleştiğinde gizlidir."],
-        quotes: [
-          { text: "Teknoloji kolay kısmıdır. Programların başarısı ya da başarısızlığı yönetişim, hizalama ve benimsemede belli olur.", attr: "Dönüşüm üzerine" },
-          { text: "Stratejideki sadelik stratejinin basit olduğu anlamına gelmez — zor düşüncenin önceden yapıldığı anlamına gelir.", attr: "Strateji üzerine" },
-          { text: "Bir işletme modeli ancak organizasyon gerçekten çalıştırabiliyorsa değerlidir.", attr: "Operasyon üzerine" },
+        "sub": "Dönüşüm, teknoloji, insan ve etki üzerine bakış açıları. Deneyimle şekillenmiş, gerçeğe dayanan, anlamlı değişimi tetiklemek için yazılmış fikirler.",
+        "posts": [
+          {
+            "img": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=70",
+            "label": "Perspective 01",
+            "title": "Pragmatik Dönüşüm",
+            "body": "“Dijital dönüşüm” kelimesini o kadar çok kullanıyoruz ki, artık neredeyse her şeyi tanımlıyor ama hiçbir şeyi tam olarak açıklamıyor sanki.",
+            "quote": "Bu yüzden; yapay zekâ çağında herkese biraz daha pragmatizm dilerim...",
+            "href": "article.html?id=0"
+          },
+          {
+            "img": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=900&q=70",
+            "label": "Perspective 02",
+            "title": "Yapay Zekâ: Teknoloji ve İnsan Doğası",
+            "body": "Dünyanın anlaması en basit teknolojisi, ama karşısında duran şeyin insanın tam kendisi olduğunu görüyoruz.",
+            "quote": "Ve ne gariptir ki, yapay zekânın karşısında duran şeyin insanın tam kendisi olduğunu görüyoruz.",
+            "href": "article.html?id=1"
+          },
+          {
+            "img": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=70",
+            "label": "Perspective 03",
+            "title": "İnsan, Amaç ve Yeni Çalışma Biçimleri",
+            "body": "Belki de ilk kez bir jenerasyon, anlamı çalışmanın ve kurumsal hiyerarşinin ötesinde arıyor.",
+            "quote": "Biz X ve Y kuşağının yeni maratonunun bu olması gerektiğine inanıyorum.",
+            "href": "article.html?id=2"
+          }
         ],
+        "readMore": "Devamını oku",
+        "more": "Yeni bakış açıları yakında.",
+        "cta": "Tüm Yazıları Gör"
       },
-      aboutTeaser: {
-        eyebrow: "Hakkında",
-        title: ["Bağımsız bakış açısı.", "Pratik deneyim."],
-        body: "Birden fazla kurum ve coğrafyada kurumsal dönüşüm alanında 25+ yıllık deneyimle, bağımsız ve tedarikçiden bağımsız bir bakış açısı getiriyorum. Odak basit: kurumların doğru kararları vermesine, disiplinle uygulamasına ve kalıcı etki yaratmasına yardımcı olmak.",
-        cta: "Hakkımda daha fazla",
-      },
-      approach: {
-        eyebrow: "Yaklaşımımız",
-        flowTitle: "İlk karardan kalıcı operasyona.",
-        title: ["Değerlendir. Planla.", "Hayata Geçir. Sürdür."],
-        lede: "Her projede işleyen, müşteri tarafında net bir yöntem — işi riskten arındıracak kadar yapısal, bağlamınıza uyacak kadar esnek.",
-        stages: [
-          { step: "Değerlendir", items: ["360° Değerlendirmeler", "Olgunluk İncelemeleri", "AI Hazırlığı"] },
-          { step: "Planla", items: ["Yol Haritaları", "İş Gerekçeleri", "RFP & Tedarikçi Seçimi"] },
-          { step: "Hayata Geçir", items: ["SAP Programları", "PMO & Yönetişim", "Değişim & Benimseme"] },
-          { step: "Sürdür", items: ["İşletme Modelleri", "AMS Tasarımı", "Destek Organizasyonları"] },
+      "aboutTeaser": {
+        "eyebrow": "Vildan Kimdir?",
+        "title": [
+          "Bütüncül deneyim.",
+          "Yenilikçi bakış.",
+          "Disiplinli uygulama."
         ],
+        "cta": "Vildan hakkında",
+        "items": [
+          {
+            "icon": "compass",
+            "title": "Bütünleşik Dönüşüm Liderliği",
+            "body": "Kurumsal dönüşüm, SAP programları, yönetilen hizmetler, destek modelleri, teklif ve ticari süreçler ile karmaşık program yönetiminde deneyim."
+          },
+          {
+            "icon": "bulb",
+            "title": "Strateji ile Uygulama Buluşuyor",
+            "body": "Stratejik danışmanlığın yapılandırılmış düşünme biçimini, gerçek iş ortamlarında sonuç üretmek için gereken uygulama disipliniyle birleştirmek."
+          },
+          {
+            "icon": "people",
+            "title": "Pragmatik. Yenilikçi. Sonuç Odaklı.",
+            "body": "Strateji, teknoloji, insan, operasyon modelleri ve ticari gerçekliklerin birlikte yönetilmesi gereken karmaşık ajandalarda pragmatik ve yenilikçi bir yaklaşım."
+          },
+          {
+            "icon": "shield",
+            "title": "Disiplin. Profesyonellik. Sahiplenme.",
+            "body": "Alman iş kültürü içinde şekillenen kariyer temelleri; dönüşüm ajandalarının tasarlanma, yönetilme ve hayata geçirilme biçimine disiplin, profesyonellik, sahiplenme ve netlik getirir."
+          },
+          {
+            "icon": "barup",
+            "title": "Ölçülebilir Etki",
+            "body": "Stratejik kararları, uygulama yetkinliklerini, hizmet modellerini ve ticari gerçeklikleri birbirine bağlayarak ölçülebilir ve sürdürülebilir iş etkisi yaratan karmaşık girişimleri yönetme deneyimi."
+          }
+        ],
+        "quote": "Karmaşıklığı netliğe, hedefi etkiye dönüştürmek."
       },
+      "manifesto": {
+        "eyebrow": "Yaklaşım",
+        "title": [
+          "Strateji geleceği şekillendirir.",
+          "Dönüşüm hayata geçirir.",
+          "Operasyonlar değeri kalıcı kılar."
+        ],
+        "paras": [
+          "Her organizasyon büyüme, verimlilik, inovasyon ve daha yüksek müşteri değeri yaratma hedefleri taşır. Ancak bu hedeflere ulaşmak ne yalnızca doğru bir strateji belirlemekle, ne başarılı bir dönüşüm programı yürütmekle, ne de operasyonel mükemmeliyet sağlamakla mümkündür.",
+          "Kalıcı iş sonuçları; stratejik öncelikler, dönüşüm girişimleri ve operasyonel yapıların birbirini tamamlayan bir bütün olarak çalışmasıyla ortaya çıkar.",
+          "Strateji yönü belirler. Dönüşüm, hedefleri somut aksiyonlara dönüştürür. Operasyonlar ise yeni yetkinlikleri ve çalışma biçimlerini organizasyonun doğal bir parçası haline getirir.",
+          "Gerçek değer; liderliği, teknolojiyi, süreçleri ve insan faktörünü ortak bir amaç etrafında hizalayabilmekten, bu unsurlar arasındaki bağı güçlendirerek organizasyonların vizyondan uygulamaya, uygulamadan da sürdürülebilir değer yaratımına uzanan yolculuğunu bütüncül bir bakış açısıyla ele alabilmekten doğar."
+        ],
+        "cite": "Vildan Kara Kayacan"
+      }
     },
-
-    stats: [
-      { figure: "25+", label: "Yıl kurumsal dönüşüm deneyimi" },
-      { figure: "16", label: "EMEA & MENA genelinde ülke" },
-      { figure: "€1M+", label: "Program plana uygun teslim edildi" },
-      { figure: "%35", label: "Operasyonel maliyet düşüşü sağlandı" },
+    "stats": [
+      {
+        "figure": "20+",
+        "label": "Yıl dönüşüm deneyimi"
+      },
+      {
+        "figure": "16",
+        "label": "EMEA ve MENA bölgelerinde ülke"
+      },
+      {
+        "figure": "€35M",
+        "label": "Bütçe yönetimi"
+      },
+      {
+        "figure": "%65'e varan",
+        "label": "Operasyonel maliyet azalması"
+      }
     ],
-
-    services: {
-      eyebrow: "Uzmanlık alanları",
-      title: "Altı uzmanlık alanı, detaylıca.",
-      lede: "Kurumsal dönüşüm gündeminin tamamında danışmanlık — stratejiden tedarikçi seçimine, teslimattan go-live'a ve işletme modeline kadar. Teknoloji işin kolay yarısı; kalıcı olan iş organizasyonel değişim, yönetişim ve onu taşıyan insanlardır. Her çalışma, hiçbir ürün veya tedarikçi gündeminden bağımsız, müşterinin sonucu için yürütülür.",
-      items: [
-        { title: "Organizasyonel Değişim & Dönüşüm", short: "Gerçekten yerleşen, insan odaklı değişim.", bullets: ["Liderlik hizalaması & paydaş katılımı", "İletişim & benimseme stratejisi", "Değişime hazırlık & etki analizi", "Eğitim, etkinleştirme & go-live desteği"], tags: ["OCM", "Benimseme", "Liderlik"] },
-        { title: "SAP S/4HANA", short: "Uçtan uca geçiş ve dönüşüm.", bullets: ["Aşamalı, düşük riskli dönüşüm yol haritası", "Go-live'a kadar program liderliği", "Hedef işletme modeli & yönetişim", "Stabilizasyon & go-live sonrası destek"], tags: ["S/4HANA", "Yol haritası", "Go-live"] },
-        { title: "Yapay Zeka & Veri", short: "AI pilotlarından üretim değerine.", bullets: ["GenAI stratejisi & kullanım senaryosu seçimi", "Veri & karar yönetişimi", "Benimseme & işletme modeli tasarımı", "Pilottan ölçülebilir değere"], tags: ["GenAI", "Yönetişim", "Benimseme"] },
-        { title: "Yönetilen Hizmetler, İşletme Modeli & CoE", short: "Kalıcı kurulan servis modelleri.", bullets: ["ITIL tabanlı servis & işletme modelleri", "SLA / KPI çerçeveleri & P&L sahipliği", "Çok bölgeli teslimat kurulumu", "SAP / AI Mükemmeliyet Merkezleri"], tags: ["ITIL", "İşletme modeli", "CoE"] },
-        { title: "Program & Portföy (PMO)", short: "Büyük programlar kontrol altında.", bullets: ["PMO kurulumu & yönetişim çerçeveleri", "Portföy denetimi & raporlama", "Risk, kapsam & bütçe kontrolü", "€1M+ program teslimatı"], tags: ["PMO", "Yönetişim", "Teslimat"] },
-        { title: "İhale, RFP & Tedarikçi Danışmanlığı", short: "Masanın müşteri tarafında.", bullets: ["RFP / RFI tasarımı & değerlendirme", "Kazanma stratejisi & çözüm şekillendirme", "Fiyatlama & ticari modelleme", "Son tur müzakere desteği"], tags: ["RFP / RFI", "Strateji", "Fiyatlama"] },
+    "svc": {
+      "eyebrow": "Hizmetler",
+      "title": [
+        "Stratejiden",
+        "Sürdürülebilir Organizasyonlara",
+        "uçtan uca kapsamlı bir yaklaşım"
       ],
-      healthcheck: {
-        eyebrow: "Buradan başlayın",
-        title: "Dönüşüm Health Check",
-        body: "Bir programın ya da SAP ortamının gerçekte nerede durduğuna dair bağımsız bir teşhis — riskler, boşluklar ve net bir sonraki adımlar seti. Bütçe ayrılmadan önce çoğu zaman doğru ilk adım.",
-        bullets: ["Program & teslimat risk incelemesi", "İşletme modeli & yönetişim boşlukları", "Net, önceliklendirilmiş öneriler"],
-        cta: "Health check talep edin",
-      },
-      journey: {
-        eyebrow: "01 — Hizmetler",
-        title: "Dönüşümün her adımında yanınızda.",
-        lede: "İlk strateji görüşmesinden işleyen ve gelişen bir operasyona kadar — bunlar işin omuz omuza yapıldığı noktalar. Tüm yay boyunca tek ve sorumlu bir partner; strateji, teslimat ve destek arasında bir devir-teslim değil.",
-        steps: [
-          { title: "Strateji Tanımı", body: "Vizyon, öncelikler ve iş değeri üzerinde hizalanın." },
-          { title: "Tedarikçi Seçimi & RFP", body: "Doğru partnerleri belirleyin ve güçlü ticari temeller kurun." },
-          { title: "Program Mobilizasyonu", body: "Yönetişimi ve planı kurun, programı başarıya hazırlayın." },
-          { title: "Teslimat & Dönüşüm", body: "Disiplin, şeffaflık ve değere sürekli odakla yürütme." },
-          { title: "Değişim & Benimseme", body: "İnsanları dahil edin, yetkinlik inşa edin ve kalıcı benimsemeyi sağlayın." },
-          { title: "İşletme Modeli & CoE", body: "Doğru işletme modelini tasarlayın ve Mükemmeliyet Merkezleri kurun." },
-          { title: "Yönetilen Hizmetler & Sürekli İyileştirme", body: "İşletin, optimize edin ve uzun vadeli etki için geliştirin." },
+      "lede": "Kurumsal dönüşüm, SAP programları, RFP, teklif ve ticari süreçler, yönetilen hizmetler, AI ve operating model’ler genelinde deneyim.",
+      "asideBody": "Karmaşıklığı değerlendirmeye, uygulamayı yapılandırmaya ve ölçülebilir iş sonuçları üretmeye odaklı.",
+      "stages": [
+        {
+          "icon": "layers",
+          "step": "Kurumsal Dönüşüm & Değişim Yönetimi",
+          "body": "Dönüşüme hazırlığı değerlendirmek, operating model’leri şekillendirmek; yönetişim, paydaşlar, adaptasyon ve uygulama genelinde kurumsal değişim ajandalarını yönetmek.",
+          "items": [
+            "Dönüşüm değerlendirmesi",
+            "Operating model & yönetişim",
+            "PMO / Dönüşüm Ofisi",
+            "Değişim yönetimi & adaptasyon"
+          ]
+        },
+        {
+          "icon": "pmo",
+          "step": "SAP Dönüşümü & Program Liderliği",
+          "body": "SAP dönüşüm programlarını yol haritasından teslimata; yönetişim, risk kontrolü, go-live hazırlığı ve stabilizasyon odağıyla yönetmek.",
+          "items": [
+            "SAP yol haritası & program kurulumu",
+            "Program / proje liderliği",
+            "Teslimat risk yönetimi",
+            "Go-live & stabilizasyon"
+          ]
+        },
+        {
+          "icon": "doc",
+          "step": "RFP, Teklif &\nTicari\nDanışmanlık",
+          "body": "RFP — Request for Proposal hazırlığı ve değerlendirmesi; uygun hizmet sağlayıcı veya tedarikçi seçimi; ticari netlik, yönetişim ve karar disipliniyle.",
+          "items": [
+            "RFP / RFI süreç yönetimi",
+            "Teklif stratejisi & değerlendirme",
+            "Tedarikçi seçimi",
+            "Fiyatlama & ticari modeller"
+          ]
+        },
+        {
+          "icon": "opmodel",
+          "step": "Yönetilen Hizmetler,\nAI & Operating\nModel’ler",
+          "body": "İş önceliklerini, operasyonel yetkinlikleri ve sürdürülebilir değer yaratımını hizalayan hizmet, destek ve AI-destekli operating model’ler tasarlamak.",
+          "items": [
+            "AMS & yönetilen hizmet modelleri",
+            "Destek organizasyonu tasarımı",
+            "AI hazırlığı & yol haritaları",
+            "CoE, SLA / KPI & yönetişim"
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "Dönüşüm Boyunca Kaliteyi Güvence Altına Almak",
+        "title": "Kalite Güvence Hizmetleri ve Sağlık Kontrolleri",
+        "paras": [
+          "Tüm dönüşüm liderliği alanları ve hizmet blokları genelinde uygulanabilen kalite güvence ve sağlık kontrol çalışmaları; teslimat kalitesi, yönetişim, riskler, kontroller ve hazırlık seviyesi hakkında bağımsız bir bakış sağlar.",
+          "Her değerlendirme, ilgili uygulama fazında doğru standartların, kalite kapılarının, kontrol mekanizmalarının ve yönetişim yapılarının mevcut olup olmadığını inceler; liderlik ekiplerinin boşlukları, bağımlılıkları ve öncelikli aksiyonları net şekilde görmesine yardımcı olur."
         ],
+        "bullets": [
+          "Kalite Güvence Hizmetleri",
+          "Program ve Proje Sağlık Kontrolleri",
+          "Kalite Kapıları ve Kontrol Değerlendirmeleri",
+          "Yönetişim, Risk ve Bağımlılık Analizi",
+          "Bağımsız Yönetici Raporlaması"
+        ],
+        "button": "Kalite incelemesi talep et"
       },
+      "areasLabel": "Uçtan uca hizmet portföyü"
     },
-
-    approach: {
-      eyebrow: "Yöntem",
-      title: "Düz bir çizgi değil, bir döngü.",
-      lede: "Her çalışma aynı titizliği izler — ve döngü halinde devam eder: tavsiyeden önce anlamak, inşadan önce tasarlamak, teslim etmek, sonra iyileştirip yeniden başlamak.",
-      steps: [
-        { n: "01", title: "Teşhis & Tanımlama", body: "Ortam, işletme modeli, riskler ve paydaşlar haritalanır — gerçekte nerede durduğuna ve başarının ne anlama geldiğine dair net bir okuma." },
-        { n: "02", title: "Planlama & Tasarım", body: "Aşamalı, düşük riskli bir yol haritası ve hedef işletme modeli tanımlanır; yönetişim, KPI'lar ve iş değerine doğrudan bir hat ile." },
-        { n: "03", title: "Teslimat & İyileştirme", body: "Programlar go-live ve stabilizasyona kadar yönetilir — sonra ölçülür, rafine edilir ve sürekli iyileştirilir; bir sonraki döngüyü besler." },
+    "services": {
+      "eyebrow": "Uzmanlık alanları",
+      "title": "Deneyim ve metodolojiden beslenen uzmanlık alanları.",
+      "lede": "Kurumsal dönüşüm gündeminin tamamında, stratejiden tedarikçi seçimine, teslimattan go-live'a ve işletme modeline kadar yönetim; bunun arkasında, aşağıdaki her alanda edinilmiş 20+ yıllık saha deneyimi vardır. Teknoloji işin kolay yarısı; kalıcı olan iş organizasyonel değişim, yönetişim ve onu taşıyan insanlardır. Çalışmalar uçtan uca da yürütülebilir, tek bir fazla da sınırlı kalabilir; her biri yalnızca kurumların ihtiyacına ve beklentilerine göre şekillendirilir.",
+      "items": [
+        {
+          "title": "Organizasyonel Değişim & Adaptasyon",
+          "short": "Etkilenen alanları tespit edip, adaptasyon planını hayata geçirme.",
+          "desc": "Dönüşüm projelerinde, strateji ve hedefler doğrultusunda değişimden etkilenecek alanlar ve paydaşlar tespit edilir; paydaş ve etki analizleriyle uyum süreci için bir strateji belirlenir. Bu strateji; aksiyon planı, iletişim planı, eğitim planı ve değişim-etki anketleriyle somut adımlara dönüştürülür.",
+          "bullets": [
+            "Paydaş & etki analizi",
+            "Uyum stratejisi & aksiyon planı",
+            "İletişim planı",
+            "Eğitim planı"
+          ],
+          "tags": [
+            "OCM",
+            "Adaptasyon",
+            "Liderlik"
+          ]
+        },
+        {
+          "title": "SAP Dönüşüm Danışmanlığı",
+          "short": "Düşük riskli, aşamalı SAP dönüşümü.",
+          "desc": "SAP S/4HANA için, doğrudan teslimat deneyimine dayanan yönetim; aşamalı, düşük riskli bir yol haritasından go-live ve stabilizasyona kadar. Odak, platformun kendisi kadar hedef işletme modeli ve insanlar üzerindedir.",
+          "bullets": [
+            "Aşamalı, düşük riskli dönüşüm yol haritası",
+            "Go-live'a kadar program liderliği",
+            "Hedef işletme modeli & yönetişim",
+            "Stabilizasyon & go-live sonrası destek"
+          ],
+          "tags": [
+            "S/4HANA",
+            "Yol haritası",
+            "Go-live"
+          ]
+        },
+        {
+          "title": "AI Stratejisi & Yol Haritaları",
+          "short": "AI pilot projelerinden değer üretmeye.",
+          "desc": "AI hedefinden gerçek değere pragmatik bir yol izlenir; bu yol, uygulamalı AI ürünleri geliştirip hayata geçirme deneyiminden şekillenir ve kullanım senaryosu seçimini, veri ile karar yönetişimini ve adaptasyonu kapsar. Amaç, üretime ölçeklenen pilotlar ve ölçülebilir sonuçlardır.",
+          "bullets": [
+            "GenAI stratejisi & kullanım senaryosu seçimi",
+            "Veri & karar yönetişimi",
+            "Adaptasyon & işletme modeli tasarımı",
+            "Pilottan ölçülebilir değere"
+          ],
+          "tags": [
+            "GenAI",
+            "Yönetişim",
+            "Adaptasyon"
+          ]
+        },
+        {
+          "title": "Yönetilen Hizmetler, İşletme Modeli & CoE",
+          "short": "Uçtan uca kurgulanan ve yönetilen operating model.",
+          "desc": "Operating model uçtan uca tasarlanır: shoring ve servis modelleri ile ticari modeller karşılaştırılır ve kurumun stratejik hedeflerine en uygun yapıya karar verilir. En iyi uygulamalara dayanan SLA ve KPI'lar, hizmet sağlayıcıdan beklenen kriterler, optimum ekip büyüklüğü ve governance modeli belirlenip yönetilir.",
+          "bullets": [
+            "Shoring & servis modeli değerlendirmesi",
+            "SLA/KPI tasarımı",
+            "Ekip büyüklüğü optimizasyonu",
+            "Governance modeli & yönetimi"
+          ],
+          "tags": [
+            "ITIL",
+            "İşletme modeli",
+            "CoE"
+          ]
+        },
+        {
+          "title": "Program & Portföy (PMO)",
+          "short": "Proje ve program yönetimi, gerektiğinde health check ve QA desteğiyle.",
+          "desc": "Proje ve program yönetimi, teslimat aşamasında uçtan uca üstlenilir; ihtiyaç halinde bağımsız bir health check veya QA desteği olarak da devreye girilir. Amaç, programı bütçe, kapsam, kaynak ve zamanlama açısından değerlendirip hedefleri doğrultusunda yeniden hizaya sokmaktır.",
+          "bullets": [
+            "PMO kurulumu & yönetişim çerçeveleri",
+            "Portföy denetimi & raporlama",
+            "Risk, kapsam & bütçe kontrolü",
+            "€1M+ program teslimatı"
+          ],
+          "tags": [
+            "PMO",
+            "Yönetişim",
+            "Teslimat"
+          ]
+        },
+        {
+          "title": "RFP & Tedarikçi Danışmanlığı",
+          "short": "İhale sürecinde kurumun güvencesi.",
+          "desc": "RFP masasında kurum adına bağımsız destek sağlanır; bu destek, gereksinimlerin şekillendirilmesinden tekliflerin değerlendirilmesine kadar sürer. Sonuç, bütçeyi koruyan ve teslimat riskini en baştan azaltan, sağlam gerekçeli ve iyi yönetilen bir seçimdir.",
+          "bullets": [
+            "RFP / RFI tasarımı & değerlendirme",
+            "Kazanma stratejisi & çözüm şekillendirme",
+            "Fiyatlama & ticari modelleme",
+            "Son tur müzakere desteği"
+          ],
+          "tags": [
+            "RFP / RFI",
+            "Strateji",
+            "Fiyatlama"
+          ]
+        }
       ],
-      caption: "Strateji; aşamalı, yönetilebilir ve sürekli iyileşen bir programa dönüştürülür.",
-      tagline: "Metodik bir yaklaşımda başarı tesadüf değildir — tasarlanır.",
+      "healthcheck": {
+        "eyebrow": "Buradan başlayın",
+        "title": "Dönüşüm Health Check",
+        "body": "Bir programın ya da SAP ortamının gerçekte nerede durduğuna dair bağımsız bir teşhis, riskler, boşluklar ve net bir sonraki adımlar seti. Bütçe ayrılmadan önce çoğu zaman doğru ilk adım.",
+        "bullets": [
+          "Program & teslimat risk incelemesi",
+          "İşletme modeli & yönetişim boşlukları",
+          "Net, önceliklendirilmiş öneriler"
+        ],
+        "cta": "Health check talep edin"
+      }
     },
-
-    work: {
-      eyebrow: "02 — Seçili Çalışmalar",
-      title: "Referans olan çalışmalar.",
-      items: [
-        { result: "Finans sektöründe Türkiye'nin ilk SAP HANA referans implementasyonu — 22 kişilik ekiple plana uygun teslim edildi.", sector: "Finans", role: "Program Yöneticisi", client: "Eureko Sigorta" },
-        { result: "Ülkenin en büyük ERP dönüşümünde organizasyonel değişim yönetildi — ~150 kişilik global program.", sector: "Havacılık", role: "OCM Lideri", client: "Türk Hava Yolları" },
-        { result: "Global bir OEM için dünya genelinde teslimatı birleştiren, Türkiye'nin ilk 100+ FTE SAP global destek merkezi sıfırdan kuruldu.", sector: "Otomotiv", role: "Kıdemli Servis Yöneticisi", client: "Daimler CoE" },
-        { result: "75+ kişilik bölgesel IT servis organizasyonu üç ayda sıfırdan kuruldu — zorlu SLA'lar ilk günden karşılandı.", sector: "Üretim", role: "Servis Teslimat Lideri", client: "Bosch-Siemens (B/S/H)" },
-        { result: "12 kişilik ekiple kapsamlı bir ana veri yönetimi (MDM) uygulaması yönetildi; veri mimarisi ve yönetişim güçlendirildi.", sector: "Dayanıklı Tüketim", role: "Program Yöneticisi", client: "Arçelik" },
-        { result: "Yönetilen hizmetler portföyü, güçlü yinelenen gelir artışıyla ikiye katlandı; global teslimatta faaliyet maliyetleri %35 düşürüldü.", sector: "Sektörler arası", role: "Servis Satış & Teslimat Direktörü", client: "NTT DATA" },
+    "projects": {
+      "eyebrow": "Uygulamalı AI",
+      "title": "Kendi geliştirdiği projeler.",
+      "lede": "Danışmanlığın ötesinde, yapay zeka doğrudan uygulanır, AI'ın kurumsal dönüşümde ve ötesinde nerede gerçek değer yarattığını sınamak için geliştirilmiş, büyüyen bir ürün portföyü. Her biri çalışan bir deney olarak başladı; bazıları yayında.",
+      "visit": "Projeyi gör",
+      "details": "Detayları gör",
+      "all": "Tüm projeler",
+      "items": [
+        {
+          "name": "SAP Activa",
+          "kind": "SAP × AI",
+          "status": "Aktif",
+          "body": "SAP program yönetimini yapay zeka ile güçlendiren araç seti: proje sağlık skorlama, risk tahmini, kaynak optimizasyonu ve otomatik durum raporlama, SAP Activate metodolojisinin AI ile entegrasyonu.",
+          "link": "#"
+        },
+        {
+          "name": "Segmentil",
+          "kind": "Analitik",
+          "status": "Geliştiriliyor",
+          "body": "Kurumsal müşteri portföylerini yapay zeka ile segmentleyen ve davranış tahmini üreten platform, RFM analizi, churn tahmini ve müşteri yaşam boyu değeri; satış ve müşteri başarı ekipleri için karar destek aracı.",
+          "link": "#"
+        },
+        {
+          "name": "Yazbix",
+          "kind": "Uygulamalı AI",
+          "status": "Aktif",
+          "body": "Düşünceleri, anıları ve notları yapay zeka desteğiyle kayıt altına alan dijital anı defteri, sesten metne, duygu analizi ve akıllı etiketleme ile kişisel hafıza platformu.",
+          "link": "#"
+        },
+        {
+          "name": "Sosyal Medya Stüdyosu",
+          "kind": "Uygulamalı AI",
+          "status": "Geliştiriliyor",
+          "body": "Küçük işletmeler ve girişimciler için yapay zeka destekli içerik ve zamanlama platformu, içerik önerileri, zamanlama optimizasyonu ve performans analitikleri.",
+          "link": "#"
+        },
+        {
+          "name": "Çocuklar için İngilizce",
+          "kind": "EdTech",
+          "status": "Aktif",
+          "body": "Çocuklara yönelik interaktif İngilizce kelime platformu: görsel kartlar, sesli telaffuz ve oyunlaştırılmış tekrar, AI ile kişiselleştirilmiş öğrenme yolu.",
+          "link": "#"
+        },
+        {
+          "name": "Devam Eden Proje",
+          "kind": "Yakında",
+          "status": "Yakında",
+          "body": "Geliştirme aşamasında yeni bir uygulamalı AI projesi; kurumsal dönüşümdeki gerçek bir problemi hedefliyor. Yakında paylaşılacak, bağlantıda kalın.",
+          "link": "#contact"
+        }
+      ]
+    },
+    "insights": {
+      "eyebrow": "Yazılar",
+      "title": "Dönüşümün sahasından notlar.",
+      "lede": "SAP, yapay zeka ve değişimi kalıcı kılan işletme modelleri üzerine bakışlar, CIO'lar ve üst düzey IT liderleri için.",
+      "readMore": "Oku",
+      "all": "Tüm yazılar",
+      "items": [
+        {
+          "tag": "Bakış açısı",
+          "read": "4 dk okuma",
+          "title": "Pragmatik Dönüşüm",
+          "text": "“Dijital dönüşüm” kelimesini o kadar çok kullanıyoruz ki, artık neredeyse her şeyi tanımlıyor ama hiçbir şeyi tam olarak açıklamıyor sanki."
+        },
+        {
+          "tag": "Bakış açısı",
+          "read": "6 dk okuma",
+          "title": "Yapay Zekâ: Teknoloji ve İnsan Doğası",
+          "text": "Dünyanın anlaması en basit teknolojisi, ve ne gariptir ki, karşısında duran şeyin insanın tam kendisi olduğunu görüyoruz."
+        },
+        {
+          "tag": "Bakış açısı",
+          "read": "5 dk okuma",
+          "title": "İnsan, Amaç ve Yeni Çalışma Biçimleri",
+          "text": "Belki de ilk kez bir jenerasyon, anlamı çalışmanın ve kurumsal hiyerarşinin ötesinde arıyor."
+        }
+      ]
+    },
+    "ctaBand": {
+      "eyebrow": "Konuşalım",
+      "title": "Kalıcı dönüşüm bir görüşmeyle başlar.",
+      "cta": "Görüşme planlayın"
+    },
+    "footprintHead": {
+      "eyebrow": "Global Erişim",
+      "title": "On altı ülke. Tek bir teslimat standardı.",
+      "lede": "EMEA & MENA genelinde on altı ülkede program ve servis organizasyonları yürütüldü. Detay için bir işaret seçin.",
+      "hint": "Bir ülke seçin"
+    },
+    "aboutPage": {
+      "eyebrow": "Hakkında",
+      "name": "Vildan Kara Kayacan",
+      "role": "İş, Teknoloji & Yapay Zeka Dönüşüm Yöneticisi",
+      "tags": "SAP & Kurumsal Mimari · Yönetilen Hizmetler · AI Dönüşümü",
+      "lede": "Yirmi yıl boyunca dönüşüm stratejisini ölçülebilir iş değerine dönüştürdü, EMEA & MENA genelindeki stratejik kurumlar için.",
+      "bio": [
+        "Vildan Kara Kayacan, EMEA & MENA genelindeki stratejik kurumlar için büyük ölçekli dönüşüm, yönetilen hizmetler ve global teslimatı yöneten, 20+ yıllık deneyime sahip bir iş ve teknoloji dönüşüm yöneticisidir. Sicili somuttur: ikiye katlanan bir yönetilen hizmetler portföyü, üçte bir oranında düşürülen faaliyet maliyetleri ve sıfırdan kurulan çok ülkeli teslimat organizasyonları.",
+        "Çalışması, kurumsal SAP dönüşümü ile uygulanan yapay zekanın nadir kesişiminde yer alır, hem teknolojiyi hem de adaptasyonun arkasındaki organizasyonel değişimi yönetir. Derin SAP teslimatı, sahada yapay zeka ve gerçek değişim yönetimi tek bir profilde: büyük kurumların bugün tam da ihtiyaç duyduğu şey.",
+        "Bugün CIO'lara ve yönetim ekiplerine güvenilen bir partner olarak liderlik eder; S/4HANA geçişinde, yönetilen hizmet yeniden yapılandırmasında, AI adaptasyonunda, bir Mükemmeliyet Merkezi tasarımında ya da deneyimli bir el gerektiren yüksek bahisli ihalelerde doğrudan yer alır. Çalışmalar, yönetim veya kıdemli program liderliği rolünde, seçici biçimde kabul edilir."
       ],
-    },
-
-    projects: {
-      eyebrow: "Uygulamalı AI",
-      title: "Kendi geliştirdiği projeler.",
-      lede: "Danışmanlığın ötesinde, yapay zeka doğrudan uygulanır — AI'ın kurumsal dönüşümde ve ötesinde nerede gerçek değer yarattığını sınamak için geliştirilmiş, büyüyen bir ürün portföyü. Her biri çalışan bir deney olarak başladı; bazıları yayında.",
-      visit: "Projeyi gör",
-      details: "Detayları gör",
-      all: "Tüm projeler",
-      items: [
-        { name: "SAP Activa", kind: "SAP × AI", status: "Aktif", body: "SAP program yönetimini yapay zeka ile güçlendiren araç seti: proje sağlık skorlama, risk tahmini, kaynak optimizasyonu ve otomatik durum raporlama — SAP Activate metodolojisinin AI ile entegrasyonu.", link: "#" },
-        { name: "Segmentil", kind: "Analitik", status: "Geliştiriliyor", body: "Kurumsal müşteri portföylerini yapay zeka ile segmentleyen ve davranış tahmini üreten platform — RFM analizi, churn tahmini ve müşteri yaşam boyu değeri; satış ve müşteri başarı ekipleri için karar destek aracı.", link: "#" },
-        { name: "Yazbix", kind: "Uygulamalı AI", status: "Aktif", body: "Düşünceleri, anıları ve notları yapay zeka desteğiyle kayıt altına alan dijital anı defteri — sesten metne, duygu analizi ve akıllı etiketleme ile kişisel hafıza platformu.", link: "#" },
-        { name: "Sosyal Medya Stüdyosu", kind: "Uygulamalı AI", status: "Geliştiriliyor", body: "Küçük işletmeler ve girişimciler için yapay zeka destekli içerik ve zamanlama platformu — içerik önerileri, zamanlama optimizasyonu ve performans analitikleri.", link: "#" },
-        { name: "Çocuklar için İngilizce", kind: "EdTech", status: "Aktif", body: "Çocuklara yönelik interaktif İngilizce kelime platformu: görsel kartlar, sesli telaffuz ve oyunlaştırılmış tekrar — AI ile kişiselleştirilmiş öğrenme yolu.", link: "#" },
-        { name: "Devam Eden Proje", kind: "Yakında", status: "Yakında", body: "Geliştirme aşamasında yeni bir uygulamalı AI projesi; kurumsal dönüşümdeki gerçek bir problemi hedefliyor. Yakında paylaşılacak — bağlantıda kalın.", link: "#contact" },
-      ],
-    },
-
-    insights: {
-      eyebrow: "Yazılar",
-      title: "Dönüşümün sahasından notlar.",
-      lede: "SAP, yapay zeka ve değişimi kalıcı kılan işletme modelleri üzerine bakışlar — CIO'lar ve üst düzey IT liderleri için.",
-      readMore: "Oku",
-      all: "Tüm yazılar",
-      items: [
-        { tag: "Makale", read: "5 dk okuma", title: "SAP S/4HANA geçişlerinde neden başarısız olunur?", text: "Temel neden teknoloji değil — insan ve süreç boyutundaki eksiklikler. Kalıcı programları ayıran nedir." },
-        { tag: "Makale", read: "4 dk okuma", title: "Yapay zeka kurumları nasıl dönüştürüyor?", text: "AI sadece teknoloji değil, organizasyonel bir dönüşüm. Benimseme nerede gerçekten başarılı olur — ve neden." },
-        { tag: "Makale", read: "3 dk okuma", title: "Sektörün önünde kalmak", text: "Değişim hızlanıyor. CIO'ların aciliyet kazanmadan önce bugün hazırlanması gereken üç alan." },
-        { tag: "Makale", read: "6 dk okuma", title: "Tedarikçi seçiminde 10 kritik hata", text: "Yanlış tedarikçi seçimi bir dönüşüm programının en büyük riski olabilir. En sık karşılaşılan on hata." },
-        { tag: "Makale", read: "4 dk okuma", title: "Yönetilen hizmetlerde değer yaratma", text: "ITIL sadece bir çerçeve değil, operasyonel mükemmelliğin temelidir. Servis modelleri değeri nasıl yaratır — ya da yok eder." },
-        { tag: "Makale", read: "5 dk okuma", title: "Geçici trend mi, kalıcı değişim mi?", text: "Her yeni teknolojiyi trend olarak mı görmeli? Sinyali gürültüden ayırmak için basit bir test." },
-      ],
-    },
-
-    ctaBand: {
-      eyebrow: "Konuşalım",
-      title: "Kalıcı dönüşüm bir görüşmeyle başlar.",
-      cta: "Görüşme planlayın",
-    },
-
-    footprintHead: {
-      eyebrow: "Global Erişim",
-      title: "On altı ülke. Tek bir teslimat standardı.",
-      lede: "EMEA & MENA genelinde on altı ülkede program ve servis organizasyonları yürütüldü. Detay için bir işaret seçin.",
-      hint: "Bir ülke seçin",
-    },
-
-    aboutPage: {
-      eyebrow: "Hakkında",
-      name: "Vildan Kara Kayacan",
-      role: "İş, Teknoloji & Yapay Zeka Dönüşüm Yöneticisi",
-      tags: "SAP & Kurumsal Mimari · Yönetilen Hizmetler · AI Dönüşümü",
-      lede: "Yirmi beş yıl boyunca dönüşüm stratejisini ölçülebilir iş değerine dönüştürdü — EMEA & MENA genelindeki stratejik kurumlar için.",
-      bio: [
-        "Vildan Kara Kayacan, EMEA & MENA genelindeki stratejik kurumlar için büyük ölçekli dönüşüm, yönetilen hizmetler ve global teslimatı yöneten, 25+ yıllık deneyime sahip bir iş ve teknoloji dönüşüm yöneticisidir. Sicili somuttur: ikiye katlanan bir yönetilen hizmetler portföyü, üçte bir oranında düşürülen faaliyet maliyetleri ve sıfırdan kurulan çok ülkeli teslimat organizasyonları.",
-        "Çalışması, kurumsal SAP dönüşümü ile uygulanan yapay zekanın nadir kesişiminde yer alır — hem teknolojiyi hem de benimsemenin arkasındaki organizasyonel değişimi yönetir. Derin SAP teslimatı, sahada yapay zeka ve gerçek değişim yönetimi tek bir profilde: büyük kurumların bugün tam da ihtiyaç duyduğu şey.",
-        "Bugün CIO'lara ve yönetim ekiplerine güvenilen bir partner olarak danışmanlık verir — S/4HANA geçişi, yönetilen hizmet yeniden yapılandırması, AI benimseme, bir Mükemmeliyet Merkezi tasarımı ya da deneyimli bir el gerektiren yüksek bahisli ihalelerde yön gösterir. Çalışmalar, danışmanlık veya kıdemli program liderliği rolünde, seçici biçimde kabul edilir.",
-      ],
-      cvLabel: "CV indir (PDF)",
-      cvHref: "#",
-      profileTitle: "Öne çıkan başarılar",
-      achievements: [
+      "cvLabel": "CV indir (PDF)",
+      "cvHref": "#",
+      "profileTitle": "Öne çıkan başarılar",
+      "achievements": [
         "Global bir otomotiv OEM'i için dünya geneli servis teslimatını merkezileştirmek üzere Türkiye'nin ilk SAP global destek merkezini (100+ FTE) kurdu.",
         "Global servis operasyonlarında servis kalitesini ve teslimat verimliliğini artırırken faaliyet maliyetlerini %35 düşürdü.",
-        "Üç ayda 75+ kişilik bölgesel IT servis organizasyonu kurdu — zorlu SLA'ları ilk günden karşıladı.",
+        "Üç ayda 75+ kişilik bölgesel IT servis organizasyonu kurdu, zorlu SLA'ları ilk günden karşıladı.",
         "Finans sektörünün ilk SAP HANA referans uygulamasını sektör referansı olarak yönetti.",
         "Stratejik kurumsal hesaplarda önemli yinelenen gelir artışıyla yönetilen hizmetler portföyünü ikiye katladı.",
-        "€1M+ dönüşüm programlarını tutarlı biçimde zamanında, bütçe dahilinde ve stabil go-live'larla teslim etti.",
+        "€1M+ dönüşüm programlarını tutarlı biçimde zamanında, bütçe dahilinde ve stabil go-live'larla teslim etti."
       ],
-      competenciesTitle: "Temel yetkinlikler",
-      competencies: ["Kurumsal & Org. Dönüşümü", "Yönetilen Hizmetler & P&L", "İşletme Modeli Tasarımı", "Global Çok Bölgeli Teslimat", "Yönetişim, Risk & Kalite", "Kurumsal Mimari (TOGAF)", "Teklif & Öneri Yönetimi", "SLA / KPI & Performans", "AI Benimseme & Değişim", "AI & Veri Odaklı Dönüşüm", "SAP / S/4HANA Dönüşümü", "Program & Portföy Liderliği"],
-      experienceTitle: "Profesyonel deneyim",
-      experience: [
-        { company: "NTT DATA Business Solutions", dates: "Kas 2014 – Günümüz", note: "EMEA & MENA'daki büyük kurumlar için servis stratejisi, global teslimat ve program yönetiminde aşamalı liderlik.", roles: [
-          { role: "Direktör, Servis Satışı & Teslimat Stratejisi", points: ["Stratejik IT ve yönetilen hizmet anlaşmaları için uçtan uca çok milyon euroluk RFP/RFI süreçlerini yönetti — kazanma stratejisi, çözüm tasarımı, teklif yönetimi, risk, fiyatlama ve son tur müzakere.", "Çok yıllı angajmanlar için ticari strateji şekillendirdi: fiyatlama çerçeveleri, finansal modelleme, maliyet yapıları ve sözleşme tasarımı.", "Yönetilen hizmetler ve büyük ölçekli dönüşüm programları için servis stratejisi ve hedef işletme modelleri kurdu."] },
-          { role: "Direktör, Global Servisler İş Entegrasyonu & Geliştirme", points: ["EMEA & MENA genelinde servis entegrasyonu ve genişlemesini yönetti; teslimat merkezlerini ölçeklendirdi ve üst düzey liderlere mentörlük yaptı.", "Global teslimattan yerel teslimata ve dış sağlayıcılardan iç Mükemmeliyet Merkezlerine stratejik geçişleri yönetti."] },
-          { role: "PMO & Müşteri Katılım Ofisi Başkanı", points: ["PMO'yu kurdu ve yönetti; portföy genelinde teslimat metodolojisini standartlaştırdı ve bir proje yöneticileri ekibini yönlendirdi.", "Öncelikli programlarda (B/S/H bölgesel IT org. ve Daimler 100+ FTE global destek merkezi dahil) Program / Dönüşüm Lideri olarak görev yaptı."] },
-        ] },
-        { company: "SAP Türkiye", dates: "May 2011 – Eki 2014", note: "Kıdemli İş Dönüşümü Proje Yöneticisi — üretim, otomotiv, finans ve havacılık sektör liderleri için SAP S/4HANA dönüşümü.", roles: [
-          { role: "Seçili programlar", points: ["Türk Hava Yolları — Ülkenin en büyük ERP dönüşümünde OCM Lideri (~150 global ekip üyesi).", "Eureko Sigorta — Finans sektörünün ilk SAP HANA referansında Program Yöneticisi (22 kişilik ekip).", "Arçelik — Kapsamlı bir MDM uygulamasında Program Yöneticisi (12 kişilik ekip).", "Yapı Kredi Bankası — İlk bankacılık sektörü ERP referansında güvenilen danışman rolü."] },
-        ] },
-        { company: "Metro Group Information AG — Düsseldorf, Almanya", dates: "Eki 2005 – Nis 2011", note: "Kıdemli Finansal Danışman & Geliştirici.", roles: [
-          { role: "Uluslararası SAP roll-out'ları", points: ["ABAP geliştirme ve SAP Basis'ten finans danışmanlığına ilerledi; Mısır, Kazakistan, Slovakya, Türkiye, Belçika, İspanya, Bulgaristan ve Pakistan'da uluslararası SAP roll-out'ları gerçekleştirdi."] },
-        ] },
+      "competenciesTitle": "Temel yetkinlikler",
+      "competencies": [
+        "Kurumsal & Org. Dönüşümü",
+        "Yönetilen Hizmetler & P&L",
+        "İşletme Modeli Tasarımı",
+        "Global Çok Bölgeli Teslimat",
+        "Yönetişim, Risk & Kalite",
+        "Kurumsal Mimari (TOGAF)",
+        "Teklif & Öneri Yönetimi",
+        "SLA / KPI & Performans",
+        "AI Adaptasyon & Değişim",
+        "AI & Veri Odaklı Dönüşüm",
+        "SAP / S/4HANA Dönüşümü",
+        "Program & Portföy Liderliği"
       ],
+      "experienceTitle": "Profesyonel deneyim",
+      "experience": [
+        {
+          "company": "NTT DATA Business Solutions",
+          "dates": "Kas 2014 – Günümüz",
+          "note": "EMEA & MENA'daki büyük kurumlar için servis stratejisi, global teslimat ve program yönetiminde aşamalı liderlik.",
+          "roles": [
+            {
+              "role": "Direktör, Servis Satışı & Teslimat Stratejisi",
+              "points": [
+                "Stratejik IT ve yönetilen hizmet anlaşmaları için uçtan uca çok milyon euroluk RFP/RFI süreçlerini yönetti, kazanma stratejisi, çözüm tasarımı, teklif yönetimi, risk, fiyatlama ve son tur müzakere.",
+                "Çok yıllı angajmanlar için ticari strateji şekillendirdi: fiyatlama çerçeveleri, finansal modelleme, maliyet yapıları ve sözleşme tasarımı.",
+                "Yönetilen hizmetler ve büyük ölçekli dönüşüm programları için servis stratejisi ve hedef işletme modelleri kurdu."
+              ]
+            },
+            {
+              "role": "Direktör, Global Servisler İş Entegrasyonu & Geliştirme",
+              "points": [
+                "EMEA & MENA genelinde servis entegrasyonu ve genişlemesini yönetti; teslimat merkezlerini ölçeklendirdi ve üst düzey liderlere mentörlük yaptı.",
+                "Global teslimattan yerel teslimata ve dış sağlayıcılardan iç Mükemmeliyet Merkezlerine stratejik geçişleri yönetti."
+              ]
+            },
+            {
+              "role": "PMO & Müşteri Katılım Ofisi Başkanı",
+              "points": [
+                "PMO'yu kurdu ve yönetti; portföy genelinde teslimat metodolojisini standartlaştırdı ve bir proje yöneticileri ekibini yönlendirdi.",
+                "Öncelikli programlarda (B/S/H bölgesel IT org. ve Daimler 100+ FTE global destek merkezi dahil) Program / Dönüşüm Lideri olarak görev yaptı."
+              ]
+            }
+          ]
+        },
+        {
+          "company": "SAP Türkiye",
+          "dates": "May 2011 – Eki 2014",
+          "note": "Kıdemli İş Dönüşümü Proje Yöneticisi, üretim, otomotiv, finans ve havacılık sektör liderleri için SAP S/4HANA dönüşümü.",
+          "roles": [
+            {
+              "role": "Seçili programlar",
+              "points": [
+                "Türk Hava Yolları, Ülkenin en büyük ERP dönüşümünde OCM Lideri (~150 global ekip üyesi).",
+                "Eureko Sigorta, Finans sektörünün ilk SAP HANA referansında Program Yöneticisi (22 kişilik ekip).",
+                "Arçelik, Kapsamlı bir MDM uygulamasında Program Yöneticisi (12 kişilik ekip).",
+                "Yapı Kredi Bankası, İlk bankacılık sektörü ERP referansında güvenilen danışman rolü."
+              ]
+            }
+          ]
+        },
+        {
+          "company": "Metro Group Information AG, Düsseldorf, Almanya",
+          "dates": "Eki 2005 – Nis 2011",
+          "note": "Kıdemli Finansal Danışman & Geliştirici.",
+          "roles": [
+            {
+              "role": "Uluslararası SAP roll-out'ları",
+              "points": [
+                "ABAP geliştirme ve SAP Basis'ten finans danışmanlığına ilerledi; Mısır, Kazakistan, Slovakya, Türkiye, Belçika, İspanya, Bulgaristan ve Pakistan'da uluslararası SAP roll-out'ları gerçekleştirdi."
+              ]
+            }
+          ]
+        }
+      ]
     },
-
-    credentials: {
-      eyebrow: "Yetkinlikler",
-      title: "Sertifikalı. Çok dilli. Çok ülkeli.",
-      groups: [
-        { label: "Sertifikalar", items: ["PMI-RMP® — Risk Yönetimi Uzmanı", "TOGAF® Kurumsal Mimari", "ITIL® Foundation", "SAP Kurumsal Mimari", "SAP Activate (Agile — Sertifikalı)", "SAP Business Transformation — SAP Academy", "Finansal Raporlama & Analiz — Deloitte"] },
-        { label: "Eğitim", items: ["B.Sc. İş Bilgi Sistemleri (Wirtschaftsinformatik)", "Marmara Üniversitesi — Almanca program (2000–2005)"] },
-        { label: "Diller", items: ["Türkçe — anadil", "İngilizce — ileri (yazılı & sözlü)", "Almanca — ileri"] },
-        { label: "Kapsam", items: ["EMEA & MENA", "Mısır · Kazakistan · Slovakya · Avusturya", "Belçika · İspanya · Bulgaristan · Pakistan · BAE · S. Arabistan"] },
+    "credentials": {
+      "eyebrow": "Yetkinlikler",
+      "title": "Sertifikalı. Çok dilli. Çok ülkeli.",
+      "groups": [
+        {
+          "label": "Sertifikalar",
+          "items": [
+            "PMI-RMP®,Risk Yönetimi Uzmanı",
+            "TOGAF® Kurumsal Mimari",
+            "ITIL® Foundation",
+            "SAP Kurumsal Mimari",
+            "SAP Activate (Agile, Sertifikalı)",
+            "SAP Business Transformation, SAP Academy",
+            "Finansal Raporlama & Analiz, Deloitte"
+          ]
+        },
+        {
+          "label": "Eğitim",
+          "items": [
+            "B.Sc. İş Bilgi Sistemleri (Wirtschaftsinformatik)",
+            "Marmara Üniversitesi, Almanca program (2000–2005)"
+          ]
+        },
+        {
+          "label": "Diller",
+          "items": [
+            "Türkçe, anadil",
+            "İngilizce, ileri (yazılı & sözlü)",
+            "Almanca, ileri"
+          ]
+        },
+        {
+          "label": "Kapsam",
+          "items": [
+            "EMEA & MENA",
+            "Mısır · Kazakistan · Slovakya · Avusturya",
+            "Belçika · İspanya · Bulgaristan · Pakistan · BAE · S. Arabistan"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "İletişim",
+      "title": "Bir görüşme planlayalım.",
+      "lede": "Kurumunuzda büyük bir dönüşüm hazırlanıyor, bir SAP ya da yapay zeka programı yürütülüyor ya da operasyon modeliniz yeniden tasarlanıyor olabilir. İlk görüşmede ihtiyacınızı birlikte değerlendirelim.",
+      "fields": {
+        "name": "Ad Soyad",
+        "org": "Kurum",
+        "email": "E-posta",
+        "topic": "İlgi alanı",
+        "message": "Ne konuşmak istersiniz?"
+      },
+      "topics": [
+        "SAP & S/4HANA",
+        "Yapay Zeka",
+        "Yönetilen Hizmetler",
+        "Program & PMO",
+        "İhale & RFP Danışmanlığı",
+        "Mükemmeliyet Merkezi",
+        "Diğer"
       ],
+      "send": "Mesaj gönder",
+      "sent": "Teşekkürler, mesajınız alındı.",
+      "location": "İstanbul, Türkiye, global çalışma (uzaktan & yerinde)",
+      "email": "vildan@vildankara.com",
+      "phone": "+90 553 296 55 75",
+      "langs": "Türkçe · İngilizce · Almanca",
+      "linkedin": "LinkedIn"
     },
-
-    contact: {
-      eyebrow: "İletişim",
-      title: "Birlikte çalışalım.",
-      lede: "İster büyük bir ihaleye hazırlanılıyor, ister bir SAP ya da AI programı yürütülüyor, ister bir işletme modeli yeniden ele alınıyor olsun — yol netleşmeden önce dahi bir görüşme memnuniyetle karşılanır.",
-      fields: { name: "Ad Soyad", org: "Kurum", email: "E-posta", topic: "İlgi alanı", message: "Nasıl yardımcı olabilirim?" },
-      topics: ["SAP & S/4HANA", "Yapay Zeka", "Yönetilen Hizmetler", "Program & PMO", "İhale & RFP Danışmanlığı", "Mükemmeliyet Merkezi", "Diğer"],
-      send: "Mesaj gönder",
-      sent: "Teşekkürler — mesajınız alındı.",
-      location: "İstanbul, Türkiye — global çalışma (uzaktan & yerinde)",
-      email: "vildan@vildankara.com",
-      phone: "+90 553 296 55 75",
-      langs: "Türkçe · İngilizce · Almanca",
-      linkedin: "LinkedIn",
+    "footer": {
+      "tagline": "Kurumsal dönüşüm, SAP, AI, yönetilen hizmetler ve büyük ihalelerde üst düzey yönetici.",
+      "copy": "© 2026 Vildan Kara Kayacan. Tüm hakları saklıdır.",
+      "colPages": "Sayfalar",
+      "colContact": "İletişim",
+      "colFollow": "Takip"
     },
-
-    footer: { tagline: "Kurumsal dönüşüm için executive advisory — SAP, AI, yönetilen hizmetler ve büyük ihaleler, EMEA & MENA genelinde.", copy: "© 2026 Vildan Kara Kayacan. Tüm hakları saklıdır.", colPages: "Sayfalar", colContact: "İletişim", colFollow: "Takip" },
-  },
+    "svcDetail": {
+      "groups": [
+        {
+          "num": "01",
+          "title": "Kurumsal Dönüşüm ve Değişim Yönetimi",
+          "intro": [
+            "Kurumsal dönüşüm; mevcut durumu doğru okumayı, uygun operasyon modelini tasarlamayı, güçlü yönetişim mekanizmaları kurmayı, paydaşları ortak hedefte buluşturmayı ve uygulamayı disiplinli şekilde yürütmeyi bir arada gerektirir.",
+            "Bu alan; dönüşüme hazırlığın değerlendirilmesine, organizasyonel ihtiyaçların belirlenmesine, yönetişim yapılarının kurulmasına ve değişimin iş, teknoloji ve operasyon ekipleri genelinde hayata geçmesine odaklanır.",
+            "Amaç; organizasyonun mevcut durumunu netleştirmek, öncelikli dönüşüm alanlarını belirlemek ve sürdürülebilir iş etkisi yaratacak bir uygulama yapısı oluşturmaktır."
+          ],
+          "rows": [
+            {
+              "title": "Dönüşüm Değerlendirmesi",
+              "desc": [
+                "Mevcut dönüşüm ajandası; hedefler, kapsam, yönetişim, uygulama yapısı, öncelikler, bağımlılıklar ve organizasyonel hazırlık açısından bütüncül olarak değerlendirilir.",
+                "Bu çalışma, mevcut durumun net bir fotoğrafını çıkarır ve ilerlemek için öncelikli adımları ve odaklanılacak alanları görünür hale getirir."
+              ]
+            },
+            {
+              "title": "Operasyon Modeli ve Yönetişim",
+              "desc": [
+                "Dönüşümün uygulanması için gerekli operasyon modeli, karar yapıları, rol ve sorumluluklar ile yönetişim mekanizmaları tasarlanır.",
+                "İş birimleri, teknoloji ekipleri, teslimat ekipleri ve liderlik yapılarının dönüşüm sürecinde nasıl birlikte çalışacağı netleştirilir."
+              ]
+            },
+            {
+              "title": "PMO ve Dönüşüm Ofisi",
+              "desc": [
+                "Program yönetim ofisi veya dönüşüm ofisi yapısı tasarlanır ya da mevcut yapı güçlendirilir.",
+                "Raporlama, yönetişim ritmi, risk yönetimi, bağımlılık takibi ve yönetici karar desteği gibi alanlarda şeffaflık, disiplin ve kontrol sağlanır."
+              ]
+            },
+            {
+              "title": "Değişim Yönetimi ve Adaptasyon",
+              "desc": [
+                "Dönüşümün insan tarafı; paydaş hizalanması, etki analizi, iletişim planlaması, eğitim koordinasyonu ve adaptasyon takibiyle birlikte ele alınır.",
+                "Amaç, yeni çalışma biçimlerinin günlük işleyişin doğal bir parçası haline gelmesini sağlamaktır."
+              ]
+            }
+          ],
+          "image": "assets/img/hero-boardroom.png"
+        },
+        {
+          "num": "02",
+          "title": "SAP Dönüşümü ve Program Liderliği",
+          "intro": [
+            "SAP dönüşüm programları büyük, birbirine bağlı ve iş açısından kritik yapılardır. Bu programlar; güçlü program liderliği, net yönetişim, şeffaf risk görünürlüğü ve yol haritasından canlı kullanıma kadar disiplinli bir uygulama yaklaşımıyla başarıya ulaşır.",
+            "Bu alan; SAP dönüşüm girişimlerinin iş öncelikleri, uygulama gerçekleri, tedarikçi koordinasyonu, hazırlık, geçiş ve stabilizasyon süreçleriyle birlikte uçtan uca yönetilmesine odaklanır.",
+            "Amaç, karmaşık SAP programlarını yapılandırılmış, şeffaf, kontrollü ve iş sonucu odaklı şekilde ilerletmektir."
+          ],
+          "rows": [
+            {
+              "title": "SAP Yol Haritası ve Program Kurulumu",
+              "desc": [
+                "SAP dönüşüm yol haritası, program kapsamı, uygulama yaklaşımı, yönetişim modeli ve ana iş akışları yapılandırılır.",
+                "Bu temel yapı; programın karmaşıklığı yönetmesini, paydaşların ortak hedefte buluşmasını ve gerçekçi bir uygulama yolunun oluşmasını sağlar."
+              ]
+            },
+            {
+              "title": "Program ve Proje Liderliği",
+              "desc": [
+                "SAP program ve proje uygulaması; iş birimleri, teknoloji ekipleri, tedarikçiler ve teslimat ekipleri arasında yönetilir.",
+                "Odak noktası; uygulama disiplinini korumak, öncelikleri yönetmek, karar almayı kolaylaştırmak ve programı iş sonuçlarıyla hizalı tutmaktır."
+              ]
+            },
+            {
+              "title": "Uygulama Riski Yönetimi",
+              "desc": [
+                "Program genelindeki teslimat riskleri, bağımlılıklar, kapsam konuları, kaynak ihtiyaçları ve yönetişim alanları erkenden ele alınır.",
+                "Liderlik ekiplerinin teslimatı etkileyen konuları net görmesi ve önlemleri zamanında alması sağlanır."
+              ]
+            },
+            {
+              "title": "Canlı Kullanım ve Stabilizasyon",
+              "desc": [
+                "Canlı kullanıma hazırlık, geçiş koordinasyonu, olay yönetimi, hypercare ve stabilizasyon planlaması ele alınır.",
+                "Amaç, canlı kullanıma geçişin kontrollü, destekli ve iş sürekliliği beklentileriyle uyumlu şekilde yönetilmesidir."
+              ]
+            }
+          ],
+          "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=70"
+        },
+        {
+          "num": "03",
+          "title": "RFP, Teklif ve Ticari Model Yönetimi",
+          "intro": [
+            "RFP, teklif ve tedarikçi seçimi süreçleri büyük iş ve teknoloji kararlarını şekillendirir. Bu süreçler; yapılandırılmış bir yönetim, ticari netlik, değerlendirme disiplini ve organizasyonun uzun vadeli çıkarlarını gözeten bağımsız bir bakışla en sağlıklı sonuca ulaşır.",
+            "Bu alan; RFP, RFI, teklif, tedarikçi seçimi ve ticari model süreçlerinin şeffaf, yapılandırılmış ve karar odaklı şekilde yönetilmesine odaklanır.",
+            "Amaç, doğru iş ortağını seçmek, savunulabilir bir karar süreci oluşturmak ve ticari modeli dönüşüm ve operasyon hedefleriyle uyumlu hale getirmektir."
+          ],
+          "rows": [
+            {
+              "title": "RFP ve RFI Süreç Yönetimi",
+              "desc": [
+                "RFP ve RFI süreçleri hazırlık aşamasından değerlendirme ve karar desteğine kadar yapılandırılır ve yönetilir.",
+                "İhtiyaçların tanımlanması, paydaş koordinasyonu, zaman planı yönetimi, tedarikçi iletişimi ve sürecin şeffaf ilerlemesi bu kapsamda ele alınır."
+              ]
+            },
+            {
+              "title": "Teklif Stratejisi ve Değerlendirme",
+              "desc": [
+                "Teklif stratejisi, değerlendirme yaklaşımı, puanlama modelleri ve karar kriterleri oluşturulur.",
+                "Seçenekler; iş değeri, teslimat kabiliyeti, risk seviyesi ve ticari uygunluk açısından net biçimde karşılaştırılır."
+              ]
+            },
+            {
+              "title": "Tedarikçi Seçimi",
+              "desc": [
+                "Tedarikçi seçim süreci bağımsız analiz, değerlendirme yönetişimi ve paydaş hizalanmasıyla desteklenir.",
+                "Tedarikçilerin yetkinlikleri, teslimat modelleri, çözüm yaklaşımları, fiyatlama yapıları ve uzun vadeli iş ortaklığı uygunluğu birlikte değerlendirilir."
+              ]
+            },
+            {
+              "title": "Fiyatlama ve Ticari Modeller",
+              "desc": [
+                "Fiyatlama modelleri, ticari yapılar, hizmet varsayımları, sözleşme mantığı ve maliyet unsurları değerlendirilir.",
+                "Amaç, ticari netliği artırmak, müzakere sürecini güçlendirmek ve seçilen modelin uygulama ve operasyon açısından sürdürülebilir olmasını sağlamaktır."
+              ]
+            }
+          ],
+          "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=70"
+        },
+        {
+          "num": "04",
+          "title": "Yönetilen Hizmetler, Yapay Zeka ve Operasyon Modelleri",
+          "intro": [
+            "Yönetilen hizmetler, yapay zeka ve operasyon modelleri ortak bir yetkinlikte buluşur: stratejik hedefleri sürdürülebilir çalışma biçimlerine dönüştürebilmek.",
+            "Bu alan; hizmet, destek ve yapay zeka ile güçlenen operasyon modellerinin iş öncelikleri, operasyonel kabiliyetler, yönetişim yapıları ve uzun vadeli değer yaratımıyla uyumlu şekilde tasarlanmasına odaklanır.",
+            "Amaç, destek modellerini güçlendirmek, AMS ve yönetilen hizmet yapılarını yeniden tasarlamak, CoE yapılarını oluşturmak ve yapay zeka hedeflerini uygulanabilir bir yol haritasına dönüştürmektir."
+          ],
+          "rows": [
+            {
+              "title": "AMS ve Yönetilen Hizmet Modelleri",
+              "desc": [
+                "AMS ve yönetilen hizmet modelleri; kapsam, rol ve sorumluluklar, hizmet seviyeleri, yönetişim ve teslimat yapısı açısından tasarlanır veya değerlendirilir.",
+                "Odak noktası, iş ihtiyaçlarıyla uyumlu, ticari olarak sürdürülebilir ve amaca uygun destek modelleri oluşturmaktır."
+              ]
+            },
+            {
+              "title": "Destek Organizasyonu Tasarımı",
+              "desc": [
+                "İç ekipler, dış hizmet sağlayıcılar, eskalasyon yolları, sahiplik yapıları ve hizmet yönetimi sorumlulukları değerlendirilir ve yeniden tasarlanır.",
+                "Amaç, hesap verebilirliği, yanıt hızını ve operasyonel istikrarı güçlendiren net ve verimli bir destek modeli oluşturmaktır."
+              ]
+            },
+            {
+              "title": "Yapay Zeka Hazırlığı ve Yol Haritaları",
+              "desc": [
+                "Yapay zeka hazırlığı; iş fırsatları, kullanım senaryoları, veri olgunluğu, yönetişim, adaptasyon ihtiyaçları ve operasyon modeli etkileri açısından değerlendirilir.",
+                "Odak noktası, yapay zeka hedeflerini fikir aşamasından pilota, pilottan da ölçülebilir iş değerine taşıyacak pragmatik bir yol haritası oluşturmaktır."
+              ]
+            },
+            {
+              "title": "CoE, SLA, KPI ve Yönetişim",
+              "desc": [
+                "Mükemmeliyet merkezi yapıları, SLA ve KPI çerçeveleri, yönetişim modelleri ve performans yönetimi mekanizmaları tasarlanır.",
+                "Bu yapı; hizmet kalitesinin, sürekli iyileştirmenin ve uzun vadeli operasyonel performansın daha net ve yönetilebilir hale gelmesini sağlar."
+              ]
+            }
+          ],
+          "image": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1000&q=70"
+        },
+        {
+          "num": "05",
+          "title": "Kalite Güvence Hizmetleri ve Sağlık Kontrolleri",
+          "intro": [
+            "Kalite güvence ve sağlık kontrol çalışmaları, dönüşüm girişimlerine bağımsız bir kalite, kontrol, yönetişim ve uygulama disiplini bakışı kazandırır.",
+            "Bu hizmetler; Kurumsal Dönüşüm ve Değişim Yönetimi, SAP Dönüşümü, RFP ve Teklif süreçleri, Yönetilen Hizmetler, Yapay Zeka hazırlığı ve Operasyon Modelleri dahil olmak üzere tüm dönüşüm liderliği alanlarında uygulanabilir.",
+            "Her faz ve hizmet bloğu özelinde; standartlar, kontroller, kalite kapıları, yönetişim mekanizmaları ve uygulama disiplinleri değerlendirilir.",
+            "Çıktı olarak; program kalitesi, uygulama olgunluğu, yönetişim yapısı, kritik bağımlılıklar ve öncelikli aksiyonlar hakkında bağımsız, tarafsız ve yönetici seviyesinde kullanılabilir bir rapor sunulur."
+          ],
+          "rows": [
+            {
+              "title": "Kalite Güvence Hizmetleri",
+              "desc": [
+                "Dönüşüm programları, teslimat iş akışları, yönetişim yapıları ve kritik proje fazları için bağımsız kalite güvence değerlendirmesi yapılır.",
+                "Odak noktası, programın doğru kontroller, standartlar, karar mekanizmaları ve uygulama disipliniyle ilerlemesini sağlamaktır."
+              ]
+            },
+            {
+              "title": "Program ve Proje Sağlık Kontrolleri",
+              "desc": [
+                "Program veya proje; kapsam, zaman planı, bütçe, yönetişim, paydaş hizalanması, uygulama performansı ve hazırlık seviyesi açısından değerlendirilir.",
+                "Amaç, erken uyarı sinyallerini ve kontrolü güçlendirecek pratik aksiyonları görünür kılmaktır."
+              ]
+            },
+            {
+              "title": "Kalite Kapıları ve Kontrol Değerlendirmeleri",
+              "desc": [
+                "Dönüşüm yaşam döngüsü boyunca kritik kalite kapıları, kontrol noktaları, onay mekanizmaları ve faz giriş çıkış kriterleri değerlendirilir.",
+                "Bu çalışma; büyük kararların, canlı kullanıma geçişlerin ve kritik geçişlerin yeterli kanıt, hazırlık ve yönetişimle desteklenmesini sağlar."
+              ]
+            },
+            {
+              "title": "Yönetişim, Risk ve Bağımlılık Analizi",
+              "desc": [
+                "Yönetişim etkinliği, eskalasyon mekanizmaları, risk görünürlüğü, bağımlılık takibi ve karar alma yapıları değerlendirilir.",
+                "Odak noktası; karmaşık uygulama ortamlarında şeffaflığı, hesap verebilirliği ve liderlik kontrolünü güçlendirmektir."
+              ]
+            },
+            {
+              "title": "Bağımsız Yönetici Raporlaması",
+              "desc": [
+                "Mevcut olgunluğu, kalite gözlemlerini, uygulama önceliklerini, yönetişim yapısını ve öncelikli önerileri özetleyen bağımsız yönetici raporları hazırlanır.",
+                "Rapor, liderlik ekiplerinin dönüşüm statüsünü doğrudan, pratik ve karar almaya hazır bir bakışla değerlendirebilmesi için tasarlanır."
+              ]
+            }
+          ],
+          "image": null
+        }
+      ],
+      "cta": {
+        "title": "Doğru başlangıç noktasını birlikte netleştirelim.",
+        "paras": [
+          "İhtiyaç; dönüşüm değerlendirmesi, SAP program liderliği, RFP süreci desteği, yönetilen hizmet modeli tasarımı, yapay zeka yol haritası veya bağımsız kalite güvence çalışması olabilir.",
+          "İlk adım, mevcut durumu doğru okumak, öncelikleri netleştirmek ve ilerleme yolunu gerçekçi şekilde yapılandırmaktır."
+        ],
+        "button": "Görüşme planla"
+      },
+      "lead": {
+        "eyebrow": "Hizmetler",
+        "title": "Dönüşüm Liderliği Alanları",
+        "lede": [
+          "Kurumsal dönüşüm, SAP programları, RFP, teklif ve ticari süreçler, yönetilen hizmetler, yapay zeka ve operasyon modelleri alanlarında bütüncül bir deneyim.",
+          "Odak noktası; karmaşıklığı doğru okumak, uygulamayı yapılandırmak, güçlü yönetişim kurmak ve ölçülebilir iş sonuçları yaratacak şekilde dönüşüm ajandasını ilerletmektir."
+        ]
+      }
+    }
+  }
 };

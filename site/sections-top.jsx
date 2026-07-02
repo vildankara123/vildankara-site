@@ -6,9 +6,6 @@
   /* ---------------- HERO PAGE (Strategy · Transform · Operate + AI rail) ---------------- */
   function SloganHero({ t, img, onNav }) {
     const H = t.landing.hero1;
-    const AP = t.home.approach;
-    const icons = ["target", "gear", "people"];
-    const pos = ["is-l", "is-m", "is-r"];
     return (
       <header id="top" style={{ position: "relative", background: "var(--bg-ink)", overflow: "hidden" }}>
         <div aria-hidden="true" style={{ position: "absolute", inset: 0, backgroundImage: `url(${img.skyline})`, backgroundSize: "cover", backgroundPosition: "center center" }} />
@@ -59,19 +56,6 @@
 
           </div>
         </div>
-        <Reveal as="div" delay={260} className="vk-hero-band">
-          <div className="container">
-            <div className="vk-flow">
-              {AP.stages.map((s, i) => (
-                <div className="vk-flow-step" key={i}>
-                  <div className="vk-flow-num">{String(i + 1).padStart(2, "0")}</div>
-                  <div className="vk-flow-name">{s.step}</div>
-                  <div className="vk-flow-tags">{s.items.map((it, k) => <span className="vk-flow-tag" key={k}>{it}</span>)}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Reveal>
       </header>
     );
   }

@@ -8,7 +8,7 @@
   function ServiceCard({ it, i, img }) {
     const [hover, setHover] = useState(false);
     return (
-      <a href="#contact" className="vk-scard"
+      <a href="services.html" className="vk-scard"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
         style={{
@@ -29,11 +29,12 @@
         </div>
         {/* content */}
         <div style={{ display: "flex", flexDirection: "column", flex: 1, padding: "26px 26px 28px" }}>
-          <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "1.8rem", lineHeight: 1.1, letterSpacing: "-0.015em", color: "var(--text-strong)", margin: "0 0 8px" }}>{it.title}</h3>
-          <div style={{ fontFamily: "var(--font-sans)", fontSize: "1.0625rem", fontWeight: 600, lineHeight: 1.35, color: "var(--accent-strong)", marginBottom: "20px" }}>{it.short}</div>
+          <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "var(--t-head-m)", lineHeight: 1.15, letterSpacing: "-0.015em", color: "var(--text-strong)", margin: "0 0 8px" }}>{it.title}</h3>
+          <div style={{ fontFamily: "var(--font-sans)", fontSize: "var(--t-body)", fontWeight: 600, lineHeight: 1.35, color: "var(--accent-strong)", marginBottom: "12px" }}>{it.short}</div>
+          {it.desc ? <p style={{ fontSize: "var(--t-body-s)", lineHeight: 1.6, color: "var(--text-muted)", margin: "0 0 20px" }}>{it.desc}</p> : null}
           <ul style={{ display: "flex", flexDirection: "column", gap: "12px", flex: 1 }}>
             {it.bullets.map((b, j) => (
-              <li key={j} style={{ display: "flex", gap: "12px", fontSize: "1rem", lineHeight: 1.45, color: "var(--text-body)" }}>
+              <li key={j} style={{ display: "flex", gap: "12px", fontSize: "var(--t-body-s)", lineHeight: 1.5, color: "var(--text-body)" }}>
                 <span aria-hidden="true" style={{ color: "var(--accent)", flexShrink: 0, marginTop: "1px" }}>—</span>{b}
               </li>
             ))}

@@ -484,7 +484,22 @@ function StatBlock({
       letterSpacing: "var(--ls-display)",
       color: onInk ? "var(--text-on-ink)" : "var(--text-strong)"
     }
-  }, figure), /*#__PURE__*/React.createElement("span", {
+  }, (function () {
+    var m = typeof figure === "string" && figure.match(/^(Up to)\s+(.+)$/i);
+    if (!m) return figure;
+    return [/*#__PURE__*/React.createElement("span", {
+      key: "pre",
+      style: {
+        display: "block",
+        fontFamily: "var(--font-mono)",
+        fontSize: "var(--t-micro)",
+        letterSpacing: "0.14em",
+        textTransform: "uppercase",
+        color: onInk ? "var(--text-on-ink-muted)" : "var(--text-muted)",
+        marginBottom: "4px"
+      }
+    }, m[1]), m[2]];
+  })()), /*#__PURE__*/React.createElement("span", {
     style: {
       fontFamily: "var(--font-mono)",
       fontSize: "var(--t-micro)",
