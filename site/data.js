@@ -649,9 +649,9 @@ window.SITE = {
       "hero1": {
         "eyebrow": "Executive Advisory",
         "headline": [
-          "Strategy.",
-          "Transformation.",
-          "Operations."
+          "Strategy",
+          "Transformation",
+          "Operations"
         ],
         "subhead": "Your end-to-end transformation partner.",
         "lede": "Executive advisory across strategy, operating model design and enterprise transformation.",
@@ -1722,9 +1722,9 @@ window.SITE = {
       "hero1": {
         "eyebrow": "Executive Advisory",
         "headline": [
-          "Strateji.",
-          "Dönüşüm.",
-          "Operasyon."
+          "Strateji",
+          "Dönüşüm",
+          "Operasyon"
         ],
         "subhead": "Uçtan uca dönüşüm ortağınız.",
         "lede": "Strateji, operating model tasarımı ve kurumsal dönüşüm alanlarında üst düzey yönetici danışmanlığı.",
