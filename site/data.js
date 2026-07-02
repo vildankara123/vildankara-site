@@ -654,7 +654,7 @@ window.SITE = {
           "Operations"
         ],
         "subhead": "Your end-to-end transformation partner.",
-        "lede": "Executive advisory across strategy, operating model design and enterprise transformation.",
+        "lede": "Senior executive across strategy, operating model design and enterprise transformation.",
         "ctaPrimary": "Arrange a consultation",
         "ctaSecondary": "See the services",
         "tagline": "Independent advice. Practical experience. End-to-end impact."
@@ -1727,7 +1727,7 @@ window.SITE = {
           "Operasyon"
         ],
         "subhead": "Uçtan uca dönüşüm ortağınız.",
-        "lede": "Strateji, operating model tasarımı ve kurumsal dönüşüm alanlarında üst düzey yönetici danışmanlığı.",
+        "lede": "Strateji, operating model tasarımı ve kurumsal dönüşüm alanlarında üst düzey yönetici.",
         "ctaPrimary": "Görüşme ayarlayın",
         "ctaSecondary": "Hizmetleri görün",
         "tagline": "Tarafsız değerlendirme. Operasyonun her aşamasında deneyim. Pragmatik, sonuç odaklı, çevik yaklaşımlar."
