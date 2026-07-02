@@ -45,7 +45,7 @@ window.SITE = {
   ],
   "aux": {
     "aboutHero": "https://images.unsplash.com/photo-1488229297570-58520851e868?auto=format&fit=crop&w=1100&q=70",
-    "aboutBio": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1100&q=70",
+    "aboutBio": "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1100&q=70",
     "cta": "assets/img/hero-boardroom.png"
   },
   "footprint": [
@@ -614,7 +614,7 @@ window.SITE = {
   "en": {
     "brand": {
       "name": "Vildan Kara Kayacan",
-      "role": "Enterprise Transformation Leader"
+      "role": ""
     },
     "nav": [
       {
@@ -1223,24 +1223,25 @@ window.SITE = {
       "cta": "Arrange a consultation"
     },
     "footprintHead": {
-      "eyebrow": "Global Footprint",
-      "title": "Sixteen countries. One standard of delivery.",
-      "lede": "Across EMEA & MENA, programmes and service organisations have been delivered in sixteen countries. Select a marker to see the work.",
+      "eyebrow": "Global Experience",
+      "title": "Sixteen Countries. One Shared Goal, Different Realities.",
+      "lede": "Working across EMEA and MENA provided the opportunity to lead multicultural teams, large-scale programmes and complex operations in diverse environments. While each market had its own realities, the foundations of successful transformation remained the same: strong governance, clear direction and consistent execution.",
       "hint": "Select a country"
     },
     "aboutPage": {
       "eyebrow": "About",
       "name": "Vildan Kara Kayacan",
-      "role": "Business, Technology & AI Transformation Executive",
-      "tags": "SAP & Enterprise Architecture · Managed Services · AI Transformation",
-      "lede": "Twenty years turning transformation strategy into measurable business value, for strategic enterprises across EMEA & MENA.",
+      "role": "Executive Advisor",
+      "tags": "Enterprise Transformation • Operating Models • Organisational Change • AI Enablement",
+      "lede": "A leader working at the intersection of transformation, technology and new ways of working.",
       "bio": [
-        "Vildan Kara Kayacan is a business and technology transformation executive with 20+ years of experience leading large-scale transformation, managed services and global delivery for strategic enterprises across EMEA & MENA. The track record is concrete: a managed-services portfolio doubled, operating costs cut by a third, and multi-country delivery organisations built from the ground up.",
-        "Her work sits at the rare intersection of enterprise SAP transformation and applied artificial intelligence, leading both the technology and the organisational change behind its adoption. Deep SAP delivery, hands-on AI and genuine change management within a single profile: precisely what large organisations need now.",
-        "Today she leads as a trusted partner to CIOs and executive teams, taking a direct role in S/4HANA migration, managed-services restructuring, AI adoption, the design of a Center of Excellence, or a high-stakes bid that warrants an experienced hand at the table. Engagements are accepted selectively, in a management or senior programme-leadership capacity."
+        "Vildan Kara Kayacan is a transformation and technology executive with more than twenty years of international experience across EMEA and MENA. Throughout her career, she has led large-scale transformation programmes, managed global delivery organisations, built high-performing teams and contributed to some of the most complex business and technology initiatives in the region.",
+        "Her experience spans enterprise technology, business transformation, operating models, managed services and organisational change. In recent years, her focus has increasingly expanded towards the impact of artificial intelligence on organisations, leadership and the future of work.",
+        "Passionate about bridging strategy, technology and human behaviour, she is particularly interested in how organisations adapt, evolve and create sustainable value in times of rapid change.",
+        "Today, she continues to explore the intersection of transformation, leadership, AI and new ways of working, drawing on two decades of experience at the forefront of organisational change."
       ],
       "cvLabel": "Download CV (PDF)",
-      "cvHref": "#",
+      "cvHref": "assets/Vildan_Kara_Kayacan_CV.pdf",
       "profileTitle": "Selected achievements",
       "achievements": [
         "Established Turkey's first SAP global support hub (100+ FTE) to centralise worldwide service delivery for a global automotive OEM.",
@@ -1248,7 +1249,7 @@ window.SITE = {
         "Built a 75+ person regional IT service organisation in three months, meeting demanding SLAs from day one.",
         "Led the financial-services sector's first SAP HANA reference implementation as an industry reference.",
         "Doubled the managed-services portfolio with significant recurring-revenue growth on strategic enterprise accounts.",
-        "Delivered €1M+ transformation programmes consistently on time, on budget and with stable go-lives."
+        "Delivered €35M+ transformation programmes consistently on time, on budget and with stable go-lives."
       ],
       "competenciesTitle": "Core competencies",
       "competencies": [
@@ -1265,7 +1266,7 @@ window.SITE = {
         "SAP / S/4HANA Transformation",
         "Program & Portfolio Leadership"
       ],
-      "experienceTitle": "Professional experience",
+      "experienceTitle": "Experience",
       "experience": [
         {
           "company": "NTT DATA Business Solutions",
@@ -1294,7 +1295,8 @@ window.SITE = {
                 "Served as Program / Transformation Lead on priority programmes (incl. B/S/H regional IT org and Daimler 100+ FTE global support hub)."
               ]
             }
-          ]
+          ],
+          "scope": "EMEA & MENA · Service Strategy, Global Delivery & PMO"
         },
         {
           "company": "SAP Türkiye",
@@ -1310,7 +1312,8 @@ window.SITE = {
                 "Yapı Kredi Bank, trusted-advisor role on the first banking-sector ERP reference."
               ]
             }
-          ]
+          ],
+          "scope": "Türkiye · SAP S/4HANA Transformation Programmes"
         },
         {
           "company": "Metro Group Information AG, Düsseldorf, Germany",
@@ -1323,13 +1326,61 @@ window.SITE = {
                 "Progressed from ABAP development and SAP Basis into finance consulting, delivering international SAP roll-outs across Egypt, Kazakhstan, Slovakia, Türkiye, Belgium, Spain, Bulgaria and Pakistan."
               ]
             }
-          ]
+          ],
+          "scope": "Germany · International SAP Roll-outs across 8 countries"
         }
-      ]
+      ],
+      "philosophy": {
+        "eyebrow": "Perspective",
+        "title": "When strategy aligns, technology accelerates, people empower, transformation lasts.",
+        "lead": [
+          "In today’s complex landscape, the greatest impact emerges when **strategy is clear, people embrace change, technology is used with purpose** and **operational discipline** brings it all together.",
+          "Across industries and geographies, I work at the intersection of business, technology, people and operations to design and deliver **integrated transformation** that creates lasting value.",
+          "My focus is simple: build organisations that are **human-centred, future-ready** and **built to perform**."
+        ],
+        "points": [
+          {
+            "icon": "target",
+            "title": "More clarity, more impact",
+            "body": "I simplify complexity, focus on what truly matters and turn priorities into actionable strategies. My goal is measurable results that create sustainable and lasting impact."
+          },
+          {
+            "icon": "bulb",
+            "title": "Technology and people, moving in the same direction",
+            "body": "I see technology as an enabler, not the goal. By aligning it with real business needs and human potential, I design environments where people can adapt, grow and perform at their best."
+          },
+          {
+            "icon": "people",
+            "title": "People at the heart of transformation",
+            "body": "I build trust, collaboration and a culture of ownership. I empower teams, strengthen capabilities and create the conditions for continuous development and meaningful change."
+          }
+        ]
+      },
+      "interests": {
+        "eyebrow": "At the core",
+        "items": [
+          {
+            "icon": "heart",
+            "label": "Meaningful work that makes a difference"
+          },
+          {
+            "icon": "compass",
+            "label": "Continuous learning, curiosity and growth"
+          },
+          {
+            "icon": "globe",
+            "label": "A global perspective, local insight"
+          },
+          {
+            "icon": "leaf",
+            "label": "Creating value that lasts"
+          }
+        ]
+      }
     },
     "credentials": {
       "eyebrow": "Capabilities",
-      "title": "Certified. Multilingual. Multi-country.",
+      "title": "Certified. Multilingual. Multinational.",
       "groups": [
         {
           "label": "Certifications",
@@ -1340,7 +1391,9 @@ window.SITE = {
             "SAP Enterprise Architecture",
             "SAP Activate (Agile, Certified)",
             "SAP Business Transformation, SAP Academy",
-            "Financial Reporting & Analysis, Deloitte"
+            "Financial Reporting & Analysis, Deloitte",
+            "IBMI Digital Transformation and AI",
+            "IBMI Economics and International Business"
           ]
         },
         {
@@ -1634,7 +1687,7 @@ window.SITE = {
   "tr": {
     "brand": {
       "name": "Vildan Kara Kayacan",
-      "role": "Kurumsal Dönüşüm Lideri"
+      "role": ""
     },
     "nav": [
       {
@@ -2244,24 +2297,25 @@ window.SITE = {
       "cta": "Görüşme planlayın"
     },
     "footprintHead": {
-      "eyebrow": "Global Erişim",
-      "title": "On altı ülke. Tek bir teslimat standardı.",
-      "lede": "EMEA & MENA genelinde on altı ülkede program ve servis organizasyonları yürütüldü. Detay için bir işaret seçin.",
+      "eyebrow": "Global Deneyim",
+      "title": "On altı ülke. Ortak hedef, farklı gerçeklikler.",
+      "lede": "EMEA ve MENA genelinde çok kültürlü ekipler, büyük ölçekli programlar ve operasyonlar yönetildi. Her lokasyon kendi dinamiklerini taşırken, başarıyı mümkün kılan ortak unsur güçlü yönetişim, net hedefler ve tutarlı uygulamaydı.",
       "hint": "Bir ülke seçin"
     },
     "aboutPage": {
       "eyebrow": "Hakkında",
       "name": "Vildan Kara Kayacan",
-      "role": "İş, Teknoloji & Yapay Zeka Dönüşüm Yöneticisi",
-      "tags": "SAP & Kurumsal Mimari · Yönetilen Hizmetler · AI Dönüşümü",
-      "lede": "Yirmi yıl boyunca dönüşüm stratejisini ölçülebilir iş değerine dönüştürdü, EMEA & MENA genelindeki stratejik kurumlar için.",
+      "role": "Executive Advisor",
+      "tags": "Kurumsal Dönüşüm • Operating Model • Organizasyonel Değişim • AI Enablement",
+      "lede": "Dönüşüm, teknoloji ve yeni çalışma modellerinin kesişiminde çalışan bir lider.",
       "bio": [
-        "Vildan Kara Kayacan, EMEA & MENA genelindeki stratejik kurumlar için büyük ölçekli dönüşüm, yönetilen hizmetler ve global teslimatı yöneten, 20+ yıllık deneyime sahip bir iş ve teknoloji dönüşüm yöneticisidir. Sicili somuttur: ikiye katlanan bir yönetilen hizmetler portföyü, üçte bir oranında düşürülen faaliyet maliyetleri ve sıfırdan kurulan çok ülkeli teslimat organizasyonları.",
-        "Çalışması, kurumsal SAP dönüşümü ile uygulanan yapay zekanın nadir kesişiminde yer alır, hem teknolojiyi hem de adaptasyonun arkasındaki organizasyonel değişimi yönetir. Derin SAP teslimatı, sahada yapay zeka ve gerçek değişim yönetimi tek bir profilde: büyük kurumların bugün tam da ihtiyaç duyduğu şey.",
-        "Bugün CIO'lara ve yönetim ekiplerine güvenilen bir partner olarak liderlik eder; S/4HANA geçişinde, yönetilen hizmet yeniden yapılandırmasında, AI adaptasyonunda, bir Mükemmeliyet Merkezi tasarımında ya da deneyimli bir el gerektiren yüksek bahisli ihalelerde doğrudan yer alır. Çalışmalar, yönetim veya kıdemli program liderliği rolünde, seçici biçimde kabul edilir."
+        "Vildan Kara Kayacan, yirmi yılı aşkın uluslararası deneyime sahip bir dönüşüm ve teknoloji yöneticisidir. Kariyeri boyunca EMEA ve MENA bölgelerinde büyük ölçekli dönüşüm programlarına liderlik etmiş, global organizasyonların kurulması ve geliştirilmesinde rol almış, iş ve teknoloji dünyasının kesişiminde yer alan birçok stratejik girişime katkı sağlamıştır.",
+        "Deneyimi; kurumsal teknoloji dönüşümü, operasyonel modeller, yönetilen hizmetler, organizasyonel değişim ve iş dönüşümü gibi farklı alanlara uzanmaktadır. Son yıllarda ise odağını giderek daha fazla yapay zekânın organizasyonlar, liderlik anlayışı ve çalışma biçimleri üzerindeki etkisine yöneltmiştir.",
+        "Strateji, teknoloji ve insan davranışının birbirinden bağımsız düşünülemeyeceğine inanmakta; organizasyonların değişime nasıl uyum sağladığı, nasıl geliştiği ve uzun vadeli değer yaratabildiği konularına özel ilgi duymaktadır.",
+        "Bugün de dönüşüm, liderlik, yapay zekâ ve yeni çalışma modellerinin kesişiminde düşünmeye, üretmeye ve deneyimlerini paylaşmaya devam etmektedir."
       ],
       "cvLabel": "CV indir (PDF)",
-      "cvHref": "#",
+      "cvHref": "assets/Vildan_Kara_Kayacan_CV.pdf",
       "profileTitle": "Öne çıkan başarılar",
       "achievements": [
         "Global bir otomotiv OEM'i için dünya geneli servis teslimatını merkezileştirmek üzere Türkiye'nin ilk SAP global destek merkezini (100+ FTE) kurdu.",
@@ -2269,7 +2323,7 @@ window.SITE = {
         "Üç ayda 75+ kişilik bölgesel IT servis organizasyonu kurdu, zorlu SLA'ları ilk günden karşıladı.",
         "Finans sektörünün ilk SAP HANA referans uygulamasını sektör referansı olarak yönetti.",
         "Stratejik kurumsal hesaplarda önemli yinelenen gelir artışıyla yönetilen hizmetler portföyünü ikiye katladı.",
-        "€1M+ dönüşüm programlarını tutarlı biçimde zamanında, bütçe dahilinde ve stabil go-live'larla teslim etti."
+        "€35M+ dönüşüm programlarını tutarlı biçimde zamanında, bütçe dahilinde ve stabil go-live'larla teslim etti."
       ],
       "competenciesTitle": "Temel yetkinlikler",
       "competencies": [
@@ -2286,7 +2340,7 @@ window.SITE = {
         "SAP / S/4HANA Dönüşümü",
         "Program & Portföy Liderliği"
       ],
-      "experienceTitle": "Profesyonel deneyim",
+      "experienceTitle": "Deneyim",
       "experience": [
         {
           "company": "NTT DATA Business Solutions",
@@ -2315,7 +2369,8 @@ window.SITE = {
                 "Öncelikli programlarda (B/S/H bölgesel IT org. ve Daimler 100+ FTE global destek merkezi dahil) Program / Dönüşüm Lideri olarak görev yaptı."
               ]
             }
-          ]
+          ],
+          "scope": "EMEA & MENA · Servis Stratejisi, Global Teslimat & PMO"
         },
         {
           "company": "SAP Türkiye",
@@ -2331,7 +2386,8 @@ window.SITE = {
                 "Yapı Kredi Bankası, İlk bankacılık sektörü ERP referansında güvenilen danışman rolü."
               ]
             }
-          ]
+          ],
+          "scope": "Türkiye · SAP S/4HANA Dönüşüm Programları"
         },
         {
           "company": "Metro Group Information AG, Düsseldorf, Almanya",
@@ -2344,13 +2400,60 @@ window.SITE = {
                 "ABAP geliştirme ve SAP Basis'ten finans danışmanlığına ilerledi; Mısır, Kazakistan, Slovakya, Türkiye, Belçika, İspanya, Bulgaristan ve Pakistan'da uluslararası SAP roll-out'ları gerçekleştirdi."
               ]
             }
-          ]
+          ],
+          "scope": "Almanya · 8 ülkede uluslararası SAP roll-out’ları"
         }
-      ]
+      ],
+      "philosophy": {
+        "eyebrow": "Bakış Açım",
+        "title": "Strateji netleştiğinde, teknoloji hız kazanır, insan güçlenir, dönüşüm kalıcı olur.",
+        "lead": [
+          "Karmaşık dönüşüm yolculuklarında en büyük etki, **stratejinin netliği, insanların sahiplenmesi, teknolojinin doğru kullanımı** ve **operasyonun disiplini** bir araya geldiğinde ortaya çıkar.",
+          "Farklı sektörlerde, çok kültürlü ve çok lokasyonlu ortamlarda çalışarak; işin stratejik yönünü operasyonel gerçeklikle buluşturan, insan odağını merkeze alan **bütüncül dönüşümler** tasarlıyor ve hayata geçirilmesine **liderlik** ediyorum."
+        ],
+        "points": [
+          {
+            "icon": "target",
+            "title": "Daha net, daha sade, daha gerçekçi",
+            "body": "Karmaşığı basitleştirir, öncelikleri netleştirir ve uygulanabilir stratejiler ortaya koyarım. Amacım; ölçülebilir sonuçlar üreten ve sürdürülebilir değeri güçlendiren çözümler geliştirmektir."
+          },
+          {
+            "icon": "bulb",
+            "title": "Teknoloji, insan ve operasyonu aynı hedefe yönlendiririm",
+            "body": "Teknolojinin potansiyelini işin gerçek ihtiyaçlarıyla buluşturur, insanın değişime uyum sağlayacağı ortamları tasarlarım. Operasyonel mükemmellik ve disiplini, dönüşümün etkisini kalıcı hale getirmek için bir kaldıraç olarak kullanırım."
+          },
+          {
+            "icon": "people",
+            "title": "İnsanı merkeze alan dönüşümler yaratırım",
+            "body": "Güven, iş birliği ve şeffaf iletişimi güçlendiren kültürler oluşturur, ekiplerin potansiyelini ortaya çıkarırım. Değişimi sahiplenen, öğrenen ve sürekli gelişen organizasyonlar inşa etmeye odaklanırım."
+          }
+        ]
+      },
+      "interests": {
+        "eyebrow": "İşin ötesinde",
+        "items": [
+          {
+            "icon": "heart",
+            "label": "İnsana ve çalışmaya anlam katan yapılar"
+          },
+          {
+            "icon": "compass",
+            "label": "Sürekli öğrenme, merak ve gelişim"
+          },
+          {
+            "icon": "globe",
+            "label": "Farklı kültürlerden beslenen global bir bakış"
+          },
+          {
+            "icon": "leaf",
+            "label": "Topluma değer katan, etkisi kalıcı işler"
+          }
+        ]
+      }
     },
     "credentials": {
       "eyebrow": "Yetkinlikler",
-      "title": "Sertifikalı. Çok dilli. Çok ülkeli.",
+      "title": "Sertifikalı. Çok dilli. Çok uluslu.",
       "groups": [
         {
           "label": "Sertifikalar",
@@ -2361,7 +2464,9 @@ window.SITE = {
             "SAP Kurumsal Mimari",
             "SAP Activate (Agile, Sertifikalı)",
             "SAP Business Transformation, SAP Academy",
-            "Finansal Raporlama & Analiz, Deloitte"
+            "Finansal Raporlama & Analiz, Deloitte",
+            "IBMI Digital Transformation and AI",
+            "IBMI Economics and International Business"
           ]
         },
         {

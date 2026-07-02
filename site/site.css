@@ -258,6 +258,9 @@ html, body { margin: 0; background: var(--bg-ink); }
   .vk-bio-photo { max-width: 340px; }
   .vk-exp-row { grid-template-columns: 1fr !important; gap: 18px !important; }
   .vk-high-grid { grid-template-columns: 1fr !important; gap: 44px !important; }
+  .vk-phil-head { grid-template-columns: 1fr !important; gap: 20px !important; }
+  .vk-phil-grid { grid-template-columns: 1fr !important; gap: 30px !important; }
+  .vk-phil-int { grid-template-columns: 1fr !important; gap: 10px !important; }
   .vk-contact-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
   .vk-work-row { grid-template-columns: auto 1fr !important; }
   .vk-work-row > span:last-child { display: none !important; }

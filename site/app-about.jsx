@@ -11,6 +11,7 @@
         <Chrome.Nav t={t} lang={lang} setLang={setLang} current="about" />
         <AboutPage.AboutHero t={t} img={SITE.img} />
         <AboutPage.Bio t={t} img={SITE.img} />
+        <AboutPage.Philosophy t={t} />
         <AboutPage.Experience t={t} />
         <AboutPage.Highlights t={t} />
         <Extra.Footprint t={t} footprint={SITE.footprint} lang={lang} />

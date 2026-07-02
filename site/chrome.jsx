@@ -23,7 +23,7 @@
         <div className="container" style={{ display: "flex", alignItems: "center", gap: "20px", height: scrolled ? "64px" : "82px", transition: "height var(--dur) var(--ease-out)" }}>
           <a href="index.html" style={{ display: "flex", flexDirection: "column", lineHeight: 1.15, marginRight: "auto", whiteSpace: "nowrap" }}>
             <span style={{ fontFamily: "var(--font-serif)", fontSize: "19px", color: "var(--text-on-ink)", letterSpacing: "0.01em" }}>{t.brand.name}</span>
-            <span style={{ fontFamily: "var(--font-mono)", fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--accent-on-ink)", marginTop: "4px" }}>{t.brand.role}</span>
+            {t.brand.role ? <span style={{ fontFamily: "var(--font-mono)", fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--accent-on-ink)", marginTop: "4px" }}>{t.brand.role}</span> : null}
           </a>
           <div className="vk-navlinks" style={{ display: "flex", gap: "24px" }}>
             {t.nav.map((n) => {
@@ -90,7 +90,7 @@
           </div>
           <div style={{ display: "flex", justifyContent: "space-between", gap: "20px", flexWrap: "wrap", marginTop: "28px" }}>
             <span style={{ fontFamily: "var(--font-mono)", fontSize: "11px", letterSpacing: "0.08em", color: "var(--text-on-ink-faint)" }}>{t.footer.copy}</span>
-            <span style={{ fontFamily: "var(--font-mono)", fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--text-on-ink-faint)" }}>{t.brand.role} · EMEA & MENA</span>
+            <span style={{ fontFamily: "var(--font-mono)", fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--text-on-ink-faint)" }}>{t.brand.role ? t.brand.role + " · " : ""}EMEA & MENA</span>
           </div>
         </div>
       </footer>

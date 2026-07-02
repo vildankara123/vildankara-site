@@ -72,7 +72,7 @@
           <div className="vk-mani">
             <div className="vk-mani-head">
               <span className="eyebrow">{M.eyebrow}</span>
-              <h2 className="vk-mani-title">{M.title.map((l, i) => <span key={i}>{l} </span>)}</h2>
+              <h2 className="vk-mani-title">{M.title.map((l, i) => <span key={i} style={i === M.title.length - 1 ? { display: "block" } : undefined}>{l} </span>)}</h2>
             </div>
             <blockquote className="vk-mani-body">
               {M.paras.map((p, i) => (
