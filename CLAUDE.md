@@ -69,6 +69,20 @@ The components in `_ds_bundle.js` are **compiled output** from a separate design
 only need to evolve the website, edit the files in `site/`. To change the component library itself,
 you need that source project — `_ds_bundle.js` is generated, **do not hand-edit it**.
 
+## Language & SEO (how EN/TR are exposed)
+
+The site is a **client-rendered SPA** — the served HTML (`view-source`) is an empty shell with an
+English `<title>`; **no body copy is in the raw HTML** (neither EN nor TR). All copy is rendered by
+JS from `data.js`. If you "Inspect" the live DOM with `localStorage vk-lang=tr` set, you'll see
+Turkish and may wrongly conclude there's no English version — that's the rendered DOM, not the source.
+
+`useLang` (in `chrome.jsx`) is the single source of truth: resolves language as `?lang=` → localStorage
+→ `en` (default). It also **syncs the URL** (`en` = clean URL, `tr` = `?lang=tr`) and injects
+`canonical` + `hreflang` (en / tr / x-default) `<link>`s into `<head>` so search engines treat EN and
+TR as two linked language versions. Internal nav/footer/CTA links pass through `withLang()` so the
+active language stays explicit in the URL when navigating. Canonical host is pinned to the apex
+`https://vildankara.com` (`SEO_ORIGIN`).
+
 ## Recently worked on
 - Approach band redesigned as a connected gold-node timeline (`sections-top.jsx` + `site.css` `.vk-flow*`).
 - Perspective section: title back to "Transformation succeeds when everything moves together", four-step
