@@ -44,19 +44,10 @@
               <span className="vk-core-enable-ic" aria-hidden="true"><Glyph name="chip" size={30} sw={1.4} /></span>
               <div className="vk-core-enable-txt">
                 <div className="vk-core-enable-label">{P.enable.label}</div>
-                <div className="vk-core-enable-items">
-                  {P.enable.items.map((it, k) => (
-                    <React.Fragment key={k}>{k > 0 ? <span className="vk-core-enable-dot">{"   ·   "}</span> : null}{it}</React.Fragment>
-                  ))}
-                </div>
+                <div className="vk-core-enable-body" style={{ margin: 0, maxWidth: "58ch", textAlign: "left" }}>{P.enable.desc}</div>
               </div>
             </div>
 
-            <p className="vk-core-note">
-              <span className="vk-core-note-lead">{P.note.lead}</span>{" "}
-              <span>{P.note.rest}</span>{" "}
-              <span className="vk-core-note-em">{P.note.em}</span>
-            </p>
           </Reveal>
         </div>
       </section>
@@ -72,7 +63,7 @@
           <div className="vk-mani">
             <div className="vk-mani-head">
               <span className="eyebrow">{M.eyebrow}</span>
-              <h2 className="vk-mani-title">{M.title.map((l, i) => <span key={i} style={i === M.title.length - 1 ? { display: "block" } : undefined}>{l} </span>)}</h2>
+              <h2 className="vk-mani-title">{M.title.map((l, i) => <span key={i} style={{ display: "block" }}>{l} </span>)}</h2>
             </div>
             <blockquote className="vk-mani-body">
               {M.paras.map((p, i) => (
@@ -156,7 +147,9 @@
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "var(--t-display-m)", lineHeight: 1.1, letterSpacing: "-0.018em", color: "var(--text-strong)", margin: 0, maxWidth: "26ch" }}>
               {H.title.map((l, i) => <span key={i} style={{ display: "block" }}>{l}</span>)}
             </h2>
-            <p style={{ fontSize: "var(--t-body-l)", lineHeight: 1.55, color: "var(--text-muted)", margin: 0, maxWidth: "60ch" }}>{H.sub}</p>
+            {(Array.isArray(H.sub) ? H.sub : [H.sub]).map((s, i) => (
+              <p key={i} style={{ fontSize: "var(--t-body-l)", lineHeight: 1.55, color: "var(--text-muted)", margin: 0, maxWidth: "60ch" }}>{s}</p>
+            ))}
           </Reveal>
           <div className="vk-blog-grid">
             {H.posts.map((p, i) => (

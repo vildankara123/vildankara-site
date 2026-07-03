@@ -17,7 +17,7 @@
             {/* Left — eyebrow → headline → rule → subhead → lede → CTAs */}
             <div style={{ minWidth: 0 }}>
               <Reveal>
-                <span style={{ display: "inline-flex", alignItems: "center", gap: "14px", fontFamily: "var(--font-mono)", fontSize: "11px", letterSpacing: "0.26em", textTransform: "uppercase", color: "var(--accent-on-ink)" }}>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: "14px", fontFamily: "var(--font-mono)", fontSize: "11px", letterSpacing: "0.26em", textTransform: "none", color: "var(--accent-on-ink)" }}>
                   <span aria-hidden="true" style={{ width: "30px", height: "1px", background: "var(--accent)" }} />
                   {H.eyebrow}
                 </span>

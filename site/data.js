@@ -647,7 +647,7 @@ window.SITE = {
     "landing": {
       "eyebrow": "Services",
       "hero1": {
-        "eyebrow": "Executive Advisory",
+        "eyebrow": "EXECUTIVE ADVISORY",
         "headline": [
           "Strategy",
           "Transformation",
@@ -831,17 +831,7 @@ window.SITE = {
         ],
         "enable": {
           "label": "AI Acceleration Layer",
-          "items": [
-            "Data",
-            "Analytics",
-            "Automation",
-            "Intelligence"
-          ]
-        },
-        "note": {
-          "lead": "",
-          "rest": "When strategy, people, transformation and operations work together,",
-          "em": "lasting change becomes inevitable."
+          "desc": "Gives transformation and excellence the right tools; it accelerates the work, raises efficiency, and moves people from running operations to making strategic decisions."
         }
       },
       "howIThink": {
@@ -1692,7 +1682,7 @@ window.SITE = {
     "nav": [
       {
         "id": "services",
-        "label": "Hizmetler",
+        "label": "Çalışma Alanlarım",
         "href": "services.html"
       },
       {
@@ -1718,18 +1708,18 @@ window.SITE = {
     ],
     "cta": "Görüşme planlayın",
     "landing": {
-      "eyebrow": "Hizmetler",
+      "eyebrow": "Çalışma Alanlarım",
       "hero1": {
-        "eyebrow": "Üst Düzey Danışmanlık",
+        "eyebrow": "EXECUTIVE DÖNÜŞÜM LİDERİ",
         "headline": [
           "Strateji",
           "Dönüşüm",
           "Operasyon"
         ],
-        "subhead": "Uçtan uca dönüşüm ortağınız",
-        "lede": "Strateji, operating model tasarımı ve kurumsal dönüşüm alanlarında üst düzey danışman ve dönüşüm lideri.",
+        "subhead": "Kurumsal dönüşüm yolculuğunuzun stratejik lideri",
+        "lede": "Strateji, organizasyon, teknoloji ve operasyon arasında köprü kuran, yapay zekayı araç olarak doğru konumlandıran bir dönüşüm lideri",
         "ctaPrimary": "Görüşme ayarlayın",
-        "ctaSecondary": "Hizmetleri görün",
+        "ctaSecondary": "Çalışma alanlarımı görün",
         "tagline": "Tarafsız değerlendirme. Operasyonun her aşamasında deneyim. Pragmatik, sonuç odaklı, çevik yaklaşımlar."
       },
       "headline": [
@@ -1755,7 +1745,7 @@ window.SITE = {
         }
       ],
       "servicesHead": {
-        "eyebrow": "Hizmetlerimiz",
+        "eyebrow": "Çalışma Alanlarım",
         "title": "Dönüşümün her aşamasında koordineli, planlı ve uygulanabilir bir üst düzey yönetim",
         "lede": "Stratejik kararların alınmasından, programların başarıyla hayata geçirilmesine ve sürdürülebilir bir operasyona kadar, tek ve koordineli bir yönetim."
       },
@@ -1876,25 +1866,25 @@ window.SITE = {
       "perspective": {
         "eyebrow": "Bakış açısı",
         "title": [
-          "Dönüşüm, tüm unsurlar birlikte ele alındığında",
+          "Dönüşüm, tüm unsurlar birlikte ele alınabildiğinde",
           "başarıya ulaşır"
         ],
-        "lede": "Dönüşümün kalıcı etkileri, strateji, insanlar, dönüşüm ve operasyonun birbiriyle hizalanmasından ve yapay zeka ile güçlendirilmesinden oluşur.",
+        "lede": "Dönüşümün kalıcı etkileri; strateji, insan, dönüşüm ve operasyonun birbiriyle hizalandığında, bütüncül şekilde ele alınabildiğinde ve yapay zeka ile güçlendirildiğinde ortaya çıkar; sürdürülebilir bir etki mekanizması ancak böylece oluşur ve devamlılığı sağlanır.",
         "flow": [
           {
             "icon": "compass",
             "title": "Strateji",
-            "body": "Yönü belirler, odağı oluşturur."
+            "body": "Yönü belirler, öncelikleri ve odağı oluşturur."
           },
           {
             "icon": "people",
             "title": "İnsan",
-            "body": "Adaptasyonu yönlendirir, yetkinlik kazandırır."
+            "body": "Yetkinliği kazandırır, adaptasyonu ve sistemi mümkün kılar."
           },
           {
             "icon": "trend",
             "title": "Dönüşüm",
-            "body": "Hedefi aksiyona çevirir, değişimi hayata geçirir."
+            "body": "Hedefi aksiyona çevirir, planlar ve değişimi hayata geçirir."
           },
           {
             "icon": "gear",
@@ -1904,26 +1894,19 @@ window.SITE = {
         ],
         "enable": {
           "label": "AI Hızlandırma Katmanı",
-          "items": [
-            "Data",
-            "Analytics",
-            "Automation",
-            "Intelligence"
-          ]
-        },
-        "note": {
-          "lead": "",
-          "rest": "Strateji, insan, dönüşüm ve operasyonlar birlikte çalıştığında,",
-          "em": "kalıcı değişim doğal olarak ortaya çıkar."
+          "desc": "Dönüşüme ve mükemmelliğe araç sağlar; süreci hızlandırır, verimliliği artırır. İnsanı, operasyondan stratejik karar verici mekanizmaya taşır."
         }
       },
       "howIThink": {
         "eyebrow": "Bakış açıları",
         "title": [
-          "Dönüşümün gerçek değeri",
-          "nasıl hayata geçtiğinde ortaya çıkar"
+          "Hayat, İnsan, Dönüşüm ve Teknoloji",
+          "Üzerine Bakış Açılarım"
         ],
-        "sub": "Dönüşüm, teknoloji, insan ve etki üzerine bakış açıları. Deneyimle şekillenmiş, gerçeğe dayanan, anlamlı değişimi tetiklemek için yazılmış fikirler.",
+        "sub": [
+          "Dönüşümün gerçekten etki yaratması, ancak organizasyonlara özgürlükçü, yaratıcı ve yenilikçi bir yerden bakıp bu cesur perspektifi hayata geçirebildiğimizde ortaya çıkar. Bunun için de stratejimiz doğrultusunda süreçleri ve teknolojiyi yeniden tasarlamanın yanında; en önemlisi, organizasyonu yaşatan insan faktörünü, empatiyi ve öngörüyü merkezine alan evrimsel bir bakışla hareket etmek gerekir.",
+          "Deneyimle şekillenmiş, gerçeğe dayanan ve anlamlı değişimi tetiklemek için yazılmış fikirler. Amaç; kurumların verimlilik ve büyümenin ötesine geçip daha özgür düşünen, daha yaratıcı çözümler üreten ve değişimi taşıyabilen organizasyonları başarıyla yapay zekâ çağına taşımaya katkı sağlamaktır."
+        ],
         "posts": [
           {
             "img": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=70",
@@ -1965,12 +1948,12 @@ window.SITE = {
         "items": [
           {
             "icon": "compass",
-            "title": "Bütünleşik Dönüşüm Liderliği",
+            "title": "Bütüncül Dönüşüm Liderliği",
             "body": "Kurumsal dönüşüm, SAP programları, yönetilen hizmetler, destek modelleri, teklif ve ticari süreçler ile karmaşık program yönetiminde deneyim."
           },
           {
             "icon": "bulb",
-            "title": "Strateji ile Uygulama Buluşuyor",
+            "title": "Strateji ile Uygulamanın Gerçek Buluşması",
             "body": "Stratejik danışmanlığın yapılandırılmış düşünme biçimini, gerçek iş ortamlarında sonuç üretmek için gereken uygulama disipliniyle birleştirmek."
           },
           {
@@ -1999,10 +1982,9 @@ window.SITE = {
           "Operasyonlar değeri kalıcı kılar."
         ],
         "paras": [
-          "Her organizasyon büyüme, verimlilik, inovasyon ve daha yüksek müşteri değeri yaratma hedefleri taşır. Ancak bu hedeflere ulaşmak ne yalnızca doğru bir strateji belirlemekle, ne başarılı bir dönüşüm programı yürütmekle, ne de operasyonel mükemmeliyet sağlamakla mümkündür.",
-          "Kalıcı iş sonuçları; stratejik öncelikler, dönüşüm girişimleri ve operasyonel yapıların birbirini tamamlayan bir bütün olarak çalışmasıyla ortaya çıkar.",
-          "Strateji yönü belirler. Dönüşüm, hedefleri somut aksiyonlara dönüştürür. Operasyonlar ise yeni yetkinlikleri ve çalışma biçimlerini organizasyonun doğal bir parçası haline getirir.",
-          "Gerçek değer; liderliği, teknolojiyi, süreçleri ve insan faktörünü ortak bir amaç etrafında hizalayabilmekten, bu unsurlar arasındaki bağı güçlendirerek organizasyonların vizyondan uygulamaya, uygulamadan da sürdürülebilir değer yaratımına uzanan yolculuğunu bütüncül bir bakış açısıyla ele alabilmekten doğar."
+          "Her organizasyonun özünde aynı arayış var: daha fazla büyüme, daha yüksek verimlilik, gerçek inovasyon ve müşteriye gerçekten anlamlı gelen değer yaratmak. Bu hedeflere ulaşmak; iyi tasarlanmış bir stratejinin, etkili dönüşüm girişimlerinin ve sağlam operasyonel yapıların birbirini destekleyen şekilde çalışmasını gerektirir.",
+          "Kalıcı ve ölçülebilir iş sonuçları, stratejik öncelikler, dönüşüm programları ve günlük operasyonların tek bir çerçeve içinde, birbirini besleyen bir bütün haline geldiğinde ortaya çıkar. Strateji, organizasyona nereye ve neden gideceğini gösteren yön duygusunu verir. Dönüşüm, bu yönü gerçekleştirilebilir hedeflere ve somut aksiyonlara çevirir. Operasyonlar ise ortaya çıkan yeni yetkinlikleri ve çalışma biçimlerini kurumun doğal işleyişinin ayrılmaz bir parçası haline getirir.",
+          "Gerçek değer; liderliği, teknolojiyi, süreçleri ve insanı aynı resmin içinde, ortak bir amaç etrafında hizalayabilmekten doğar. Bu unsurlar arasındaki bağı güçlendirebildiğimizde, organizasyonların vizyondan uygulamaya; uygulamadan da esnek, dayanıklı ve uzun vadede değer üreten yapılara dönüşen yolculuğunu bütüncül bir gözle görebilir ve yönetebiliriz."
         ],
         "cite": "Vildan Kara Kayacan"
       }
@@ -2014,30 +1996,30 @@ window.SITE = {
       },
       {
         "figure": "16",
-        "label": "EMEA ve MENA bölgelerinde ülke"
+        "label": "ülkede başarı"
       },
       {
         "figure": "€35M",
         "label": "Bütçe yönetimi"
       },
       {
-        "figure": "%65'e varan",
+        "figure": "%65",
         "label": "Operasyonel maliyet azalması"
       }
     ],
     "svc": {
-      "eyebrow": "Hizmetler",
+      "eyebrow": "Çalışma Alanlarım",
       "title": [
-        "Stratejiden sürdürülebilir organizasyonlara uzanan,",
-        "uçtan uca kapsamlı bir yaklaşım"
+        "Stratejiden organizasyonun tamamına uzanan",
+        "uçtan uca kapsamlı bir dönüşüm yaklaşımı"
       ],
-      "lede": "Kurumsal dönüşüm, SAP programları, RFP, teklif ve ticari süreçler, yönetilen hizmetler, AI ve operating model’ler genelinde deneyim.",
-      "asideBody": "Karmaşıklığı değerlendirmeye, uygulamayı yapılandırmaya ve ölçülebilir iş sonuçları üretmeye odaklı.",
+      "lede": "Kurumsal dönüşüm, SAP programları, RFP ve teklif süreçleri, ticari yapılandırma, yönetilen hizmetler, AI ve operating model alanlarında deneyim.",
+      "asideBody": "Karmaşıklığı doğru değerlendirmeye, uygulamayı yapılandırmaya ve ölçülebilir iş sonuçları üretmeye odaklı.",
       "stages": [
         {
           "icon": "layers",
           "step": "Kurumsal Dönüşüm & Değişim Yönetimi",
-          "body": "Dönüşüme hazırlığı değerlendirmek, operating model’leri şekillendirmek; yönetişim, paydaşlar, adaptasyon ve uygulama genelinde kurumsal değişim ajandalarını yönetmek.",
+          "body": "Dönüşümü bütüncül ele alma, yönetişimi ve düzenli iyileştirme disiplinlerini yönetme, paydaşlar ve organizasyonel değişim yönetimi ajandalarının profesyonel yönetimi ve liderliği.",
           "items": [
             "Dönüşüm değerlendirmesi",
             "Operating model & yönetişim",
@@ -2048,7 +2030,7 @@ window.SITE = {
         {
           "icon": "pmo",
           "step": "SAP Dönüşümü & Program Liderliği",
-          "body": "SAP dönüşüm programlarını yol haritasından teslimata; yönetişim, risk kontrolü, go-live hazırlığı ve stabilizasyon odağıyla yönetmek.",
+          "body": "SAP dönüşüm programlarının yönetilmesinden, stratejik öncelikler doğrultusunda yol haritalarının belirlenmesi; risk yönetimleri, canlıya geçiş ve operasyonel sürdürülebilirliğin yönetilmesi.",
           "items": [
             "SAP yol haritası & program kurulumu",
             "Program / proje liderliği",
@@ -2059,7 +2041,7 @@ window.SITE = {
         {
           "icon": "doc",
           "step": "RFP, Teklif &\nTicari\nDanışmanlık",
-          "body": "RFP — Request for Proposal hazırlığı ve değerlendirmesi; uygun hizmet sağlayıcı veya tedarikçi seçimi; ticari netlik, yönetişim ve karar disipliniyle.",
+          "body": "RFP — Request for Proposal süreçlerinin yönetilmesi, değerlendirmesi, farklı ticari ve hizmet modelleri arasında hibrit yapılar kurulması, uygun hizmet sağlayıcı veya tedarikçi seçimi; yönetişim ve karar disiplinleriyle yönetilmesi.",
           "items": [
             "RFP / RFI süreç yönetimi",
             "Teklif stratejisi & değerlendirme",
@@ -2069,26 +2051,26 @@ window.SITE = {
         },
         {
           "icon": "opmodel",
-          "step": "Yönetilen Hizmetler,\nAI & Operating\nModel’ler",
-          "body": "İş önceliklerini, operasyonel yetkinlikleri ve sürdürülebilir değer yaratımını uyumlu hale getiren; hizmet, destek ve AI-destekli operating model’ler tasarlamak.",
+          "step": "Yönetilen Hizmetler,\nAMS & AI ve\nOperasyon Yönetimi",
+          "body": "AMS, yönetilen hizmetler stratejileri, alternatif hizmet modelleri ve mükemmellik standartları ile operasyonu dönüştüren, verimliliğini artıran ve birimin gelir merkezi haline getiren yapılara dönüşümü sağlamak.",
           "items": [
             "AMS & yönetilen hizmet modelleri",
             "Destek organizasyonu tasarımı",
-            "AI hazırlığı & yol haritaları",
+            "AI ile verimlilik artışı & yol haritaları",
             "CoE, SLA / KPI & yönetişim"
           ]
         }
       ],
       "cta": {
         "eyebrow": "Dönüşüm Boyunca Kaliteyi Güvence Altına Almak",
-        "title": "Kalite Güvence Hizmetleri ve Sağlık Kontrolleri",
+        "title": "Kalite Güvence ve Health Check Hizmetleri",
         "paras": [
-          "Tüm dönüşüm liderliği alanları ve hizmet blokları genelinde uygulanabilen kalite güvence ve sağlık kontrol çalışmaları; teslimat kalitesi, yönetişim, riskler, kontroller ve hazırlık seviyesi hakkında bağımsız bir bakış sağlar.",
+          "Dönüşüm liderliği alanları ve hizmet alanlarının bütününde veya ayrı birimler halinde uygulanabilen QA çalışmalarıyla mevcut süreç veya gidişatın health check'inin yapılması; risk tespitlerinin bağımsız ve tarafsız oluşturulması, gerekli hazırlık ve planlamanın gözden geçirilmesi ve kritik noktalarda yapılan yönlendirmelerle başarının güvence altına alınması; tüm bunlar, sürece farklı bir bakış açısıyla değerlendirme imkânı sağlar.",
           "Her değerlendirme, ilgili uygulama fazında doğru standartların, kalite kapılarının, kontrol mekanizmalarının ve yönetişim yapılarının mevcut olup olmadığını inceler; liderlik ekiplerinin boşlukları, bağımlılıkları ve öncelikli aksiyonları net şekilde görmesine yardımcı olur."
         ],
         "bullets": [
           "Kalite Güvence Hizmetleri",
-          "Program ve Proje Sağlık Kontrolleri",
+          "Program ve Proje Health Check'leri",
           "Kalite Kapıları ve Kontrol Değerlendirmeleri",
           "Yönetişim, Risk ve Bağımlılık Analizi",
           "Bağımsız Yönetici Raporlaması"
@@ -2692,7 +2674,7 @@ window.SITE = {
         },
         {
           "num": "05",
-          "title": "Kalite Güvence Hizmetleri ve Sağlık Kontrolleri",
+          "title": "Kalite Güvence ve Health Check Hizmetleri",
           "intro": [
             "Kalite güvence ve sağlık kontrol çalışmaları, dönüşüm girişimlerine bağımsız bir kalite, kontrol, yönetişim ve uygulama disiplini bakışı kazandırır.",
             "Bu hizmetler; Kurumsal Dönüşüm ve Değişim Yönetimi, SAP Dönüşümü, RFP ve Teklif süreçleri, Yönetilen Hizmetler, Yapay Zeka hazırlığı ve Operasyon Modelleri dahil olmak üzere tüm dönüşüm liderliği alanlarında uygulanabilir.",
@@ -2708,7 +2690,7 @@ window.SITE = {
               ]
             },
             {
-              "title": "Program ve Proje Sağlık Kontrolleri",
+              "title": "Program ve Proje Health Check'leri",
               "desc": [
                 "Program veya proje; kapsam, zaman planı, bütçe, yönetişim, paydaş hizalanması, uygulama performansı ve hazırlık seviyesi açısından değerlendirilir.",
                 "Amaç, erken uyarı sinyallerini ve kontrolü güçlendirecek pratik aksiyonları görünür kılmaktır."
@@ -2748,7 +2730,7 @@ window.SITE = {
         "button": "Görüşme planla"
       },
       "lead": {
-        "eyebrow": "Hizmetler",
+        "eyebrow": "Çalışma Alanlarım",
         "title": "Dönüşüm Liderliği Alanları",
         "lede": [
           "Kurumsal dönüşüm, SAP programları, RFP, teklif ve ticari süreçler, yönetilen hizmetler, yapay zeka ve operasyon modelleri alanlarında bütüncül bir deneyim.",
