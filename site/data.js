@@ -1720,14 +1720,14 @@ window.SITE = {
     "landing": {
       "eyebrow": "Hizmetler",
       "hero1": {
-        "eyebrow": "Executive Advisory",
+        "eyebrow": "Üst Düzey Danışmanlık",
         "headline": [
           "Strateji",
           "Dönüşüm",
           "Operasyon"
         ],
         "subhead": "Uçtan uca dönüşüm ortağınız",
-        "lede": "Strateji, operating model tasarımı ve kurumsal dönüşüm alanlarında üst düzey yönetici.",
+        "lede": "Strateji, operating model tasarımı ve kurumsal dönüşüm alanlarında üst düzey danışman ve dönüşüm lideri.",
         "ctaPrimary": "Görüşme ayarlayın",
         "ctaSecondary": "Hizmetleri görün",
         "tagline": "Tarafsız değerlendirme. Operasyonun her aşamasında deneyim. Pragmatik, sonuç odaklı, çevik yaklaşımlar."
@@ -1876,7 +1876,7 @@ window.SITE = {
       "perspective": {
         "eyebrow": "Bakış açısı",
         "title": [
-          "Dönüşüm, her şey birlikte ele alındığında",
+          "Dönüşüm, tüm unsurlar birlikte ele alındığında",
           "başarıya ulaşır"
         ],
         "lede": "Dönüşümün kalıcı etkileri, strateji, insanlar, dönüşüm ve operasyonun birbiriyle hizalanmasından ve yapay zeka ile güçlendirilmesinden oluşur.",
@@ -1914,7 +1914,7 @@ window.SITE = {
         "note": {
           "lead": "",
           "rest": "Strateji, insan, dönüşüm ve operasyonlar birlikte çalıştığında,",
-          "em": "kalıcı değişim kaçınılmaz olur."
+          "em": "kalıcı değişim doğal olarak ortaya çıkar."
         }
       },
       "howIThink": {
@@ -2028,8 +2028,7 @@ window.SITE = {
     "svc": {
       "eyebrow": "Hizmetler",
       "title": [
-        "Stratejiden",
-        "Sürdürülebilir Organizasyonlara",
+        "Stratejiden sürdürülebilir organizasyonlara uzanan,",
         "uçtan uca kapsamlı bir yaklaşım"
       ],
       "lede": "Kurumsal dönüşüm, SAP programları, RFP, teklif ve ticari süreçler, yönetilen hizmetler, AI ve operating model’ler genelinde deneyim.",
@@ -2071,7 +2070,7 @@ window.SITE = {
         {
           "icon": "opmodel",
           "step": "Yönetilen Hizmetler,\nAI & Operating\nModel’ler",
-          "body": "İş önceliklerini, operasyonel yetkinlikleri ve sürdürülebilir değer yaratımını hizalayan hizmet, destek ve AI-destekli operating model’ler tasarlamak.",
+          "body": "İş önceliklerini, operasyonel yetkinlikleri ve sürdürülebilir değer yaratımını uyumlu hale getiren; hizmet, destek ve AI-destekli operating model’ler tasarlamak.",
           "items": [
             "AMS & yönetilen hizmet modelleri",
             "Destek organizasyonu tasarımı",
