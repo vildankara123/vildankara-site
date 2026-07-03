@@ -62,11 +62,11 @@
           <Reveal>
             <Heading eyebrow={c.eyebrow} title={c.title} lede={c.lede} onInk maxWidth="14ch" ledeWidth="46ch" />
             <div style={{ marginTop: "40px", display: "flex", flexDirection: "column", gap: "16px" }}>
-              {[["@", c.email, "mailto:" + c.email], ["↗", c.linkedin, "#"], ["·", c.location, null], ["·", c.langs, null]].map((row, i) => (
+              {[["@", c.email, "mailto:" + c.email], ["↗", c.linkedin, "https://www.linkedin.com/in/vildankara/"], ["·", c.location, null], ["·", c.langs, null]].map((row, i) => (
                 <div key={i} style={{ display: "flex", gap: "14px", alignItems: "baseline" }}>
                   <span style={{ fontFamily: "var(--font-mono)", fontSize: "12px", color: "var(--accent-on-ink)", width: "14px" }}>{row[0]}</span>
                   {row[2]
-                    ? <a href={row[2]} style={{ fontSize: "var(--t-body-s)", color: "var(--text-on-ink)", borderBottom: "1px solid var(--line-on-ink)", paddingBottom: "1px" }}>{row[1]}</a>
+                    ? <a href={row[2]} target={row[2].startsWith("http") ? "_blank" : undefined} rel={row[2].startsWith("http") ? "noopener noreferrer" : undefined} style={{ fontSize: "var(--t-body-s)", color: "var(--text-on-ink)", borderBottom: "1px solid var(--line-on-ink)", paddingBottom: "1px" }}>{row[1]}</a>
                     : <span style={{ fontSize: "var(--t-body-s)", color: "var(--text-on-ink-muted)" }}>{row[1]}</span>}
                 </div>
               ))}

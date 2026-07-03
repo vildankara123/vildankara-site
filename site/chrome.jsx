@@ -83,7 +83,7 @@
             </div>
             <div>
               <div style={ftCol}>{t.footer.colFollow}</div>
-              <a href="#" style={ftLink}
+              <a href="https://www.linkedin.com/in/vildankara/" target="_blank" rel="noopener noreferrer" style={ftLink}
                 onMouseEnter={(e) => e.currentTarget.style.color = "var(--accent-on-ink)"}
                 onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-on-ink-muted)"}>LinkedIn ↗</a>
             </div>
