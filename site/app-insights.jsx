@@ -11,7 +11,7 @@
         <Chrome.Nav t={t} lang={lang} setLang={setLang} current="insights" solid />
         <Extra.Insights t={t} lang={lang} page />
         <End.Contact t={t} />
-        <Chrome.Footer t={t} />
+        <Chrome.Footer t={t} lang={lang} />
       </>
     );
   }

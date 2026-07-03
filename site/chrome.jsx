@@ -21,7 +21,7 @@
         boxShadow: "0 1px 0 rgba(236,240,244,0.10)",
       }}>
         <div className="container" style={{ display: "flex", alignItems: "center", gap: "20px", height: scrolled ? "64px" : "82px", transition: "height var(--dur) var(--ease-out)" }}>
-          <a href="index.html" style={{ display: "flex", flexDirection: "column", lineHeight: 1.15, marginRight: "auto", whiteSpace: "nowrap" }}>
+          <a href={withLang("index.html", lang)} style={{ display: "flex", flexDirection: "column", lineHeight: 1.15, marginRight: "auto", whiteSpace: "nowrap" }}>
             <span style={{ fontFamily: "var(--font-serif)", fontSize: "19px", color: "var(--text-on-ink)", letterSpacing: "0.01em" }}>{t.brand.name}</span>
             {t.brand.role ? <span style={{ fontFamily: "var(--font-mono)", fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--accent-on-ink)", marginTop: "4px" }}>{t.brand.role}</span> : null}
           </a>
@@ -29,7 +29,7 @@
             {t.nav.map((n) => {
               const active = current === n.id;
               return (
-                <a key={n.id} href={n.href} className="vk-navlink"
+                <a key={n.id} href={withLang(n.href, lang)} className="vk-navlink"
                   style={{ fontFamily: "var(--font-sans)", fontSize: "14px", fontWeight: 500, color: active ? "var(--text-on-ink)" : "var(--text-on-ink-muted)", letterSpacing: "0.01em", whiteSpace: "nowrap", borderBottom: active ? "1px solid var(--accent-on-ink)" : "1px solid transparent", paddingBottom: "2px", transition: "color var(--dur-fast)" }}
                   onMouseEnter={(e) => e.currentTarget.style.color = "var(--text-on-ink)"}
                   onMouseLeave={(e) => e.currentTarget.style.color = active ? "var(--text-on-ink)" : "var(--text-on-ink-muted)"}>{n.label}</a>
@@ -42,7 +42,7 @@
             onMouseLeave={(e) => e.currentTarget.style.borderColor = "rgba(236,240,244,0.28)"}>
             {lang === "en" ? "TR" : "EN"}
           </button>
-          <a href="index.html#contact" className="vk-navcta"
+          <a href={withLang("index.html#contact", lang)} className="vk-navcta"
             style={{ fontFamily: "var(--font-sans)", fontSize: "14px", fontWeight: 500, color: "var(--on-accent)", background: "var(--accent)", padding: "10px 18px", borderRadius: "var(--r-sm)", whiteSpace: "nowrap", transition: "background var(--dur-fast)" }}
             onMouseEnter={(e) => e.currentTarget.style.background = "var(--gold-400)"}
             onMouseLeave={(e) => e.currentTarget.style.background = "var(--accent)"}>{t.cta}</a>
@@ -52,7 +52,7 @@
   }
 
   /* ---------------- FOOTER ---------------- */
-  function Footer({ t }) {
+  function Footer({ t, lang }) {
     const c = t.contact;
     return (
       <footer style={{ background: "var(--ink-900)", padding: "64px 0 40px", borderTop: "1px solid var(--line-on-ink)" }}>
@@ -67,7 +67,7 @@
               <div style={ftCol}>{t.footer.colPages}</div>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                 {t.nav.map((n) => (
-                  <a key={n.id} href={n.href} style={ftLink}
+                  <a key={n.id} href={withLang(n.href, lang)} style={ftLink}
                     onMouseEnter={(e) => e.currentTarget.style.color = "var(--accent-on-ink)"}
                     onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-on-ink-muted)"}>{n.label}</a>
                 ))}
@@ -100,19 +100,76 @@
   const ftCol = { fontFamily: "var(--font-mono)", fontSize: "10.5px", letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--accent-on-ink)", marginBottom: "16px" };
   const ftLink = { fontFamily: "var(--font-sans)", fontSize: "var(--t-body-s)", color: "var(--text-on-ink-muted)", transition: "color var(--dur-fast)" };
 
-  /* Shared language hook: reads ?lang= or localStorage, persists both. */
+  /* Canonical host for SEO tags — pin to the apex domain so EN/TR canonicals stay
+     consistent regardless of whether a visitor arrived via www or apex. */
+  const SEO_ORIGIN = "https://vildankara.com";
+
+  /* Create-or-update a <link> in <head>, keyed so we never duplicate it. */
+  function upsertLink(key, rel, href, hreflang) {
+    let el = document.head.querySelector('link[data-vk="' + key + '"]');
+    if (!el) {
+      el = document.createElement("link");
+      el.setAttribute("data-vk", key);
+      el.setAttribute("rel", rel);
+      if (hreflang) el.setAttribute("hreflang", hreflang);
+      document.head.appendChild(el);
+    }
+    el.setAttribute("href", href);
+  }
+
+  /* Emit canonical + hreflang alternates so search engines see EN and TR as two
+     distinct, linked language versions of the same page. EN is x-default. */
+  function syncSeoTags(lang) {
+    /* Normalise /index.html → / so the home canonical stays clean. */
+    const path = (location.pathname || "/").replace(/\/index\.html$/, "/");
+    const enUrl = SEO_ORIGIN + path;
+    const trUrl = SEO_ORIGIN + path + "?lang=tr";
+    upsertLink("canonical", "canonical", lang === "tr" ? trUrl : enUrl, null);
+    upsertLink("alt-en", "alternate", enUrl, "en");
+    upsertLink("alt-tr", "alternate", trUrl, "tr");
+    upsertLink("alt-x", "alternate", enUrl, "x-default");
+  }
+
+  /* Append the active language to internal links so navigating keeps the language
+     explicit in the URL. EN is the default → no param; TR → ?lang=tr. External,
+     mail, tel and pure-hash links are left untouched. */
+  function withLang(href, lang) {
+    if (!href || lang !== "tr") return href;
+    if (/^(https?:|mailto:|tel:)/i.test(href) || href.charAt(0) === "#") return href;
+    const hashIdx = href.indexOf("#");
+    const hash = hashIdx >= 0 ? href.slice(hashIdx) : "";
+    const path = hashIdx >= 0 ? href.slice(0, hashIdx) : href;
+    const sep = path.indexOf("?") >= 0 ? "&" : "?";
+    return path + sep + "lang=tr" + hash;
+  }
+
+  /* Shared language hook: reads ?lang= or localStorage, persists both, and keeps
+     the URL + SEO tags in sync so EN/TR are distinct, shareable, indexable URLs. */
   function useLang() {
     const [lang, setLang] = useState(() => {
-      const q = new URLSearchParams(location.search).get("lang");
-      return q || localStorage.getItem("vk-lang") || "en";
+      const valid = (v) => (v === "en" || v === "tr") ? v : null;
+      const q = valid(new URLSearchParams(location.search).get("lang"));
+      return q || valid(localStorage.getItem("vk-lang")) || "en";
     });
     useEffect(() => {
       localStorage.setItem("vk-lang", lang);
       document.documentElement.lang = lang;
+      /* Keep the URL's ?lang= in sync — EN default stays clean, TR carries ?lang=tr. */
+      try {
+        const url = new URL(location.href);
+        const cur = url.searchParams.get("lang");
+        if (lang === "en") {
+          if (cur !== null) { url.searchParams.delete("lang"); history.replaceState(null, "", url); }
+        } else if (cur !== lang) {
+          url.searchParams.set("lang", lang);
+          history.replaceState(null, "", url);
+        }
+      } catch (e) {}
+      syncSeoTags(lang);
     }, [lang]);
     return [lang, setLang];
   }
 
   window.VKWeb = window.VKWeb || {};
-  window.VKWeb.Chrome = { Nav, Footer, useLang };
+  window.VKWeb.Chrome = { Nav, Footer, useLang, withLang };
 })();

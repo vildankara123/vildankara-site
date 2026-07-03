@@ -17,7 +17,7 @@
         <Extra.Footprint t={t} footprint={SITE.footprint} lang={lang} />
         <End.Credentials t={t} />
         <End.Contact t={t} />
-        <Chrome.Footer t={t} />
+        <Chrome.Footer t={t} lang={lang} />
       </>
     );
   }

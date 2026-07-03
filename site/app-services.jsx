@@ -77,7 +77,7 @@
           </div>
         </section>
         <End.Contact t={t} />
-        <Chrome.Footer t={t} />
+        <Chrome.Footer t={t} lang={lang} />
       </>
     );
   }

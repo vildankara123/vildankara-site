@@ -9,7 +9,7 @@
       <>
         <Chrome.Nav t={t} lang={lang} setLang={setLang} current="projects" solid />
         <Detail.ProjectDetail t={t} lang={lang} />
-        <Chrome.Footer t={t} />
+        <Chrome.Footer t={t} lang={lang} />
       </>
     );
   }

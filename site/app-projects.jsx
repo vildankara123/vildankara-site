@@ -36,7 +36,7 @@
             </Reveal>
           </div>
         </section>
-        <Chrome.Footer t={t} />
+        <Chrome.Footer t={t} lang={lang} />
       </>
     );
   }

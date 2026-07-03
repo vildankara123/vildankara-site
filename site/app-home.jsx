@@ -24,7 +24,7 @@
         <HomeSections.AboutTeaser t={t} />
         <End.CtaBand t={t} />
         <End.Contact t={t} />
-        <Chrome.Footer t={t} />
+        <Chrome.Footer t={t} lang={lang} />
       </>
     );
   }
