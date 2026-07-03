@@ -653,7 +653,7 @@ window.SITE = {
           "Transformation",
           "Operations"
         ],
-        "subhead": "Your end-to-end transformation partner.",
+        "subhead": "Your end-to-end transformation partner",
         "lede": "Senior executive across strategy, operating model design and enterprise transformation.",
         "ctaPrimary": "Arrange a consultation",
         "ctaSecondary": "See the services",
@@ -683,7 +683,7 @@ window.SITE = {
       ],
       "servicesHead": {
         "eyebrow": "The services",
-        "title": "One coordinated management across every stage of the journey.",
+        "title": "One coordinated management across every stage of the journey",
         "lede": "From the first strategic decision through successful delivery to a sustainable operation, management stays coordinated across the whole arc."
       },
       "nodes": [
@@ -788,14 +788,14 @@ window.SITE = {
         }
       ],
       "ctaBand": {
-        "title": "A transformation journey, shaped together.",
+        "title": "A transformation journey, shaped together",
         "body": "Get in touch to discuss your strategic priorities.",
         "cta": "Arrange a consultation"
       }
     },
     "projectsSoon": {
       "eyebrow": "Projects",
-      "title": "Carefully in the making.",
+      "title": "Carefully in the making",
       "body": "Initiatives designed to deliver the highest value for the country and its enterprises, powered by artificial intelligence, are being carefully developed. The aim is to bring forward corporate solutions that turn strategic priorities into measurable, sustainable outcomes. As each one matures, it will be shared here.",
       "cta": "Get in touch"
     },
@@ -804,7 +804,7 @@ window.SITE = {
         "eyebrow": "The perspective",
         "title": [
           "Transformation succeeds",
-          "when all is addressed together."
+          "when all is addressed together"
         ],
         "lede": "Sustainable impact comes from aligning strategy, people, transformation and operations, supported and accelerated by AI.",
         "flow": [
@@ -848,7 +848,7 @@ window.SITE = {
         "eyebrow": "Perspectives",
         "title": [
           "The real value of transformation",
-          "is in how it lands."
+          "is in how it lands"
         ],
         "sub": "Perspectives on transformation, technology, people and impact. Ideas shaped by experience. Rooted in reality. Written to spark meaningful change.",
         "posts": [
@@ -884,9 +884,9 @@ window.SITE = {
       "aboutTeaser": {
         "eyebrow": "Who is Vildan?",
         "title": [
-          "End-to-end experience.",
-          "Innovative perspective.",
-          "Disciplined execution."
+          "End-to-end experience",
+          "Innovative perspective",
+          "Disciplined execution"
         ],
         "cta": "More about Vildan",
         "items": [
@@ -1026,7 +1026,7 @@ window.SITE = {
     },
     "services": {
       "eyebrow": "The practice areas",
-      "title": "Expertise areas shaped by experience and methodology.",
+      "title": "Expertise areas shaped by experience and methodology",
       "lede": "Management across the full enterprise-transformation agenda, from strategy and vendor selection through delivery, go-live and the operating model, backed by 20+ years of hands-on delivery across every domain below. Technology is the easy half; the work that lasts is organisational change, governance and the people who carry it. Engagements can run the full arc or focus on a single phase, and every one is shaped solely by enterprises' needs and expectations.",
       "items": [
         {
@@ -1140,7 +1140,7 @@ window.SITE = {
     },
     "projects": {
       "eyebrow": "Applied AI",
-      "title": "Projects built in-house.",
+      "title": "Projects built in-house",
       "lede": "Beyond advisory, artificial intelligence is applied directly, a growing portfolio of products built to test where AI creates real value, in enterprise transformation and beyond. Each began as a working experiment; several are live.",
       "visit": "Visit project",
       "details": "View details",
@@ -1192,7 +1192,7 @@ window.SITE = {
     },
     "insights": {
       "eyebrow": "Insights",
-      "title": "Notes from the transformation frontline.",
+      "title": "Notes from the transformation frontline",
       "lede": "Perspectives on SAP, AI and the operating models that make change last, written for CIOs and senior IT leaders.",
       "readMore": "Read",
       "all": "All insights",
@@ -1219,7 +1219,7 @@ window.SITE = {
     },
     "ctaBand": {
       "eyebrow": "Get in touch",
-      "title": "Transformation that lasts starts with a conversation.",
+      "title": "Transformation that lasts starts with a conversation",
       "cta": "Arrange a consultation"
     },
     "footprintHead": {
@@ -1332,7 +1332,7 @@ window.SITE = {
       ],
       "philosophy": {
         "eyebrow": "Perspective",
-        "title": "When strategy aligns, technology accelerates, people empower, transformation lasts.",
+        "title": "When strategy aligns, technology accelerates, people empower, transformation lasts",
         "lead": [
           "In today’s complex landscape, the greatest impact emerges when **strategy is clear, people embrace change, technology is used with purpose** and **operational discipline** brings it all together.",
           "Across industries and geographies, I work at the intersection of business, technology, people and operations to design and deliver **integrated transformation** that creates lasting value.",
@@ -1423,7 +1423,7 @@ window.SITE = {
     },
     "contact": {
       "eyebrow": "Contact",
-      "title": "A conversation starts here.",
+      "title": "A conversation starts here",
       "lede": "Whether a major transformation is being prepared in your organisation, an SAP or AI programme is underway, or an operating model needs redesign, a conversation is welcome.",
       "fields": {
         "name": "Name",
@@ -1668,7 +1668,7 @@ window.SITE = {
         }
       ],
       "cta": {
-        "title": "Let’s define the right starting point.",
+        "title": "Let’s define the right starting point",
         "paras": [
           "Whether the need is a transformation review, SAP programme leadership, RFP support, managed service design, AI roadmap or independent quality assurance, the first step is to understand the current situation clearly."
         ],
@@ -1726,7 +1726,7 @@ window.SITE = {
           "Dönüşüm",
           "Operasyon"
         ],
-        "subhead": "Uçtan uca dönüşüm ortağınız.",
+        "subhead": "Uçtan uca dönüşüm ortağınız",
         "lede": "Strateji, operating model tasarımı ve kurumsal dönüşüm alanlarında üst düzey yönetici.",
         "ctaPrimary": "Görüşme ayarlayın",
         "ctaSecondary": "Hizmetleri görün",
@@ -1756,7 +1756,7 @@ window.SITE = {
       ],
       "servicesHead": {
         "eyebrow": "Hizmetlerimiz",
-        "title": "Dönüşümün her aşamasında koordineli, planlı ve uygulanabilir bir üst düzey yönetim.",
+        "title": "Dönüşümün her aşamasında koordineli, planlı ve uygulanabilir bir üst düzey yönetim",
         "lede": "Stratejik kararların alınmasından, programların başarıyla hayata geçirilmesine ve sürdürülebilir bir operasyona kadar, tek ve koordineli bir yönetim."
       },
       "nodes": [
@@ -1861,14 +1861,14 @@ window.SITE = {
         }
       ],
       "ctaBand": {
-        "title": "Adım adım tanımlanan ve yönetilebilir bir dönüşüm yolculuğu.",
+        "title": "Adım adım tanımlanan ve yönetilebilir bir dönüşüm yolculuğu",
         "body": "Stratejik önceliklerinizi konuşmak için bizimle iletişime geçin.",
         "cta": "Görüşme ayarlayın"
       }
     },
     "projectsSoon": {
       "eyebrow": "Projeler",
-      "title": "Özenle hazırlanıyor.",
+      "title": "Özenle hazırlanıyor",
       "body": "Ülkemiz ve kurumlarımız için en yüksek katma değeri yaratacak projeler, yapay zekâ destekli çözümlerle titizlikle hazırlanıyor. Amacımız, stratejik olarak ölçülebilir, sürdürülebilir sonuçlara dönüşen, kurumsal değeri yüksek çözümler ortaya koymaktır. Her bir projemiz olgunlaştıkça bu sayfada sizinle paylaşılacaktır.",
       "cta": "İletişime geçin"
     },
@@ -1877,7 +1877,7 @@ window.SITE = {
         "eyebrow": "Bakış açısı",
         "title": [
           "Dönüşüm, her şey birlikte ele alındığında",
-          "başarıya ulaşır."
+          "başarıya ulaşır"
         ],
         "lede": "Dönüşümün kalıcı etkileri, strateji, insanlar, dönüşüm ve operasyonun birbiriyle hizalanmasından ve yapay zeka ile güçlendirilmesinden oluşur.",
         "flow": [
@@ -1921,7 +1921,7 @@ window.SITE = {
         "eyebrow": "Bakış açıları",
         "title": [
           "Dönüşümün gerçek değeri",
-          "nasıl hayata geçtiğinde ortaya çıkar."
+          "nasıl hayata geçtiğinde ortaya çıkar"
         ],
         "sub": "Dönüşüm, teknoloji, insan ve etki üzerine bakış açıları. Deneyimle şekillenmiş, gerçeğe dayanan, anlamlı değişimi tetiklemek için yazılmış fikirler.",
         "posts": [
@@ -1957,9 +1957,9 @@ window.SITE = {
       "aboutTeaser": {
         "eyebrow": "Vildan Kimdir?",
         "title": [
-          "Bütüncül deneyim.",
-          "Yenilikçi bakış.",
-          "Disiplinli uygulama."
+          "Bütüncül deneyim",
+          "Yenilikçi bakış",
+          "Disiplinli uygulama"
         ],
         "cta": "Vildan hakkında",
         "items": [
@@ -2100,7 +2100,7 @@ window.SITE = {
     },
     "services": {
       "eyebrow": "Uzmanlık alanları",
-      "title": "Deneyim ve metodolojiden beslenen uzmanlık alanları.",
+      "title": "Deneyim ve metodolojiden beslenen uzmanlık alanları",
       "lede": "Kurumsal dönüşüm gündeminin tamamında, stratejiden tedarikçi seçimine, teslimattan go-live'a ve işletme modeline kadar yönetim; bunun arkasında, aşağıdaki her alanda edinilmiş 20+ yıllık saha deneyimi vardır. Teknoloji işin kolay yarısı; kalıcı olan iş organizasyonel değişim, yönetişim ve onu taşıyan insanlardır. Çalışmalar uçtan uca da yürütülebilir, tek bir fazla da sınırlı kalabilir; her biri yalnızca kurumların ihtiyacına ve beklentilerine göre şekillendirilir.",
       "items": [
         {
@@ -2214,7 +2214,7 @@ window.SITE = {
     },
     "projects": {
       "eyebrow": "Uygulamalı AI",
-      "title": "Kendi geliştirdiği projeler.",
+      "title": "Kendi geliştirdiği projeler",
       "lede": "Danışmanlığın ötesinde, yapay zeka doğrudan uygulanır, AI'ın kurumsal dönüşümde ve ötesinde nerede gerçek değer yarattığını sınamak için geliştirilmiş, büyüyen bir ürün portföyü. Her biri çalışan bir deney olarak başladı; bazıları yayında.",
       "visit": "Projeyi gör",
       "details": "Detayları gör",
@@ -2266,7 +2266,7 @@ window.SITE = {
     },
     "insights": {
       "eyebrow": "Yazılar",
-      "title": "Dönüşümün sahasından notlar.",
+      "title": "Dönüşümün sahasından notlar",
       "lede": "SAP, yapay zeka ve değişimi kalıcı kılan işletme modelleri üzerine bakışlar, CIO'lar ve üst düzey IT liderleri için.",
       "readMore": "Oku",
       "all": "Tüm yazılar",
@@ -2293,7 +2293,7 @@ window.SITE = {
     },
     "ctaBand": {
       "eyebrow": "Konuşalım",
-      "title": "Kalıcı dönüşüm bir görüşmeyle başlar.",
+      "title": "Kalıcı dönüşüm bir görüşmeyle başlar",
       "cta": "Görüşme planlayın"
     },
     "footprintHead": {
@@ -2406,7 +2406,7 @@ window.SITE = {
       ],
       "philosophy": {
         "eyebrow": "Bakış Açım",
-        "title": "Strateji netleştiğinde, teknoloji hız kazanır, insan güçlenir, dönüşüm kalıcı olur.",
+        "title": "Strateji netleştiğinde, teknoloji hız kazanır, insan güçlenir, dönüşüm kalıcı olur",
         "lead": [
           "Karmaşık dönüşüm yolculuklarında en büyük etki, **stratejinin netliği, insanların sahiplenmesi, teknolojinin doğru kullanımı** ve **operasyonun disiplini** bir araya geldiğinde ortaya çıkar.",
           "Farklı sektörlerde, çok kültürlü ve çok lokasyonlu ortamlarda çalışarak; işin stratejik yönünü operasyonel gerçeklikle buluşturan, insan odağını merkeze alan **bütüncül dönüşümler** tasarlıyor ve hayata geçirilmesine **liderlik** ediyorum."
@@ -2496,7 +2496,7 @@ window.SITE = {
     },
     "contact": {
       "eyebrow": "İletişim",
-      "title": "Bir görüşme planlayalım.",
+      "title": "Bir görüşme planlayalım",
       "lede": "Kurumunuzda büyük bir dönüşüm hazırlanıyor, bir SAP ya da yapay zeka programı yürütülüyor ya da operasyon modeliniz yeniden tasarlanıyor olabilir. İlk görüşmede ihtiyacınızı birlikte değerlendirelim.",
       "fields": {
         "name": "Ad Soyad",
@@ -2741,7 +2741,7 @@ window.SITE = {
         }
       ],
       "cta": {
-        "title": "Doğru başlangıç noktasını birlikte netleştirelim.",
+        "title": "Doğru başlangıç noktasını birlikte netleştirelim",
         "paras": [
           "İhtiyaç; dönüşüm değerlendirmesi, SAP program liderliği, RFP süreci desteği, yönetilen hizmet modeli tasarımı, yapay zeka yol haritası veya bağımsız kalite güvence çalışması olabilir.",
           "İlk adım, mevcut durumu doğru okumak, öncelikleri netleştirmek ve ilerleme yolunu gerçekçi şekilde yapılandırmaktır."
