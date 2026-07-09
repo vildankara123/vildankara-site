@@ -149,7 +149,7 @@
     const [lang, setLang] = useState(() => {
       const valid = (v) => (v === "en" || v === "tr") ? v : null;
       const q = valid(new URLSearchParams(location.search).get("lang"));
-      return q || valid(localStorage.getItem("vk-lang")) || "en";
+      return q || valid(localStorage.getItem("vk-lang")) || "tr";
     });
     useEffect(() => {
       localStorage.setItem("vk-lang", lang);
