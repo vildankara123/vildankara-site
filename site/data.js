@@ -1771,8 +1771,8 @@ window.SITE = {
           "Dönüşüm",
           "Operasyon"
         ],
-        "subhead": "Stratejiden dönüşüme, dönüşümden operasyonel mükemmelliğe",
-        "lede": "Stratejik yönü dönüşüm kapasitesine, dönüşümü operasyonel mükemmelliğe bağlayan; yapay zeka ve teknoloji gücüyle geleceğin organizasyonlarını şekillendirmeye odaklanan bütüncül bir liderlik perspektifi.",
+        "subhead": "Güçlü bir gelecek için, organizasyonların dönüşümüne bütüncül bir liderlik yaklaşımı",
+        "lede": "Strateji, organizasyon, operasyon ve teknolojiyi ortak bir hedef doğrultusunda bir araya getiren; dönüşüm kapasitesini, sürdürülebilir büyümeyi ve kurumsal etkiyi bütüncül bir bakışla ele alan liderlik anlayışı",
         "ctaPrimary": "Perspektifi keşfedin",
         "ctaSecondary": "Deneyimi keşfedin",
         "tagline": "Tarafsız değerlendirme. Operasyonun her aşamasında deneyim. Pragmatik, sonuç odaklı, çevik yaklaşımlar."
