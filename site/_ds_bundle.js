@@ -1381,10 +1381,10 @@ try { (() => {
 // ui_kits/website/data.js
 try { (() => {
 /* ============================================================
-   Content — Vildan Kara Kayacan · Executive Advisory.
+   Content — Vildan Kara · Executive Advisory.
    Multi-page site. Bilingual (EN / TR).
    Voice: third person, professional / advertising register.
-   The SUBJECT is Vildan Kara Kayacan (named or implied) — not a
+   The SUBJECT is Vildan Kara (named or implied) — not a
    first person ("I/me"), and not a fictional company structure.
    Region terminology: EMEA & MENA.
    Exposed as window.SITE.
@@ -1577,7 +1577,7 @@ window.SITE = {
       labels: {
         back: "All insights",
         backProjects: "All projects",
-        byline: "Vildan Kara Kayacan",
+        byline: "Vildan Kara",
         features: "Highlights",
         visit: "Visit project",
         status: "Status",
@@ -1592,7 +1592,7 @@ window.SITE = {
       labels: {
         back: "Tüm yazılar",
         backProjects: "Tüm projeler",
-        byline: "Vildan Kara Kayacan",
+        byline: "Vildan Kara",
         features: "Öne çıkanlar",
         visit: "Projeyi gör",
         status: "Durum",
@@ -1606,7 +1606,7 @@ window.SITE = {
   },
   en: {
     brand: {
-      name: "Vildan Kara Kayacan",
+      name: "Vildan Kara",
       role: "Executive Advisory"
     },
     nav: [{
@@ -1848,11 +1848,11 @@ window.SITE = {
     /* ---- ABOUT PAGE ---- */
     aboutPage: {
       eyebrow: "About",
-      name: "Vildan Kara Kayacan",
+      name: "Vildan Kara",
       role: "Business, Technology & AI Transformation Executive",
       tags: "SAP & Enterprise Architecture · Managed Services · AI Transformation",
       lede: "Twenty-five years turning transformation strategy into measurable business value — for strategic enterprises across EMEA & MENA.",
-      bio: ["Vildan Kara Kayacan is a business and technology transformation executive with 25+ years of experience leading large-scale transformation, managed services and global delivery for strategic enterprises across EMEA & MENA. The track record is concrete: a managed-services portfolio doubled, operating costs cut by a third, and multi-country delivery organisations built from the ground up.", "Her work sits at the rare intersection of enterprise SAP transformation and applied artificial intelligence — leading both the technology and the organisational change behind its adoption. Deep SAP delivery, hands-on AI and genuine change management within a single profile: precisely what large organisations need now.", "Today she advises CIOs and executive teams as a trusted partner — guiding them as they navigate S/4HANA migration, managed-services restructuring, AI adoption, the design of a Center of Excellence, or a high-stakes bid that warrants an experienced hand at the table. Engagements are accepted selectively, in an advisory or senior programme-leadership capacity."],
+      bio: ["Vildan Kara is a business and technology transformation executive with 25+ years of experience leading large-scale transformation, managed services and global delivery for strategic enterprises across EMEA & MENA. The track record is concrete: a managed-services portfolio doubled, operating costs cut by a third, and multi-country delivery organisations built from the ground up.", "Her work sits at the rare intersection of enterprise SAP transformation and applied artificial intelligence — leading both the technology and the organisational change behind its adoption. Deep SAP delivery, hands-on AI and genuine change management within a single profile: precisely what large organisations need now.", "Today she advises CIOs and executive teams as a trusted partner — guiding them as they navigate S/4HANA migration, managed-services restructuring, AI adoption, the design of a Center of Excellence, or a high-stakes bid that warrants an experienced hand at the table. Engagements are accepted selectively, in an advisory or senior programme-leadership capacity."],
       cvLabel: "Download CV (PDF)",
       cvHref: "#",
       profileTitle: "Selected achievements",
@@ -1931,7 +1931,7 @@ window.SITE = {
     },
     footer: {
       tagline: "Executive advisory for enterprise transformation — SAP, AI, managed services and major bids, across EMEA & MENA.",
-      copy: "© 2026 Vildan Kara Kayacan. All rights reserved.",
+      copy: "© 2026 Vildan Kara. All rights reserved.",
       colPages: "Pages",
       colContact: "Contact",
       colFollow: "Follow"
@@ -1939,7 +1939,7 @@ window.SITE = {
   },
   tr: {
     brand: {
-      name: "Vildan Kara Kayacan",
+      name: "Vildan Kara",
       role: "Executive Advisory"
     },
     nav: [{
@@ -2180,11 +2180,11 @@ window.SITE = {
     },
     aboutPage: {
       eyebrow: "Hakkında",
-      name: "Vildan Kara Kayacan",
+      name: "Vildan Kara",
       role: "İş, Teknoloji & Yapay Zeka Dönüşüm Yöneticisi",
       tags: "SAP & Kurumsal Mimari · Yönetilen Hizmetler · AI Dönüşümü",
       lede: "Yirmi beş yıl boyunca dönüşüm stratejisini ölçülebilir iş değerine dönüştürdü — EMEA & MENA genelindeki stratejik kurumlar için.",
-      bio: ["Vildan Kara Kayacan, EMEA & MENA genelindeki stratejik kurumlar için büyük ölçekli dönüşüm, yönetilen hizmetler ve global teslimatı yöneten, 25+ yıllık deneyime sahip bir iş ve teknoloji dönüşüm yöneticisidir. Sicili somuttur: ikiye katlanan bir yönetilen hizmetler portföyü, üçte bir oranında düşürülen faaliyet maliyetleri ve sıfırdan kurulan çok ülkeli teslimat organizasyonları.", "Çalışması, kurumsal SAP dönüşümü ile uygulanan yapay zekanın nadir kesişiminde yer alır — hem teknolojiyi hem de benimsemenin arkasındaki organizasyonel değişimi yönetir. Derin SAP teslimatı, sahada yapay zeka ve gerçek değişim yönetimi tek bir profilde: büyük kurumların bugün tam da ihtiyaç duyduğu şey.", "Bugün CIO'lara ve yönetim ekiplerine güvenilen bir partner olarak danışmanlık verir — S/4HANA geçişi, yönetilen hizmet yeniden yapılandırması, AI benimseme, bir Mükemmeliyet Merkezi tasarımı ya da deneyimli bir el gerektiren yüksek bahisli ihalelerde yön gösterir. Çalışmalar, danışmanlık veya kıdemli program liderliği rolünde, seçici biçimde kabul edilir."],
+      bio: ["Vildan Kara, EMEA & MENA genelindeki stratejik kurumlar için büyük ölçekli dönüşüm, yönetilen hizmetler ve global teslimatı yöneten, 25+ yıllık deneyime sahip bir iş ve teknoloji dönüşüm yöneticisidir. Sicili somuttur: ikiye katlanan bir yönetilen hizmetler portföyü, üçte bir oranında düşürülen faaliyet maliyetleri ve sıfırdan kurulan çok ülkeli teslimat organizasyonları.", "Çalışması, kurumsal SAP dönüşümü ile uygulanan yapay zekanın nadir kesişiminde yer alır — hem teknolojiyi hem de benimsemenin arkasındaki organizasyonel değişimi yönetir. Derin SAP teslimatı, sahada yapay zeka ve gerçek değişim yönetimi tek bir profilde: büyük kurumların bugün tam da ihtiyaç duyduğu şey.", "Bugün CIO'lara ve yönetim ekiplerine güvenilen bir partner olarak danışmanlık verir — S/4HANA geçişi, yönetilen hizmet yeniden yapılandırması, AI benimseme, bir Mükemmeliyet Merkezi tasarımı ya da deneyimli bir el gerektiren yüksek bahisli ihalelerde yön gösterir. Çalışmalar, danışmanlık veya kıdemli program liderliği rolünde, seçici biçimde kabul edilir."],
       cvLabel: "CV indir (PDF)",
       cvHref: "#",
       profileTitle: "Öne çıkan başarılar",
@@ -2263,7 +2263,7 @@ window.SITE = {
     },
     footer: {
       tagline: "Kurumsal dönüşüm için executive advisory — SAP, AI, yönetilen hizmetler ve büyük ihaleler, EMEA & MENA genelinde.",
-      copy: "© 2026 Vildan Kara Kayacan. Tüm hakları saklıdır.",
+      copy: "© 2026 Vildan Kara. Tüm hakları saklıdır.",
       colPages: "Sayfalar",
       colContact: "İletişim",
       colFollow: "Takip"

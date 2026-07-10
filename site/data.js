@@ -1,4 +1,4 @@
-/* Vildan Kara Kayacan - site content (window.SITE). Tek kaynak. */
+/* Vildan Kara - site content (window.SITE). Tek kaynak. */
 window.SITE = {
   "img": {
     "portrait": "assets/img/vildan-portrait.jpg",
@@ -8,7 +8,7 @@ window.SITE = {
     "boardroom": "assets/img/hero-boardroom.png",
     "road": "assets/img/hero-city-night.png",
     "skyline": "assets/img/hero-skyline.png",
-    "seated": "assets/img/vildan-seated.png"
+    "seated": "assets/img/vildan-about-hero.png"
   },
   "pages": {
     "home": "index.html",
@@ -307,7 +307,7 @@ window.SITE = {
       "labels": {
         "back": "All insights",
         "backProjects": "All projects",
-        "byline": "Vildan Kara Kayacan",
+        "byline": "Vildan Kara",
         "features": "Highlights",
         "visit": "Visit project",
         "status": "Status",
@@ -391,6 +391,26 @@ window.SITE = {
           "In this context, I genuinely trust Gen Z.",
           "Especially for the Alpha generation, our children whom today, at the age of three, we send to school paying 100K a month, I hope we can build a world where, at the end of the day, they do not simply turn into minimum-wage and burnt-out white-collar workers.",
           "I believe this should be the new marathon of us, the X and Y generations."
+        ],
+        [
+          "Perhaps the greatest magic of the age of AI is our ability to redesign the division of labour between humans, systems and machines.",
+          "We are passing through an era in which the human being is, to some degree, drawn back from the centre and, precisely for that reason, needs to move closer to other human beings.",
+          "The person who once turned the wheels of the system must now create meaning within systems that act ever more autonomously, and redefine the value they generate.",
+          "Rather than merely predicting the future, they must rethink, redesign and rebuild it together with the changing dynamics.",
+          "And perhaps this is where the greatest challenge begins:",
+          "The human being, who for thousands of years has existed by producing, working and transforming the world with mind and hands, will hand an ever-larger share of their tasks and intellectual output to machines, so how will they redefine their place in nature and in society?",
+          "Or will this new position take shape, as it has before in human history, through an evolutionary adaptation that unfolds over time?",
+          "If producing lies at the core of human identity, on what will the human being build themselves once the form of production changes?",
+          "What will it mean to create value? What will it mean to work? By what will success be measured?",
+          "As the human being hands over the work that machines take on faster and more effectively, which human capacities will they move closer to?",
+          "Perhaps intuition.. Perhaps judgement.. Perhaps creativity.. Perhaps the ability to build relationships..",
+          "Perhaps, too, the search for meaning that we have long pushed into the background in the name of efficiency..",
+          "How exciting a time, and in equal measure, how carefully it must be handled.",
+          "It is precisely for this reason that ethical frameworks need to become clear at the macro level.",
+          "It is precisely for this reason that the matter cannot be limited to how AI will be used.",
+          "We need to rethink how society will transform, how the human being will be positioned in this new order, how power will be distributed, and how production and prosperity will be shared.",
+          "All the visionary leaders of this country who think, take responsibility and have something to say about the future must address the new relationship between people, society and technology today.",
+          "Because the matter is not only technological transformation; it is the human being redefining themselves in the face of the intelligence they have created."
         ]
       ],
       "projectBodies": [
@@ -462,7 +482,7 @@ window.SITE = {
       "labels": {
         "back": "Tüm yazılar",
         "backProjects": "Tüm projeler",
-        "byline": "Vildan Kara Kayacan",
+        "byline": "Vildan Kara",
         "features": "Öne çıkanlar",
         "visit": "Projeyi gör",
         "status": "Durum",
@@ -543,6 +563,26 @@ window.SITE = {
           "Bu bağlamda Z kuşağına gerçekten güveniyorum.",
           "Hele ki Alfa kuşağı olan; bugün 3 yaşında, ayda 100K verip okula gönderdiğimiz çocuklarımızın, günün sonunda yalnızca asgari ücretli ve tükenmiş beyaz yakalara dönüşmediği bir dünya kurabilmemizi umuyorum.",
           "Biz X ve Y kuşağının yeni maratonunun bu olması gerektiğine inanıyorum."
+        ],
+        [
+          "Yapay zeka çağının belki de en büyük büyüsü, insan, sistem ve makine arasındaki iş bölümünü yeniden tasarlayabilme ihtimalimiz.",
+          "İnsanın bir ölçüde merkezden çekildiği, tam da bu nedenle diğer insana daha fazla yaklaşması gerektiği bir dönemden geçiyoruz.",
+          "Sistemin çarkını çeviren insanın, artık giderek daha otonom hareket eden sistemlerin içinde anlam üretmesi ve yarattığı değeri yeniden tanımlaması gerekiyor.",
+          "Geleceği yalnızca öngörmek yerine, değişen dinamiklerle birlikte yeniden düşünmesi, tasarlaması ve inşa etmesi gerekiyor.",
+          "Ve belki de en büyük zorluk burada başlıyor:",
+          "Binlerce yıldır üreterek, çalışarak, aklı ve elleriyle dönüştürerek var olmuş insan; görevlerinin ve düşünsel üretiminin giderek daha büyük bir bölümünü makinelere devrettiğinde, doğadaki ve toplumdaki yerini nasıl yeniden tanımlayacak?",
+          "Yoksa bu yeni konum, insanlık tarihinde daha önce olduğu gibi, zaman içinde gelişen evrimsel bir uyumla mı şekillenecek?",
+          "Üretmek insanın kimliğinin merkezindeyse, üretimin biçimi değiştiğinde insan kendisini ne üzerinden kuracak?",
+          "Değer yaratmak ne anlama gelecek? Çalışmak ne anlama gelecek? Başarı neyle ölçülecek?",
+          "İnsan, makinenin daha hızlı ve daha etkin üstlendiği işleri devrederken hangi insani kapasitelere daha fazla yaklaşacak?",
+          "Belki sezgiye.. Belki muhakemeye.. Belki yaratıcılığa.. Belki ilişki kurmaya..",
+          "Belki de uzun zamandır verimlilik uğruna ikinci plana ittiğimiz anlam arayışına..",
+          "Ne kadar heyecan verici ve aynı ölçüde ne kadar dikkatle ele alınması gereken bir zaman.",
+          "Tam da bu nedenle etik çerçevelerin makro seviyede netleşmesi gerekiyor.",
+          "Tam da bu nedenle mesele yalnızca yapay zekanın nasıl kullanılacağıyla sınırlı kalamaz.",
+          "Toplumun nasıl dönüşeceğini, insanın bu yeni düzende nasıl konumlanacağını, gücün nasıl dağılacağını, üretimin ve refahın nasıl paylaşılacağını yeniden düşünmemiz gerekiyor.",
+          "Bu ülkenin düşünen, sorumluluk alan ve geleceğe dair sözü olan tüm vizyoner liderlerinin; insanın, toplumun ve teknolojinin yeni ilişkisini bugünden ele alması gerekiyor.",
+          "Çünkü mesele yalnızca teknolojik dönüşüm değil; insanın, kendi yarattığı zeka karşısında kendisini yeniden tanımlama meselesi."
         ]
       ],
       "projectBodies": [
@@ -613,7 +653,7 @@ window.SITE = {
   },
   "en": {
     "brand": {
-      "name": "Vildan Kara Kayacan",
+      "name": "Vildan Kara",
       "role": ""
     },
     "nav": [
@@ -867,7 +907,7 @@ window.SITE = {
             "href": "article.html?id=2"
           },
           {
-            "img": "https://images.unsplash.com/photo-1677442d019cecf8887bf34b3e9d8b53b957f8c7?auto=format&fit=crop&w=900&q=70",
+            "img": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=70",
             "label": "Perspective 04",
             "title": "Humanity in the Age of AI",
             "body": "The greatest magic of the AI age might be our ability to reimagine the division of labour between humans, systems, and machines.",
@@ -928,7 +968,7 @@ window.SITE = {
           "Strategy sets the direction. Transformation turns ambition into action. Operations embed new capabilities and ways of working into the fabric of the organisation.",
           "Real value is created by aligning leadership, technology, processes and people around a common purpose. By connecting strategy, transformation and operations as a single integrated journey, organisations can move seamlessly from vision to execution and from execution to sustainable value creation."
         ],
-        "cite": "Vildan Kara Kayacan"
+        "cite": "Vildan Kara"
       }
     },
     "stats": [
@@ -1212,6 +1252,13 @@ window.SITE = {
           "read": "5 min read",
           "title": "People, Purpose & New Ways of Working",
           "text": "Why Purpose Matters More Than Ever. Perhaps for the first time, a generation looks for meaning beyond work and corporate hierarchy alone."
+        },
+        {
+          "tag": "Perspective",
+          "read": "5 min read",
+          "img": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=75",
+          "title": "Humanity in the Age of AI",
+          "text": "The greatest magic of the AI age might be our ability to reimagine the division of labour between humans, systems and machines, and to redefine what it means to create value."
         }
       ]
     },
@@ -1228,12 +1275,12 @@ window.SITE = {
     },
     "aboutPage": {
       "eyebrow": "About",
-      "name": "Vildan Kara Kayacan",
+      "name": "Vildan Kara",
       "role": "Executive Advisor",
       "tags": "Enterprise Transformation • Operating Models • Organisational Change • AI Enablement",
       "lede": "A leader working at the intersection of transformation, technology and new ways of working.",
       "bio": [
-        "Vildan Kara Kayacan is a transformation and technology executive with more than twenty years of international experience across EMEA and MENA. Throughout her career, she has led large-scale transformation programmes, managed global delivery organisations, built high-performing teams and contributed to some of the most complex business and technology initiatives in the region.",
+        "Vildan Kara is a transformation and technology executive with more than twenty years of international experience across EMEA and MENA. Throughout her career, she has led large-scale transformation programmes, managed global delivery organisations, built high-performing teams and contributed to some of the most complex business and technology initiatives in the region.",
         "Her experience spans enterprise technology, business transformation, operating models, managed services and organisational change. In recent years, her focus has increasingly expanded towards the impact of artificial intelligence on organisations, leadership and the future of work.",
         "Passionate about bridging strategy, technology and human behaviour, she is particularly interested in how organisations adapt, evolve and create sustainable value in times of rapid change.",
         "Today, she continues to explore the intersection of transformation, leadership, AI and new ways of working, drawing on two decades of experience at the forefront of organisational change."
@@ -1449,7 +1496,7 @@ window.SITE = {
     },
     "footer": {
       "tagline": "A senior executive across enterprise transformation, SAP, AI, managed services and major bids.",
-      "copy": "© 2026 Vildan Kara Kayacan. All rights reserved.",
+      "copy": "© 2026 Vildan Kara. All rights reserved.",
       "colPages": "Pages",
       "colContact": "Contact",
       "colFollow": "Follow"
@@ -1684,13 +1731,13 @@ window.SITE = {
   },
   "tr": {
     "brand": {
-      "name": "Vildan Kara Kayacan",
+      "name": "Vildan Kara",
       "role": ""
     },
     "nav": [
       {
         "id": "services",
-        "label": "Çalışma Alanlarım",
+        "label": "Liderlik Alanları",
         "href": "services.html"
       },
       {
@@ -1714,27 +1761,27 @@ window.SITE = {
         "href": "index.html#contact"
       }
     ],
-    "cta": "Görüşme planlayın",
+    "cta": "İletişime geçin",
     "landing": {
-      "eyebrow": "Çalışma Alanlarım",
+      "eyebrow": "Liderlik Alanları",
       "hero1": {
-        "eyebrow": "EXECUTIVE DÖNÜŞÜM LİDERİ",
+        "eyebrow": "TEKNOLOJİ VE İŞ DÖNÜŞÜM LİDERİ",
         "headline": [
           "Strateji",
           "Dönüşüm",
           "Operasyon"
         ],
-        "subhead": "Kurumsal dönüşüm yolculuğunuzun stratejik lideri",
-        "lede": "Strateji, organizasyon, teknoloji ve operasyon arasında köprü kuran, yapay zekayı araç olarak doğru konumlandıran bir dönüşüm lideri",
-        "ctaPrimary": "Görüşme ayarlayın",
-        "ctaSecondary": "Çalışma alanlarımı görün",
+        "subhead": "Stratejiden dönüşüme, dönüşümden operasyonel mükemmelliğe",
+        "lede": "Stratejik yönü dönüşüm kapasitesine, dönüşümü operasyonel mükemmelliğe bağlayan; yapay zeka ve teknoloji gücüyle geleceğin organizasyonlarını şekillendirmeye odaklanan bütüncül bir liderlik perspektifi.",
+        "ctaPrimary": "Perspektifi keşfedin",
+        "ctaSecondary": "Deneyimi keşfedin",
         "tagline": "Tarafsız değerlendirme. Operasyonun her aşamasında deneyim. Pragmatik, sonuç odaklı, çevik yaklaşımlar."
       },
       "headline": [
-        "Dönüşümünüzde",
-        "uçtan uca stratejik ortağınız."
+        "Stratejiden operasyona",
+        "uçtan uca dönüşüm liderliği"
       ],
-      "lede": "Stratejiden hizmet sağlayıcı seçimine, projeler ve program yönetiminden operasyon birimlerinin kurgulanıp oluşturulmasına; dönüşümün her aşamasında yanınızda.",
+      "lede": "Stratejinin belirlenmesinden hizmet sağlayıcı seçimine, program yönetiminden operasyon birimlerinin kurgulanmasına; dönüşümün her aşamasını kapsayan bir liderlik deneyimi.",
       "features": [
         {
           "icon": "target",
@@ -1753,7 +1800,7 @@ window.SITE = {
         }
       ],
       "servicesHead": {
-        "eyebrow": "Çalışma Alanlarım",
+        "eyebrow": "Liderlik Alanları",
         "title": "Dönüşümün her aşamasında koordineli, planlı ve uygulanabilir bir üst düzey yönetim",
         "lede": "Stratejik kararların alınmasından, programların başarıyla hayata geçirilmesine ve sürdürülebilir bir operasyona kadar, tek ve koordineli bir yönetim."
       },
@@ -1798,7 +1845,7 @@ window.SITE = {
           "items": [
             {
               "icon": "layers",
-              "title": "SAP Dönüşüm Danışmanlığı",
+              "title": "SAP Dönüşüm Liderliği",
               "body": "SAP S/4HANA ve kurumsal dönüşüm inisiyatiflerinde, iş modelinden go-live'a kadar bağımsız yönetim. Platform ve işletme modeli, tek ve birbirine bağlı bir karar olarak ele alınır."
             },
             {
@@ -1860,8 +1907,8 @@ window.SITE = {
       ],
       "ctaBand": {
         "title": "Adım adım tanımlanan ve yönetilebilir bir dönüşüm yolculuğu",
-        "body": "Stratejik önceliklerinizi konuşmak için bizimle iletişime geçin.",
-        "cta": "Görüşme ayarlayın"
+        "body": "Stratejik öncelikleriniz üzerine fikir alışverişi için iletişime geçebilirsiniz.",
+        "cta": "İletişime geçin"
       }
     },
     "projectsSoon": {
@@ -1877,27 +1924,27 @@ window.SITE = {
           "Dönüşüm, tüm unsurlar birlikte ele alınabildiğinde",
           "başarıya ulaşır"
         ],
-        "lede": "Dönüşümün kalıcı etkileri; strateji, insan, dönüşüm ve operasyonun birbiriyle hizalandığında, bütüncül şekilde ele alınabildiğinde ve yapay zeka ile güçlendirildiğinde ortaya çıkar; sürdürülebilir bir etki mekanizması ancak böylece oluşur ve devamlılığı sağlanır.",
+        "lede": "Dönüşümün kalıcı etkisi; stratejik yön, insan ve organizasyon, dönüşüm kapasitesi ve operasyonel mükemmellik birlikte ele alındığında ortaya çıkar. Yapay zeka ve teknoloji ise karar alma, uygulama hızı, verimlilik ve sürekli gelişim kapasitesini bütün yapı boyunca güçlendirir.",
         "flow": [
           {
             "icon": "compass",
             "title": "Strateji",
-            "body": "Yönü belirler, öncelikleri ve odağı oluşturur."
-          },
-          {
-            "icon": "people",
-            "title": "İnsan",
-            "body": "Yetkinliği kazandırır, adaptasyonu ve sistemi mümkün kılar."
+            "body": "Yönü, öncelikleri ve değer hedeflerini belirler."
           },
           {
             "icon": "trend",
             "title": "Dönüşüm",
-            "body": "Hedefi aksiyona çevirir, planlar ve değişimi hayata geçirir."
+            "body": "Stratejik yönü organizasyonel harekete ve somut değişime çevirir."
           },
           {
             "icon": "gear",
-            "title": "Operations",
-            "body": "Yeni çalışma biçimlerini yerleştirir, performansı sürdürür."
+            "title": "Operasyonel Mükemmellik",
+            "body": "Yeni çalışma biçimlerini kalıcılaştırır, performansı ve sürekli gelişimi güçlendirir."
+          },
+          {
+            "icon": "chip",
+            "title": "Yapay Zeka ve Teknoloji",
+            "body": "Karar alma, uygulama hızı, verimlilik ve değer yaratma kapasitesini bütün sistem boyunca güçlendirir."
           }
         ],
         "enable": {
@@ -1906,7 +1953,7 @@ window.SITE = {
         }
       },
       "howIThink": {
-        "eyebrow": "Bakış açıları",
+        "eyebrow": "Yazılar",
         "title": [
           "Hayat, İnsan, Dönüşüm ve Teknoloji",
           "Üzerine Bakış Açılarım"
@@ -1941,7 +1988,7 @@ window.SITE = {
             "href": "article.html?id=2"
           },
           {
-            "img": "https://images.unsplash.com/photo-1677442d019cecf8887bf34b3e9d8b53b957f8c7?auto=format&fit=crop&w=900&q=70",
+            "img": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=70",
             "label": "Perspective 04",
             "title": "Yapay Zeka Çağında İnsan",
             "body": "Yapay zeka çağının belki de en büyük büyüsü, insan, sistem ve makine arasındaki iş bölümünü yeniden tasarlayabilme ihtimalimiz.",
@@ -1954,7 +2001,7 @@ window.SITE = {
         "cta": "Tüm Yazıları Gör"
       },
       "aboutTeaser": {
-        "eyebrow": "Vildan Kimdir?",
+        "eyebrow": "Vildan Kara Kimdir?",
         "title": [
           "Bütüncül deneyim",
           "Yenilikçi bakış",
@@ -1970,7 +2017,7 @@ window.SITE = {
           {
             "icon": "bulb",
             "title": "Strateji ile Uygulamanın Gerçek Buluşması",
-            "body": "Stratejik danışmanlığın yapılandırılmış düşünme biçimini, gerçek iş ortamlarında sonuç üretmek için gereken uygulama disipliniyle birleştirmek."
+            "body": "Yapılandırılmış stratejik düşünme biçimini, gerçek iş ortamlarında sonuç üretmek için gereken uygulama disipliniyle birleştirmek."
           },
           {
             "icon": "people",
@@ -1991,18 +2038,23 @@ window.SITE = {
         "quote": "Karmaşıklığı netliğe, hedefi etkiye dönüştürmek."
       },
       "manifesto": {
-        "eyebrow": "Yaklaşım",
+        "eyebrow": "Dönüşüme Bakış",
         "title": [
           "Strateji geleceği şekillendirir.",
           "Dönüşüm hayata geçirir.",
           "Operasyonlar değeri kalıcı kılar."
         ],
         "paras": [
-          "Her organizasyonun özünde aynı arayış var: daha fazla büyüme, daha yüksek verimlilik, gerçek inovasyon ve müşteriye gerçekten anlamlı gelen değer yaratmak. Bu hedeflere ulaşmak; iyi tasarlanmış bir stratejinin, etkili dönüşüm girişimlerinin ve sağlam operasyonel yapıların birbirini destekleyen şekilde çalışmasını gerektirir.",
-          "Kalıcı ve ölçülebilir iş sonuçları, stratejik öncelikler, dönüşüm programları ve günlük operasyonların tek bir çerçeve içinde, birbirini besleyen bir bütün haline geldiğinde ortaya çıkar. Strateji, organizasyona nereye ve neden gideceğini gösteren yön duygusunu verir. Dönüşüm, bu yönü gerçekleştirilebilir hedeflere ve somut aksiyonlara çevirir. Operasyonlar ise ortaya çıkan yeni yetkinlikleri ve çalışma biçimlerini kurumun doğal işleyişinin ayrılmaz bir parçası haline getirir.",
-          "Gerçek değer; liderliği, teknolojiyi, süreçleri ve insanı aynı resmin içinde, ortak bir amaç etrafında hizalayabilmekten doğar. Bu unsurlar arasındaki bağı güçlendirebildiğimizde, organizasyonların vizyondan uygulamaya; uygulamadan da esnek, dayanıklı ve uzun vadede değer üreten yapılara dönüşen yolculuğunu bütüncül bir gözle görebilir ve yönetebiliriz."
+          "Yıllar içinde farklı ülkelerde, farklı organizasyonlarda, büyük dönüşüm programlarında ve karmaşık operasyonel yapılarda çalışırken defalarca gözlemlediğim şey şuydu: Her organizasyon özünde büyümeyi, daha yüksek verimliliği, gerçek inovasyonu ve müşteriye değer yaratmada farklılaşmayı hedefliyor. Ancak kurumların gerçek yetkinliği, bu stratejiyi hayata geçirme ve kalıcı bir çalışma biçimine dönüştürme becerisiyle ortaya çıkıyor. Başarı ise iyi tasarlanmış bir stratejinin, etkili dönüşüm girişimlerinin ve sağlam operasyonel yapıların birbirini destekleyen şekilde çalışmasını mümkün kılabilmekle geliyor.",
+          "Strateji, organizasyona nereye ve neden gideceğini gösteren yön duygusunu verir. Hangi geleceğin hedeflendiğini, hangi seçimlerin yapılacağını ve kaynakların hangi öncelikler etrafında toplanacağını tanımlar.",
+          "Dönüşüm, bu yönü gerçekleştirilebilir hedeflere ve somut aksiyonlara çevirir; organizasyonel harekete dönüştürür. Yapıları, yetkinlikleri, süreçleri, teknolojiyi ve çalışma biçimlerini yeniden şekillendirir.",
+          "Operasyonlar ise kazanılan yeni kapasitenin gündelik işleyişe yerleşmesini, gelişmesini ve sürdürülebilir değer üretmesini sağlar; yeni yetkinlikleri ve çalışma biçimlerini kurumun doğal işleyişinin ayrılmaz bir parçası haline getirir.",
+          "Bu nedenle strateji, dönüşüm ve operasyonel mükemmelliği birbirinden ayrılan yönetim alanları olarak görmüyorum. Benim için bunlar aynı sistemin birbirini besleyen parçalarıdır. Strateji dönüşümle karşılık bulur, dönüşüm operasyonlarda kök salar, operasyonlardan gelen gerçeklik ise bir sonraki stratejik yönü daha güçlü hale getirir.",
+          "Bugün bu sistem yapay zeka ve güçlü teknolojilerle yeniden şekilleniyor. Yapay zeka, bu yapının dışında duran ayrı bir teknoloji gündeminden çok daha fazlasını temsil ediyor. Teknolojiyi seçebilmek ve uygulayabilmek kadar, onu işin yönüyle, organizasyonun kapasitesiyle ve operasyonun gerçekliğiyle doğru biçimde buluşturabilmek için de yeni bir kapasite yaratıyor.",
+          "Kalıcı değer ise liderlik, teknoloji, süreç, insan ve operasyon aynı amaç etrafında hizalandığında ortaya çıkıyor. Asıl mesele, vizyon ile uygulama arasındaki mesafeyi kapatmak ve değişimi kurumun doğal çalışma biçimine dönüştürebilmek.",
+          "Benim dönüşüme bakışımın merkezinde bu bütünlük var: stratejiden dönüşüme, dönüşümden operasyonel mükemmelliğe uzanan; yapay zeka ve teknolojiyle sürekli güçlenen bir değer yaratma sistemi."
         ],
-        "cite": "Vildan Kara Kayacan"
+        "cite": "Vildan Kara"
       }
     },
     "stats": [
@@ -2024,13 +2076,13 @@ window.SITE = {
       }
     ],
     "svc": {
-      "eyebrow": "Çalışma Alanlarım",
+      "eyebrow": "Liderlik Alanları",
       "title": [
-        "Stratejiden organizasyonun tamamına uzanan",
-        "uçtan uca kapsamlı bir dönüşüm yaklaşımı"
+        "Stratejiden dönüşüme,",
+        "dönüşümden operasyonel mükemmelliğe uzanan deneyim"
       ],
-      "lede": "Kurumsal dönüşüm, SAP programları, RFP ve teklif süreçleri, ticari yapılandırma, yönetilen hizmetler, AI ve operating model alanlarında deneyim.",
-      "asideBody": "Karmaşıklığı doğru değerlendirmeye, uygulamayı yapılandırmaya ve ölçülebilir iş sonuçları üretmeye odaklı.",
+      "lede": "Strateji, büyük ölçekli dönüşüm programları, teknoloji kararları ve operasyonel modeller arasında bağ kuran çok boyutlu liderlik deneyimi.",
+      "asideBody": "Yapay zeka ve teknoloji gücünü; stratejik kararları, dönüşüm kapasitesini ve operasyonel mükemmelliği güçlendiren ortak bir katman olarak ele alan bütüncül liderlik perspektifi.",
       "stages": [
         {
           "icon": "layers",
@@ -2056,7 +2108,7 @@ window.SITE = {
         },
         {
           "icon": "doc",
-          "step": "RFP, Teklif &\nTicari\nDanışmanlık",
+          "step": "RFP, Teklif &\nTicari Süreç\nLiderliği",
           "body": "RFP — Request for Proposal süreçlerinin yönetilmesi, değerlendirmesi, farklı ticari ve hizmet modelleri arasında hibrit yapılar kurulması, uygun hizmet sağlayıcı veya tedarikçi seçimi; yönetişim ve karar disiplinleriyle yönetilmesi.",
           "items": [
             "RFP / RFI süreç yönetimi",
@@ -2078,20 +2130,19 @@ window.SITE = {
         }
       ],
       "cta": {
-        "eyebrow": "Dönüşüm Boyunca Kaliteyi Güvence Altına Almak",
-        "title": "Kalite Güvence ve Health Check Hizmetleri",
+        "eyebrow": "Dönüşümde Kalite, Risk ve Yönetişim",
+        "title": "Dönüşüm Güvencesi ve Yönetim Disiplini",
         "paras": [
-          "Dönüşüm liderliği alanları ve hizmet alanlarının bütününde veya ayrı birimler halinde uygulanabilen QA çalışmalarıyla mevcut süreç veya gidişatın health check'inin yapılması; risk tespitlerinin bağımsız ve tarafsız oluşturulması, gerekli hazırlık ve planlamanın gözden geçirilmesi ve kritik noktalarda yapılan yönlendirmelerle başarının güvence altına alınması; tüm bunlar, sürece farklı bir bakış açısıyla değerlendirme imkânı sağlar.",
-          "Her değerlendirme, ilgili uygulama fazında doğru standartların, kalite kapılarının, kontrol mekanizmalarının ve yönetişim yapılarının mevcut olup olmadığını inceler; liderlik ekiplerinin boşlukları, bağımlılıkları ve öncelikli aksiyonları net şekilde görmesine yardımcı olur."
+          "Büyük dönüşüm programlarında başarı yalnızca güçlü bir strateji ve iyi planlanmış uygulamayla şekillenmez. Risklerin erken görünür olması, kritik bağımlılıkların doğru yönetilmesi, kalite kapılarının doğru noktalarda devreye girmesi ve liderlik ekiplerinin gerçeği zamanında görebilmesi aynı ölçüde belirleyicidir.",
+          "Bu yaklaşım; program kalitesini, yönetişim yapılarını, uygulama disiplinini ve karar mekanizmalarını bütüncül biçimde ele alır. Amaç, dönüşümün seyrini erken okuyabilmek, zayıf sinyalleri görünür kılmak ve liderlik ekiplerinin doğru zamanda doğru kararları almasını sağlayacak netliği oluşturmaktır."
         ],
         "bullets": [
-          "Kalite Güvence Hizmetleri",
-          "Program ve Proje Health Check'leri",
-          "Kalite Kapıları ve Kontrol Değerlendirmeleri",
-          "Yönetişim, Risk ve Bağımlılık Analizi",
-          "Bağımsız Yönetici Raporlaması"
-        ],
-        "button": "Kalite incelemesi talep et"
+          "Program ve Dönüşüm Güvencesi",
+          "Risk ve Kritik Bağımlılık Görünürlüğü",
+          "Kalite Kapıları ve Karar Mekanizmaları",
+          "Yönetişim ve Uygulama Disiplini",
+          "Yönetici Seviyesinde Şeffaflık ve Netlik"
+        ]
       },
       "areasLabel": "Uçtan uca hizmet portföyü"
     },
@@ -2117,7 +2168,7 @@ window.SITE = {
           ]
         },
         {
-          "title": "SAP Dönüşüm Danışmanlığı",
+          "title": "SAP Dönüşüm Liderliği",
           "short": "Düşük riskli, aşamalı SAP dönüşümü.",
           "desc": "SAP S/4HANA için, doğrudan teslimat deneyimine dayanan yönetim; aşamalı, düşük riskli bir yol haritasından go-live ve stabilizasyona kadar. Odak, platformun kendisi kadar hedef işletme modeli ve insanlar üzerindedir.",
           "bullets": [
@@ -2285,13 +2336,21 @@ window.SITE = {
           "read": "5 dk okuma",
           "title": "İnsan, Amaç ve Yeni Çalışma Biçimleri",
           "text": "Belki de ilk kez bir jenerasyon, anlamı çalışmanın ve kurumsal hiyerarşinin ötesinde arıyor."
+        },
+        {
+          "tag": "Bakış açısı",
+          "read": "5 dk okuma",
+          "img": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=75",
+          "title": "Yapay Zeka Çağında İnsan",
+          "text": "Yapay zeka çağının belki de en büyük büyüsü; insan, sistem ve makine arasındaki iş bölümünü yeniden tasarlayabilme ihtimalimiz."
         }
       ]
     },
     "ctaBand": {
-      "eyebrow": "Konuşalım",
-      "title": "Kalıcı dönüşüm bir görüşmeyle başlar",
-      "cta": "Görüşme planlayın"
+      "eyebrow": "İlk Adım",
+      "title": "En güçlü fikirler, ortak akılla derinleşir",
+      "body": "Strateji, insan, yapay zeka ve operasyonun kesişimindeki fırsatları birlikte değerlendirelim.",
+      "cta": "İletişime geçin"
     },
     "footprintHead": {
       "eyebrow": "Global Deneyim",
@@ -2301,12 +2360,12 @@ window.SITE = {
     },
     "aboutPage": {
       "eyebrow": "Hakkında",
-      "name": "Vildan Kara Kayacan",
-      "role": "Executive Advisor",
-      "tags": "Kurumsal Dönüşüm • Operating Model • Organizasyonel Değişim • AI Enablement",
+      "name": "Vildan Kara",
+      "role": "Teknoloji ve İş Dönüşüm Lideri",
+      "tags": "Strateji • Dönüşüm • Operasyonel Mükemmellik • AI Enablement",
       "lede": "Dönüşüm, teknoloji ve yeni çalışma modellerinin kesişiminde çalışan bir lider.",
       "bio": [
-        "Vildan Kara Kayacan, yirmi yılı aşkın uluslararası deneyime sahip bir dönüşüm ve teknoloji yöneticisidir. Kariyeri boyunca EMEA ve MENA bölgelerinde büyük ölçekli dönüşüm programlarına liderlik etmiş, global organizasyonların kurulması ve geliştirilmesinde rol almış, iş ve teknoloji dünyasının kesişiminde yer alan birçok stratejik girişime katkı sağlamıştır.",
+        "Vildan Kara, yirmi yılı aşkın uluslararası deneyime sahip bir dönüşüm ve teknoloji yöneticisidir. Kariyeri boyunca EMEA ve MENA bölgelerinde büyük ölçekli dönüşüm programlarına liderlik etmiş, global organizasyonların kurulması ve geliştirilmesinde rol almış, iş ve teknoloji dünyasının kesişiminde yer alan birçok stratejik girişime katkı sağlamıştır.",
         "Deneyimi; kurumsal teknoloji dönüşümü, operasyonel modeller, yönetilen hizmetler, organizasyonel değişim ve iş dönüşümü gibi farklı alanlara uzanmaktadır. Son yıllarda ise odağını giderek daha fazla yapay zekânın organizasyonlar, liderlik anlayışı ve çalışma biçimleri üzerindeki etkisine yöneltmiştir.",
         "Strateji, teknoloji ve insan davranışının birbirinden bağımsız düşünülemeyeceğine inanmakta; organizasyonların değişime nasıl uyum sağladığı, nasıl geliştiği ve uzun vadeli değer yaratabildiği konularına özel ilgi duymaktadır.",
         "Bugün de dönüşüm, liderlik, yapay zekâ ve yeni çalışma modellerinin kesişiminde düşünmeye, üretmeye ve deneyimlerini paylaşmaya devam etmektedir."
@@ -2412,17 +2471,17 @@ window.SITE = {
           {
             "icon": "target",
             "title": "Daha net, daha sade, daha gerçekçi",
-            "body": "Karmaşığı basitleştirir, öncelikleri netleştirir ve uygulanabilir stratejiler ortaya koyarım. Amacım; ölçülebilir sonuçlar üreten ve sürdürülebilir değeri güçlendiren çözümler geliştirmektir."
+            "body": "Karmaşık olan sadeleştirilir, öncelikler netleştirilir ve uygulanabilir stratejiler ortaya konur. Amaç; ölçülebilir sonuçlar üreten ve sürdürülebilir değeri güçlendiren çözümler geliştirmektir."
           },
           {
             "icon": "bulb",
-            "title": "Teknoloji, insan ve operasyonu aynı hedefe yönlendiririm",
-            "body": "Teknolojinin potansiyelini işin gerçek ihtiyaçlarıyla buluşturur, insanın değişime uyum sağlayacağı ortamları tasarlarım. Operasyonel mükemmellik ve disiplini, dönüşümün etkisini kalıcı hale getirmek için bir kaldıraç olarak kullanırım."
+            "title": "Teknoloji, insan ve operasyonu aynı hedefe yönlendirme",
+            "body": "Teknolojinin potansiyeli işin gerçek ihtiyaçlarıyla buluşturulur; insanın değişime uyum sağlayacağı ortamlar tasarlanır. Operasyonel mükemmellik ve disiplin, dönüşümün etkisini kalıcı hale getiren bir kaldıraç olarak ele alınır."
           },
           {
             "icon": "people",
-            "title": "İnsanı merkeze alan dönüşümler yaratırım",
-            "body": "Güven, iş birliği ve şeffaf iletişimi güçlendiren kültürler oluşturur, ekiplerin potansiyelini ortaya çıkarırım. Değişimi sahiplenen, öğrenen ve sürekli gelişen organizasyonlar inşa etmeye odaklanırım."
+            "title": "İnsanı merkeze alan dönüşümler yaratma",
+            "body": "Güven, iş birliği ve şeffaf iletişimi güçlendiren kültürler oluşturulur; ekiplerin potansiyeli ortaya çıkarılır. Odak; değişimi sahiplenen, öğrenen ve sürekli gelişen organizasyonlar inşa etmektir."
           }
         ]
       },
@@ -2493,22 +2552,21 @@ window.SITE = {
     },
     "contact": {
       "eyebrow": "İletişim",
-      "title": "Bir görüşme planlayalım",
-      "lede": "Kurumunuzda büyük bir dönüşüm hazırlanıyor, bir SAP ya da yapay zeka programı yürütülüyor ya da operasyon modeliniz yeniden tasarlanıyor olabilir. İlk görüşmede ihtiyacınızı birlikte değerlendirelim.",
+      "title": "Bakış açılarını buluşturalım",
+      "lede": "Dönüşüm, teknoloji ve liderlik üzerine fikir alışverişi; yönetim kurulu ve üst yönetim gündemleri, konuşma ve etkinlik davetleri ya da olası iş birlikleri için bana ulaşabilirsiniz.",
       "fields": {
         "name": "Ad Soyad",
         "org": "Kurum",
         "email": "E-posta",
-        "topic": "İlgi alanı",
-        "message": "Ne konuşmak istersiniz?"
+        "topic": "Konu",
+        "message": "Mesajınız"
       },
       "topics": [
-        "SAP & S/4HANA",
-        "Yapay Zeka",
-        "Yönetilen Hizmetler",
-        "Program & PMO",
-        "İhale & RFP Danışmanlığı",
-        "Mükemmeliyet Merkezi",
+        "Dönüşüm Liderliği",
+        "Yapay Zeka ve Teknoloji",
+        "Yönetim Kurulu / Üst Yönetim Gündemi",
+        "Konuşma & Etkinlik Daveti",
+        "İş Birliği",
         "Diğer"
       ],
       "send": "Mesaj gönder",
@@ -2520,8 +2578,8 @@ window.SITE = {
       "linkedin": "LinkedIn"
     },
     "footer": {
-      "tagline": "Kurumsal dönüşüm, SAP, AI, yönetilen hizmetler ve büyük ihalelerde üst düzey yönetici.",
-      "copy": "© 2026 Vildan Kara Kayacan. Tüm hakları saklıdır.",
+      "tagline": "Stratejiden dönüşüme, dönüşümden operasyonel mükemmelliğe uzanan bütüncül bir liderlik perspektifi.",
+      "copy": "© 2026 Vildan Kara. Tüm hakları saklıdır.",
       "colPages": "Sayfalar",
       "colContact": "İletişim",
       "colFollow": "Takip"
@@ -2743,10 +2801,10 @@ window.SITE = {
           "İhtiyaç; dönüşüm değerlendirmesi, SAP program liderliği, RFP süreci desteği, yönetilen hizmet modeli tasarımı, yapay zeka yol haritası veya bağımsız kalite güvence çalışması olabilir.",
           "İlk adım, mevcut durumu doğru okumak, öncelikleri netleştirmek ve ilerleme yolunu gerçekçi şekilde yapılandırmaktır."
         ],
-        "button": "Görüşme planla"
+        "button": "İletişime geçin"
       },
       "lead": {
-        "eyebrow": "Çalışma Alanlarım",
+        "eyebrow": "Liderlik Alanları",
         "title": "Dönüşüm Liderliği Alanları",
         "lede": [
           "Kurumsal dönüşüm, SAP programları, RFP, teklif ve ticari süreçler, yönetilen hizmetler, yapay zeka ve operasyon modelleri alanlarında bütüncül bir deneyim.",

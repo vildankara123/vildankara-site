@@ -36,12 +36,12 @@
               );
             })}
           </div>
-          <button onClick={() => setLang(lang === "en" ? "tr" : "en")} aria-label="Toggle language"
+          {window.VK_SHOW_LANG_TOGGLE ? <button onClick={() => setLang(lang === "en" ? "tr" : "en")} aria-label="Toggle language"
             style={{ fontFamily: "var(--font-mono)", fontSize: "11px", fontWeight: 500, letterSpacing: "0.1em", color: "var(--text-on-ink)", background: "transparent", border: "1px solid rgba(236,240,244,0.28)", padding: "6px 10px", borderRadius: "var(--r-sm)", cursor: "pointer", transition: "border-color var(--dur-fast)" }}
             onMouseEnter={(e) => e.currentTarget.style.borderColor = "var(--accent-on-ink)"}
             onMouseLeave={(e) => e.currentTarget.style.borderColor = "rgba(236,240,244,0.28)"}>
             {lang === "en" ? "TR" : "EN"}
-          </button>
+          </button> : null}
           <a href={withLang("index.html#contact", lang)} className="vk-navcta"
             style={{ fontFamily: "var(--font-sans)", fontSize: "14px", fontWeight: 500, color: "var(--on-accent)", background: "var(--accent)", padding: "10px 18px", borderRadius: "var(--r-sm)", whiteSpace: "nowrap", transition: "background var(--dur-fast)" }}
             onMouseEnter={(e) => e.currentTarget.style.background = "var(--gold-400)"}
@@ -90,7 +90,7 @@
           </div>
           <div style={{ display: "flex", justifyContent: "space-between", gap: "20px", flexWrap: "wrap", marginTop: "28px" }}>
             <span style={{ fontFamily: "var(--font-mono)", fontSize: "11px", letterSpacing: "0.08em", color: "var(--text-on-ink-faint)" }}>{t.footer.copy}</span>
-            <span style={{ fontFamily: "var(--font-mono)", fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--text-on-ink-faint)" }}>{t.brand.role ? t.brand.role + " · " : ""}EMEA & MENA</span>
+            <span style={{ fontFamily: "var(--font-mono)", fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--text-on-ink-faint)" }}>{t.brand.role || ""}</span>
           </div>
         </div>
       </footer>
@@ -149,7 +149,10 @@
     const [lang, setLang] = useState(() => {
       const valid = (v) => (v === "en" || v === "tr") ? v : null;
       const q = valid(new URLSearchParams(location.search).get("lang"));
-      return q || valid(localStorage.getItem("vk-lang")) || "tr";
+      /* EN temporarily invisible: only an explicit ?lang=en shows it; everyone else gets TR.
+         To restore the toggle + saved preference: set window.VK_SHOW_LANG_TOGGLE = true and
+         return q || valid(localStorage.getItem("vk-lang")) || "tr"; */
+      return q || "tr";
     });
     useEffect(() => {
       localStorage.setItem("vk-lang", lang);

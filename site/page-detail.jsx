@@ -39,6 +39,13 @@
                 <span style={{ color: "var(--accent-on-ink)" }}>{it.tag}</span><span>· {it.read}</span>
               </div>
             </Reveal>
+            {it.img && (
+              <Reveal delay={90}>
+                <div style={{ margin: "6px 0 28px", borderRadius: "var(--r-md)", overflow: "hidden", border: "1px solid var(--line-on-ink)", boxShadow: "0 26px 54px -30px rgba(0,0,0,0.75)", aspectRatio: "16 / 8", background: "var(--ink-800)" }}>
+                  <img src={it.img} alt={it.title} loading="lazy" style={{ display: "block", width: "100%", height: "100%", objectFit: "cover" }} />
+                </div>
+              </Reveal>
+            )}
             <Reveal delay={100}>
               <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.2rem, 1.3rem + 3vw, 3.4rem)", lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--text-on-ink)", margin: 0 }}>{it.title}</h1>
             </Reveal>

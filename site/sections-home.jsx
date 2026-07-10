@@ -40,14 +40,6 @@
               ))}
             </div>
 
-            <div className="vk-core-enable">
-              <span className="vk-core-enable-ic" aria-hidden="true"><Glyph name="chip" size={30} sw={1.4} /></span>
-              <div className="vk-core-enable-txt">
-                <div className="vk-core-enable-label">{P.enable.label}</div>
-                <div className="vk-core-enable-body" style={{ margin: 0, maxWidth: "58ch", textAlign: "left" }}>{P.enable.desc}</div>
-              </div>
-            </div>
-
           </Reveal>
         </div>
       </section>
@@ -318,7 +310,7 @@
               <ul className="vk-svcd-cta-bullets">
                 {(S.cta.bullets || []).map((b, i) => <li key={i}>{b}</li>)}
               </ul>
-              <DS.Button variant="accent" trailingArrow href={ctaHref || "services.html"}>{S.cta.button}</DS.Button>
+              {S.cta.button ? <DS.Button variant="accent" trailingArrow href={ctaHref || "services.html"}>{S.cta.button}</DS.Button> : null}
             </div>
           </div>
         </div>

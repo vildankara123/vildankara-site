@@ -15,8 +15,11 @@
         <div className="container" style={{ position: "relative", padding: "clamp(4rem, 3rem + 5vw, 7rem) 0" }}>
           <Reveal>
             <span className="eyebrow eyebrow--on-ink">{c.eyebrow}</span>
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "var(--t-display-l)", lineHeight: 1.05, letterSpacing: "-0.022em", color: "var(--text-on-ink)", margin: "22px 0 32px", maxWidth: "18ch" }}>{c.title}</h2>
-            <DS.Button variant="accent" trailingArrow href="index.html#contact">{c.cta}</DS.Button>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "var(--t-display-l)", lineHeight: 1.05, letterSpacing: "-0.022em", color: "var(--text-on-ink)", margin: "22px 0 0", maxWidth: "18ch" }}>{c.title}</h2>
+            {c.body ? <p style={{ fontSize: "var(--t-body-l)", lineHeight: 1.55, color: "var(--text-on-ink-muted)", margin: "20px 0 0", maxWidth: "52ch" }}>{c.body}</p> : null}
+            <div style={{ marginTop: "32px" }}>
+              <DS.Button variant="accent" trailingArrow href="index.html#contact">{c.cta}</DS.Button>
+            </div>
           </Reveal>
         </div>
       </section>
