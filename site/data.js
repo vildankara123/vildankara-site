@@ -865,6 +865,14 @@ window.SITE = {
             "body": "Why Purpose Matters More Than Ever. Perhaps for the first time, a generation looks for meaning beyond work and corporate hierarchy alone.",
             "quote": "I believe this should be the new marathon of us, the X and Y generations.",
             "href": "article.html?id=2"
+          },
+          {
+            "img": "https://images.unsplash.com/photo-1677442d019cecf8887bf34b3e9d8b53b957f8c7?auto=format&fit=crop&w=900&q=70",
+            "label": "Perspective 04",
+            "title": "Humanity in the Age of AI",
+            "body": "The greatest magic of the AI age might be our ability to reimagine the division of labour between humans, systems, and machines.",
+            "quote": "If production is at the core of human identity, what becomes of humanity when the nature of production itself changes?",
+            "href": "article.html?id=3"
           }
         ],
         "readMore": "Read more",
@@ -1931,6 +1939,14 @@ window.SITE = {
             "body": "Belki de ilk kez bir jenerasyon, anlamı çalışmanın ve kurumsal hiyerarşinin ötesinde arıyor.",
             "quote": "Biz X ve Y kuşağının yeni maratonunun bu olması gerektiğine inanıyorum.",
             "href": "article.html?id=2"
+          },
+          {
+            "img": "https://images.unsplash.com/photo-1677442d019cecf8887bf34b3e9d8b53b957f8c7?auto=format&fit=crop&w=900&q=70",
+            "label": "Perspective 04",
+            "title": "Yapay Zeka Çağında İnsan",
+            "body": "Yapay zeka çağının belki de en büyük büyüsü, insan, sistem ve makine arasındaki iş bölümünü yeniden tasarlayabilme ihtimalimiz.",
+            "quote": "Üretmek insanın kimliğinin merkezindeyse, üretimin biçimi değiştiğinde insan kendisini ne üzerinden kuracak?",
+            "href": "article.html?id=3"
           }
         ],
         "readMore": "Devamını oku",
